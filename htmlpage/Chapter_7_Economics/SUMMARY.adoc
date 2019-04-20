@@ -1,0 +1,29 @@
+= Chapter 7  Economics
+
+
+=== link:CH00_Preface.asciidoc[Preface]
+
+=== link:CH01_Valuation.asciidoc[7.1 Valuation（估值）]
+
+* **7.1.1 A Simple Model with Fee-Based Rewards（一个基于费用奖励的简单模型）**
+
+* **7.1.2 An Extended Model with Increasing Token Supply（代币供应持续增长的扩展模型）**
+
+=== link:CH02_Block_Rewards.asciidoc[7.2  Block Rewards（区块奖励）]
+
+* **7.2.1 The economic implications of block rewards（区块奖励的经济意义）**
+
+* **7.2.2 Block Reward Schedule: Design Considerations（区块奖励计划：设计考虑）**
+
+* **7.2.3 Equitability in PoS block reward schemes（PoS系统区块奖励方案的均衡性）**
+
+** **7.2.3.1 Equitability（均衡性）**
+** **7.2.3.2 Equitable choices of the total reward R（总奖励 R 的合理选择）**
+
+=== link:CH03_Transaction_Fees.asciidoc[7.3 Transaction Fees（交易费用）]
+
+* **7.3.1 Fee management today（现在的费用管理方法）**
+
+* **
+
+

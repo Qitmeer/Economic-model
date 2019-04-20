@@ -1,0 +1,621 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Transaction Fees · Cryptoeconomics</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CH04_Acknowledgement.html" />
+    
+    
+    <link rel="prev" href="CH02_Block_Rewards.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Cryptoeconomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="CH00_Preface.html">
+            
+                <a href="CH00_Preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="CH01_Valuation.html">
+            
+                <a href="CH01_Valuation.html">
+            
+                    
+                    Valuation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="CH02_Block_Rewards.html">
+            
+                <a href="CH02_Block_Rewards.html">
+            
+                    
+                    Block Rewards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4" data-path="CH03_Transaction_Fees.html">
+            
+                <a href="CH03_Transaction_Fees.html">
+            
+                    
+                    Transaction Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="CH04_Acknowledgement.html">
+            
+                <a href="CH04_Acknowledgement.html">
+            
+                    
+                    Acknowledgement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Incentive_design/Incentive_design.html">
+            
+                <a href="../Incentive_design/Incentive_design.html">
+            
+                    
+                    Incentive_design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Incentive_design/CH01.html">
+            
+                <a href="../Incentive_design/CH01.html">
+            
+                    
+                    加密经济学和Token经济的起源和定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Incentive_design/CH02.html">
+            
+                <a href="../Incentive_design/CH02.html">
+            
+                    
+                    机制设计和博弈论基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Incentive_design/CH03.html">
+            
+                <a href="../Incentive_design/CH03.html">
+            
+                    
+                    共识机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Incentive_design/CH04.html">
+            
+                <a href="../Incentive_design/CH04.html">
+            
+                    
+                    Token分类和Token经济的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Incentive_design/CH05.html">
+            
+                <a href="../Incentive_design/CH05.html">
+            
+                    
+                    Token的供给和需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Transaction Fees</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_7_3_transaction_fees">7.3  Transaction Fees&#xFF08;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF09;</a>
+<ul class="sectlevel2">
+<li><a href="#_7_3_1_quad_fee_management_today">7.3.1 \(\quad\) Fee management today&#xFF08;&#x5F53;&#x4ECA;&#x7684;&#x8D39;&#x7528;&#x7BA1;&#x7406;&#x65B9;&#x6CD5;&#xFF09;</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_7_3_transaction_fees">7.3  Transaction Fees&#xFF08;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF09;</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Another class of incentives known as transaction fees are drawn from users&#x2019; transactions and awarded to nodes who process that node&#x2019;s transactions. This can include both the block proposer and/or validator. A primary question in cryptocurrencies is how to choose transaction fees. A common approach&#x2014;used in Bitcoin and Ethereum, for example&#x2014;is to allow users to propose their own fees for each transaction. In such a system, miners are incentivized to prioritize high-fee transactions when forming blocks; the higher the transaction fee, the lower the con&#xFB01;rmation delay. Most cryptocurrencies also set a minimum transaction fee to prevent users spamming the network with transactions. Two important questions characterize the selection of transaction fees. The &#xFB01;rst is how to choose the magnitude of transaction fees; namely, should fees be proposed by users, imposed by the system, or some combination thereof? Typical considerations include scaling fees with the transaction&#x2019;s bytesize, monetary value, or both. The second question is how to allocate fees once they are collected. Recent work has shown that naive (and very common) methods of allocating fees can lead to incentive-incompatibility as well as increased confirmation latency. We begin this section by presenting an industry-standard approach to fee management in Section 7.3.1, and discussing why such an approach is unacceptable for a low-latency payment system. Next, we discuss alternatives, and highlight their advantages and disadvantages 7.3.2.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x53E6;&#x4E00;&#x79CD;&#x6FC0;&#x52B1;&#x63AA;&#x65BD;&#x88AB;&#x79F0;&#x4E3A;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF0C;&#x8FD9;&#x6765;&#x81EA;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x5E76;&#x88AB;&#x5956;&#x52B1;&#x7ED9;&#x5904;&#x7406;&#x8BE5;&#x8282;&#x70B9;&#x4EA4;&#x6613;&#x4E8B;&#x52A1;&#x7684;&#x8282;&#x70B9;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x5305;&#x542B;&#x4E86;&#x51FA;&#x5757;&#x8005;&#x548C;&#x9A8C;&#x8BC1;&#x8005;&#xFF0C;&#x6216;&#x8005;&#x53EA;&#x662F;&#x4E8C;&#x8005;&#x4E4B;&#x4E00;&#x3002;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x7684;&#x4E00;&#x4E2A;&#x9996;&#x8981;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6BD4;&#x7279;&#x5E01;&#x548C;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x65B9;&#x6CD5;&#x662F;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4E3A;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;&#x63D0;&#x51FA;&#x81EA;&#x5DF1;&#x7684;&#x8D39;&#x7528;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5F53;&#x4EA7;&#x751F;&#x533A;&#x5757;&#x65F6;&#xFF0C;&#x9F13;&#x52B1;&#x77FF;&#x5DE5;&#x4F18;&#x5148;&#x5904;&#x7406;&#x9AD8;&#x6536;&#x8D39;&#x4EA4;&#x6613;&#xFF1B;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x8D8A;&#x9AD8;&#xFF0C;&#x786E;&#x8BA4;&#x5EF6;&#x8FDF;&#x8D8A;&#x4F4E;&#x3002;&#x5927;&#x591A;&#x6570;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x8FD8;&#x8BBE;&#x7F6E;&#x4E86;&#x6700;&#x4F4E;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x7528;&#x6237;&#x5411;&#x7F51;&#x7EDC;&#x53D1;&#x9001;&#x5783;&#x573E;&#x4EA4;&#x6613;&#x3002;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x7684;&#x9009;&#x62E9;&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x7684;&#x91CF;&#x7EA7;&#xFF1B;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8D39;&#x7528;&#x662F;&#x7531;&#x7528;&#x6237;&#x63D0;&#x51FA;&#xFF0C;&#x7531;&#x7CFB;&#x7EDF;&#x5F3A;&#x5236;&#x6267;&#x884C;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x4ED6;&#x4EEC;&#x7684;&#x67D0;&#x79CD;&#x7EC4;&#x5408;&#xFF1F;&#x5178;&#x578B;&#x7684;&#x8003;&#x8651;&#x56E0;&#x7D20;&#x5305;&#x62EC;&#x6309;&#x7167;&#x4EA4;&#x6613;&#x5C3A;&#x5BF8;&#xFF0C;&#x5E01;&#x503C;&#x6216;&#x8005;&#x4E24;&#x8005;&#x6765;&#x7F29;&#x653E;&#x8D39;&#x7528;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x95EE;&#x9898;&#x662F;&#x5982;&#x4F55;&#x5728;&#x6536;&#x96C6;&#x8D39;&#x7528;&#x540E;&#x5206;&#x914D;&#x8D39;&#x7528;&#x3002; &#x6700;&#x8FD1;&#x7684;&#x5DE5;&#x4F5C;&#x8868;&#x660E;&#xFF0C;&#x5206;&#x914D;&#x8D39;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x592A;&#x8FC7;&#x4E8E;&#x5355;&#x7EAF;&#xFF08;&#x548C;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#xFF09;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6FC0;&#x52B1;&#x4E0D;&#x517C;&#x5BB9;&#x4EE5;&#x53CA;&#x589E;&#x52A0;&#x7684;&#x786E;&#x8BA4;&#x5EF6;&#x8FDF;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x5C0F;&#x8282;7.3.1&#x4E2D;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x884C;&#x4E1A;&#x6807;&#x51C6;&#x7684;&#x8D39;&#x7528;&#x7BA1;&#x7406;&#x65B9;&#x6CD5;&#x5F00;&#x59CB;&#x672C;&#x8282;&#xFF0C;&#x5E76;&#x8BA8;&#x8BBA;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5BF9;&#x4E8E;&#x4F4E;&#x5EF6;&#x8FDF;&#x7684;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x662F;&#x4E0D;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8BA8;&#x8BBA;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#xFF0C;&#x5E76;&#x5728;&#x5C0F;&#x8282;7.3.2&#x4E2D;&#x7A81;&#x51FA;&#x5176;&#x4F18;&#x7F3A;&#x70B9;&#x3002;</p>
+</div>
+<div class="sect2">
+<h3 id="_7_3_1_quad_fee_management_today">7.3.1 \(\quad\) Fee management today&#xFF08;&#x5F53;&#x4ECA;&#x7684;&#x8D39;&#x7528;&#x7BA1;&#x7406;&#x65B9;&#x6CD5;&#xFF09;</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Most existing cryptocurrencies allow users to set their own fees; validators choose whether to process a given transaction based on whether the offered transaction fee is high enough. If a miner (or proposer) includes a transaction in a block, that node reaps the full transaction fee as a reward. If a given transaction is not included in a block by any miner after some period of time, that same transaction can be re-broadcast with a higher fee. Although Bitcoin and Ethereum place lower bounds on the size of transaction fees, in practice, users tend to choose substantially higher transaction fees. This natural approach to fee selection is widely adopted, but it has three important negative repercussions: high congestion, high fees, and incentive incompatibility. We begin by describing each of these repercussions more precisely.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x5927;&#x591A;&#x6570;&#x73B0;&#x5B58;&#x7684;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x90FD;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x8BBE;&#x5B9A;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF1B;&#x9A8C;&#x8BC1;&#x8005;&#x6839;&#x636E;&#x7ED9;&#x51FA;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x662F;&#x5426;&#x8DB3;&#x591F;&#x9AD8;&#x6765;&#x9009;&#x62E9;&#x662F;&#x5426;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x5982;&#x679C;&#x77FF;&#x5DE5;&#xFF08;&#x6216;&#x8005;&#x51FA;&#x5757;&#x8005;&#xFF09;&#x5C06;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x6253;&#x5305;&#x5230;&#x533A;&#x5757;&#x4E2D;&#xFF0C;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x6536;&#x83B7;&#x5168;&#x90E8;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x4F5C;&#x4E3A;&#x5956;&#x52B1;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x4EA4;&#x6613;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4EE5;&#x540E;&#x8FD8;&#x6CA1;&#x6709;&#x88AB;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x77FF;&#x5DE5;&#x6253;&#x5305;&#x5230;&#x533A;&#x5757;&#x4E2D;&#x53BB;&#xFF0C;&#x90A3;&#x4E48;&#x540C;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x53EF;&#x4EE5;&#x7528;&#x66F4;&#x9AD8;&#x7684;&#x8D39;&#x7528;&#x88AB;&#x91CD;&#x65B0;&#x5E7F;&#x64AD;&#x3002;&#x867D;&#x7136;&#x6BD4;&#x7279;&#x5E01;&#x548C;&#x4EE5;&#x592A;&#x574A;&#x5728;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x7684;&#x5927;&#x5C0F;&#x4E0A;&#x8BBE;&#x7F6E;&#x4E86;&#x4E0B;&#x9650;&#xFF0C;&#x4F46;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x5B9E;&#x8D28;&#x4E0A;&#x503E;&#x5411;&#x4E8E;&#x9009;&#x62E9;&#x66F4;&#x9AD8;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x3002;&#x8FD9;&#x79CD;&#x81EA;&#x7136;&#x7684;&#x8D39;&#x7528;&#x9009;&#x62E9;&#x65B9;&#x6CD5;&#x88AB;&#x5E7F;&#x6CDB;&#x91C7;&#x7528;&#xFF0C;&#x4F46;&#x5B83;&#x6709;&#x4E09;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x8D1F;&#x9762;&#x5F71;&#x54CD;&#xFF1A;&#x9AD8;&#x62E5;&#x5835;&#x3001;&#x9AD8;&#x8D39;&#x7528;&#x548C;&#x6FC0;&#x52B1;&#x4E0D;&#x76F8;&#x5BB9;&#x3002;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x66F4;&#x51C6;&#x786E;&#x5730;&#x63CF;&#x8FF0;&#x4E00;&#x4E0B;&#x8FD9;&#x4E9B;&#x540E;&#x679C;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Congestion</strong> \(\quad\) Current fee systems contribute critically to congestion. Intuitively, this happens because current mechanisms incentivize validators to choose which transactions to confirm based on transaction fees; this in turn forces users to pay to bypass congestion at equilibrium. To make this statement precise, consider a simpli&#xFB01;ed system in which new blocks are produced as a Poisson process of rate \(&#xB5;\), each of which can contain up to \(K\) transactions. Transactions arrive in the system at rate \(&#x3BB;\), and each transaction offers a transaction fee \(b\), chosen by the user. Let \(c\) denote the (random) cost per unit time of delaying a transaction&#x2019;s confirmation, with \(c \sim F[0, \overline{c}]\), where \(\overline{c}\) is a positive constant. So if a single transaction&#x2019;s confirmation is delayed by time \(\Delta\), a delay cost of \(c \Delta\) is incurred. Here \(F(\cdot)\) denotes a cdf with density \(f(\cdot)\) and tail probability \(\overline{F}(c) := 1 - F(c)\).The congestion in the system \(&#x3C1;\) is defined as \(\rho := \frac {\lambda} {\mu K}\). Let \(W_K (&#x3C1;)\) denote the expected transaction confirmation delay in a system (in blocks) with block size \(K\) and congestion \(&#x3C1;\), \(R_K (&#x3C1;)\) the total revenue per unit time raised from users, and \(D_K (&#x3C1;)\) the total delay cost incurred per unit time. Consider the following result by Huberman et al.:</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>&#x62E5; &#x5835;</strong> \(\quad\) &#x76EE;&#x524D;&#x7684;&#x6536;&#x8D39;&#x7CFB;&#x7EDF;&#x662F;&#x5F15;&#x8D77;&#x62E5;&#x5835;&#x7684;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x539F;&#x56E0;&#x3002;&#x76F4;&#x89C2;&#x6765;&#x8BB2;&#xFF0C;&#x53D1;&#x751F;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x662F;&#x56E0;&#x4E3A;&#x73B0;&#x5728;&#x7684;&#x673A;&#x5236;&#x9F13;&#x52B1;&#x9A8C;&#x8BC1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x7684;&#x5927;&#x5C0F;&#x53BB;&#x9009;&#x62E9;&#x8981;&#x786E;&#x8BA4;&#x54EA;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#xFF1B;&#x8FD9;&#x76F8;&#x5E94;&#x5730;&#x5C31;&#x4F1A;&#x5F3A;&#x8FEB;&#x7528;&#x6237;&#x5728;&#x5E73;&#x8861;&#x72B6;&#x6001;&#x65F6;&#x8981;&#x4E3A;&#x4E86;&#x7ED5;&#x8FC7;&#x62E5;&#x5835;&#x800C;&#x652F;&#x4ED8;&#x6210;&#x672C;&#x3002;&#x4E3A;&#x4E86;&#x4F7F;&#x8FD9;&#x4E2A;&#x63CF;&#x8FF0;&#x66F4;&#x52A0;&#x7684;&#x51C6;&#x786E;&#xFF0C;&#x8003;&#x8651;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x4E2D;&#x65B0;&#x533A;&#x5757;&#x7684;&#x4EA7;&#x751F;&#x662F;&#x4E00;&#x4E2A;&#x901F;&#x7387;&#x4E3A; \(&#x3BC;\) &#x7684;&#x6CCA;&#x677E;&#x8FC7;&#x7A0B;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x53EF;&#x4EE5;&#x5BB9;&#x7EB3;&#x591A;&#x8FBE; \(K\) &#x7B14;&#x4EA4;&#x6613;&#x3002;&#x4EA4;&#x6613;&#x4EE5; \(&#x3BB;\) &#x7684;&#x901F;&#x5EA6;&#x5230;&#x8FBE;&#x7CFB;&#x7EDF;&#xFF0C;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;&#x63D0;&#x4F9B;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x662F; \(b\)&#xFF0C;&#x8FD9;&#x662F;&#x7531;&#x7528;&#x6237;&#x9009;&#x62E9;&#x7684;&#x3002;&#x7528; \(c\) &#x8868;&#x793A;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x5EF6;&#x8FDF;&#x4EA4;&#x6613;&#x786E;&#x8BA4;&#x7684;&#xFF08;&#x968F;&#x673A;&#xFF09;&#x6210;&#x672C;&#xFF0C;&#x800C; \(c \sim F[0, \overline{c}]\)&#xFF0C;&#x5176;&#x4E2D; \(\overline{c}\)&#x4E3A;&#x6B63;&#x5E38;&#x6570;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x5355;&#x7B14;&#x4EA4;&#x6613;&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#x662F; \(\Delta\)&#xFF0C;&#x5219;&#x4F1A;&#x4EA7;&#x751F; \(c \Delta\) &#x7684;&#x5EF6;&#x8FDF;&#x6210;&#x672C;&#x3002;&#x8FD9;&#x91CC;&#x7684; \(F(\cdot)\) &#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5BC6;&#x5EA6;&#x4E3A; \(f(\cdot)\)&#x3001;&#x5C3E;&#x90E8;&#x6982;&#x7387;&#x4E3A; \(\overline{F}(c) := 1 - F(c)\) &#x7684;&#x7D2F;&#x79EF;&#x5206;&#x5E03;&#x51FD;&#x6570;&#xFF08;CDF&#xFF09;&#x3002;&#x7CFB;&#x7EDF;&#x7684;&#x5BC6;&#x96C6;&#x5EA6; \(&#x3C1;\) &#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;\(\rho := \frac {\lambda} {\mu K}\) &#x3002;&#x6211;&#x4EEC;&#x7528; \(W_K (&#x3C1;)\) &#x8868;&#x793A;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x5BB9;&#x91CF;&#x4E3A; \(K\)&#x3001;&#x5BC6;&#x96C6;&#x5EA6;&#x4E3A; \(&#x3C1;\) &#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x9884;&#x671F;&#x4EA4;&#x6613;&#x786E;&#x8BA4;&#x5EF6;&#x8FDF;&#xFF0C;\(R_K (&#x3C1;)\) &#x8868;&#x793A;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x4ECE;&#x7528;&#x6237;&#x5904;&#x83B7;&#x5F97;&#x7684;&#x603B;&#x6536;&#x76CA;&#xFF0C;\(D_K (&#x3C1;)\) &#x8868;&#x793A;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x4EA7;&#x751F;&#x7684;&#x603B;&#x5EF6;&#x8FDF;&#x6210;&#x672C;&#x3002;&#x4EE5;&#x4E0B;&#x662F;Gur Huberman&#x7B49;&#x4EBA;&#x7684;&#x4E00;&#x4E9B;&#x7ED3;&#x8BBA;&#xFF1A;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Theorem 3 ([94]).</strong> \(\quad\) At equilibrium, if \(&#x3C1; = 0\), both revenue and delay cost are \(0\). For all \(&#x3C1; \in (0,1)\),</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>&#x5B9A; &#x7406; \(3\) ([94])</strong> \(\quad\)  &#x5728;&#x5747;&#x8861;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x5BC6;&#x96C6;&#x5EA6; \(&#x3C1; = 0\)&#xFF0C;&#x6536;&#x76CA;&#x548C;&#x5EF6;&#x8FDF;&#x6210;&#x672C;&#x90FD;&#x662F; \(0\)&#x3002;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684; \(&#x3C1; \in (0,1)\)&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>\begin{equation}
+\begin{aligned} R_{K}^{\prime}(\rho) &amp;=K \rho \int_{0}^{\overline{c}} \overline{F}(c)^{2} W_{K}^{\prime}(\rho \overline{F}(c)) d c&gt;0, \\ D_{K}^{\prime}(\rho) &amp;=\frac{R_{K}(\rho)+D_{K}(\rho)}{\rho}&gt;0. \end{aligned}
+\end{equation}</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In other words, both revenue (and with it infrastructure provision by miners) and delay cost are strictly increasing in \(&#x3C1;\).</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x6536;&#x76CA;&#xFF08;&#x8FDE;&#x5E26;&#x77FF;&#x5DE5;&#x63D0;&#x4F9B;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#xFF09;&#x548C;&#x5EF6;&#x8FDF;&#x6210;&#x672C;&#x662F;&#x968F;&#x7740;&#x5BC6;&#x96C6;&#x5EA6; \(&#x3C1;\) &#x800C;&#x4E25;&#x683C;&#x9012;&#x589E;&#x7684;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">A primary, troubling repercussion of this result is that congestion is not merely a side effect of technical scalability challenges. Rather, it is fundamental; validators are not incentivized to work without congestion. As stated in [94]: </dt>
+<dd>
+<p>An implication of [Theorem 3] is that congestion and delays are necessary for the system to function. Low congestion &#x3C1; leads to low delay costs, as blocks are rarely full and each transaction is likely to be processed in the next block. But when blocks are rarely full users have little incentive to pay transaction fees to gain priority, and the system raises little revenue. Without sufficient revenue the number of miners&#x2026;can become too small, making the system unreliable.</p>
+</dd>
+</dl>
+</div>
+</blockquote>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">&#x8FD9;&#x4E00;&#x7ED3;&#x679C;&#x7684;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x3001;&#x4EE4;&#x4EBA;&#x5FE7;&#x8651;&#x7684;&#x5F71;&#x54CD;&#x662F;&#xFF0C;&#x62E5;&#x5835;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x6280;&#x672F;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x6311;&#x6218;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x662F;&#x5341;&#x5206;&#x91CD;&#x8981;&#x7684;&#xFF1B;&#x5728;&#x6CA1;&#x6709;&#x62E5;&#x5835;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9A8C;&#x8BC1;&#x8005;&#x5C31;&#x6CA1;&#x6709;&#x5DE5;&#x4F5C;&#x7684;&#x52A8;&#x529B;&#x3002;&#x5982;[94]&#x6240;&#x8FF0;&#xFF1A; </dt>
+<dd>
+<p>&#x3010;&#x5B9A;&#x7406;3&#x3011;&#x7684;&#x4E00;&#x4E2A;&#x542B;&#x4E49;&#x662F;&#x7CFB;&#x7EDF;&#x7684;&#x8FD0;&#x884C;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x7684;&#x62E5;&#x5835;&#x548C;&#x5EF6;&#x8FDF;&#x3002;&#x4F4E;&#x5BC6;&#x96C6;&#x5EA6;&#x3C1;&#x5BFC;&#x81F4;&#x4F4E;&#x5EF6;&#x8FDF;&#x6210;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x533A;&#x5757;&#x5F88;&#x5C11;&#x662F;&#x6EE1;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EA4;&#x6613;&#x53EF;&#x80FD;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x5757;&#x4E2D;&#x5904;&#x7406;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x533A;&#x5757;&#x5F88;&#x5C11;&#x662F;&#x6EE1;&#x7684;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x5F88;&#x5C11;&#x6709;&#x52A8;&#x529B;&#x652F;&#x4ED8;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x4EE5;&#x83B7;&#x5F97;&#x4F18;&#x5148;&#x6743;&#xFF0C;&#x800C;&#x7CFB;&#x7EDF;&#x4E5F;&#x5F88;&#x5C11;&#x589E;&#x52A0;&#x6536;&#x5165;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x6536;&#x5165;&#xFF0C;&#x77FF;&#x5DE5;&#x7684;&#x6570;&#x91CF;&#x2026;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;&#x5F97;&#x592A;&#x5C0F;&#xFF0C;&#x4F7F;&#x7CFB;&#x7EDF;&#x4E0D;&#x53EF;&#x9760;&#x3002;</p>
+</dd>
+</dl>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This instability among miners under low congestion conditions is discussed more carefully when we consider incentive compatibility. We want to highlight that although [94] was written for the PoW setting, their results are not specific to PoW. Rather, they stem from the combination of three factors: (1) blocks are produced at a constant rate with a limited block size, (2) different transactions give miners (proposers) di&#xFB00;erent reward amounts, and (3) miners get to choose which transactions to include in each block. If a similar fee mechanism were adopted in a PoS system, the same effects would emerge, due to the fact that block times are lower bounded (by protocol and/or by physical constraints). This fundamental relation between congestion and user-selected fees is problematic in a high-throughput payment system.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x6FC0;&#x52B1;&#x76F8;&#x5BB9;&#x6027;&#x65F6;&#xFF0C;&#x66F4;&#x4ED4;&#x7EC6;&#x5730;&#x8BA8;&#x8BBA;&#x4E86;&#x4F4E;&#x62E5;&#x5835;&#x6761;&#x4EF6;&#x4E0B;&#x77FF;&#x5DE5;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x8981;&#x5F3A;&#x8C03;&#x7684;&#x662F;&#xFF0C;&#x5C3D;&#x7BA1; [94] &#x662F;&#x4E3A;PoW&#x8BBE;&#x7F6E;&#x7F16;&#x5199;&#x7684;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x7684;&#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x662F;&#x53EA;&#x7279;&#x5B9A;&#x4E8E;PoW&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x7531;&#x4E09;&#x4E2A;&#x56E0;&#x7D20;&#x7EC4;&#x5408;&#x800C;&#x6210;&#x7684;&#xFF1A;&#xFF08;1&#xFF09;&#x533A;&#x5757;&#x4EE5;&#x56FA;&#x5B9A;&#x7684;&#x901F;&#x5EA6;&#x751F;&#x4EA7;&#xFF0C;&#x4E14;&#x533A;&#x5757;&#x5927;&#x5C0F;&#x6709;&#x9650;&#xFF1B;&#xFF08;2&#xFF09;&#x4E0D;&#x540C;&#x7684;&#x4EA4;&#x6613;&#x7ED9;&#x77FF;&#x5DE5;&#xFF08;&#x51FA;&#x5757;&#x8005;&#xFF09;&#x4E0D;&#x540C;&#x7684;&#x5956;&#x52B1;&#x91D1;&#x989D;&#xFF1B;&#xFF08;3&#xFF09;&#x77FF;&#x5DE5;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5728;&#x6BCF;&#x4E2A;&#x533A;&#x5757;&#x4E2D;&#x5305;&#x542B;&#x54EA;&#x4E9B;&#x4EA4;&#x6613;&#x3002;&#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;POS&#x7CFB;&#x7EDF;&#x4E2D;&#x91C7;&#x7528;&#x7C7B;&#x4F3C;&#x7684;&#x6536;&#x8D39;&#x673A;&#x5236;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x6548;&#x679C;&#x4E5F;&#x4F1A;&#x51FA;&#x73B0;&#xFF0C;&#x56E0;&#x4E3A;&#x4E8B;&#x5B9E;&#x4E0A;PoS&#x7CFB;&#x7EDF;&#x91CC;&#x533A;&#x5757;&#x65F6;&#x95F4;&#x7684;&#x9650;&#x5236;&#x8F83;&#x4F4E;&#xFF08;&#x53D7;&#x534F;&#x8BAE;&#x548C;/&#x6216;&#x7269;&#x7406;&#x7EA6;&#x675F;&#xFF09;&#x3002;&#x5728;&#x9AD8;&#x541E;&#x5410;&#x91CF;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x62E5;&#x5835;&#x4E0E;&#x7528;&#x6237;&#x9009;&#x62E9;&#x8D39;&#x7528;&#x4E4B;&#x95F4;&#x7684;&#x8FD9;&#x79CD;&#x57FA;&#x672C;&#x5173;&#x7CFB;&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>High fees</strong> \(\quad\) Another substantial problem with the current fee structure is that fees can be unbounded. Consider the following result from Huberman et al., which considers the same model from the prior discussion on congestion:</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>&#x9AD8;&#x624B;&#x7EED;&#x8D39;</strong> \(\quad\) &#x5F53;&#x524D;&#x7684;&#x8D39;&#x7528;&#x7ED3;&#x6784;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5B9E;&#x8D28;&#x6027;&#x95EE;&#x9898;&#x662F;&#x8D39;&#x7528;&#x53EF;&#x4EE5;&#x4E0D;&#x53D7;&#x9650;&#x5236;&#x3002;&#x8003;&#x8651;Huberman&#x7B49;&#x4EBA;&#x5F97;&#x51FA;&#x7684;&#x4EE5;&#x4E0B;&#x7ED3;&#x679C;&#xFF0C;&#x8BE5;&#x7ED3;&#x679C;&#x8003;&#x8651;&#x4E86;&#x4E4B;&#x524D;&#x5173;&#x4E8E;&#x62E5;&#x5835;&#x7684;&#x8BA8;&#x8BBA;&#x5F97;&#x51FA;&#x7684;&#x76F8;&#x540C;&#x6A21;&#x578B;&#xFF1A;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Theorem 4 ([94]).</strong> \(\quad\) At equilibrium, transaction fees coincide with the payments that result from selling priority of service in a Vickrey-Clark-Groves (VCG) auction.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>&#x5B9A;&#x7406;4&#xFF08;[94]&#xFF09;</strong> \(\quad\) &#x5728;&#x5747;&#x8861;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x4E0E;&#x7EF4;&#x514B;&#x91CC;&#xFF08;VCG&#xFF09;&#x62CD;&#x5356;&#x4E2D;&#x4E3A;&#x9500;&#x552E;&#x4F18;&#x5148;&#x670D;&#x52A1;&#x652F;&#x4ED8;&#x8D39;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x9053;&#x7406;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A well-known property of VCG auctions is that participants are incentivized to bid an amount equal to the externality they impose upon others. This may not be problematic on average, but these amounts can become arti&#xFB01;cially inflated due to social factors, world events, random fluctuations in system load, etc. Indeed, in December of 2017, Bitcoin fees exceeded $20 per transaction [92]. This volatility and unboundedness is explicitly at odds with the requirements of a payment system. Merchant adoption hinges critically on the guarantee that fees will not grow beyond a maximum threshold; this point has been touted as a primary reason why cryptocurrencies can never replace fiat money [164].</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>VCG&#x62CD;&#x5356;&#x7684;&#x4E00;&#x4E2A;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF0C;&#x53C2;&#x4E0E;&#x8005;&#x88AB;&#x6FC0;&#x52B1;&#x51FA;&#x4EF7;&#xFF0C;&#x5176;&#x91D1;&#x989D;&#x7B49;&#x4E8E;&#x4ED6;&#x4EEC;&#x5F3A;&#x52A0;&#x7ED9;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x5916;&#x90E8;&#x6548;&#x5E94;&#x3002;&#x5E73;&#x5747;&#x800C;&#x8A00;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x793E;&#x4F1A;&#x56E0;&#x7D20;&#x3001;&#x4E16;&#x754C;&#x4E8B;&#x4EF6;&#x3001;&#x7CFB;&#x7EDF;&#x8D1F;&#x8F7D;&#x7684;&#x968F;&#x673A;&#x6CE2;&#x52A8;&#x7B49;&#x539F;&#x56E0;&#xFF0C;&#x8FD9;&#x4E9B;&#x91D1;&#x989D;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x4EBA;&#x4E3A;&#x81A8;&#x80C0;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;2017&#x5E74;12&#x6708;&#xFF0C;&#x6BD4;&#x7279;&#x5E01;&#x6536;&#x8D39;&#x4E00;&#x5EA6;&#x8D85;&#x8FC7;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;20&#x7F8E;&#x5143;[92]&#x3002;&#x8FD9;&#x79CD;&#x6CE2;&#x52A8;&#x6027;&#x548C;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x663E;&#x7136;&#x4E0E;&#x652F;&#x4ED8;&#x7CFB;&#x7EDF;&#x7684;&#x8981;&#x6C42;&#x4E0D;&#x7B26;&#x3002;&#x5546;&#x5BB6;&#x7684;&#x91C7;&#x7528;&#x4E3B;&#x8981;&#x53D6;&#x51B3;&#x4E8E;&#x4FDD;&#x8BC1;&#x8D39;&#x7528;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;&#x6700;&#x5927;&#x9608;&#x503C;&#xFF1B;&#x8FD9;&#x4E00;&#x70B9;&#x5DF2;&#x7ECF;&#x88AB;&#x5439;&#x6367;&#x4E3A;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x6C38;&#x8FDC;&#x65E0;&#x6CD5;&#x53D6;&#x4EE3;&#x6CD5;&#x5E01;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;[164]&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A key observation is that whereas congestion arises mainly because of the way fees are disbursed, high or volatile fees result from a combination of two factors: first, fees are proposed by users. Second, validators receive higher rewards for transactions with higher fees, and choose which transactions to include. It is this combination that leads to the VCG result, which in turn leads to unpredictable fees. Hence, any solution to this problem should tackle both factors; it is not enough to simply change the way that fees are disbursed.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x7684;&#x6CE8;&#x610F;&#x70B9;&#x662F;&#xFF0C;&#x9274;&#x4E8E;&#x62E5;&#x5835;&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;&#x4EA4;&#x6613;&#x8D39;&#x7684;&#x652F;&#x4ED8;&#x65B9;&#x5F0F;&#x9020;&#x6210;&#x7684;&#xFF0C;&#x9AD8;&#x6216;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#x8D39;&#x7528;&#x662F;&#x7531;&#x4E24;&#x4E2A;&#x56E0;&#x7D20;&#x7684;&#x7EFC;&#x5408;&#x9020;&#x6210;&#x7684;&#x7ED3;&#x679C;&#xFF1A;<strong>&#x7B2C;&#x4E00;&#xFF0C;&#x8D39;&#x7528;&#x662F;&#x7531;&#x7528;&#x6237;&#x63D0;&#x51FA;&#x7684;&#xFF1B;&#x7B2C;&#x4E8C;&#xFF0C;&#x9A8C;&#x8BC1;&#x8005;&#x53EF;&#x4EE5;&#x4ECE;&#x6536;&#x8D39;&#x8F83;&#x9AD8;&#x7684;&#x4EA4;&#x6613;&#x4E2D;&#x83B7;&#x5F97;&#x66F4;&#x9AD8;&#x7684;&#x5956;&#x52B1;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x8981;&#x6253;&#x5305;&#x54EA;&#x4E9B;&#x4EA4;&#x6613;</strong>&#x3002;&#x6B63;&#x662F;&#x8FD9;&#x4E24;&#x8005;&#x7684;&#x7ED3;&#x5408;&#x5BFC;&#x81F4;&#x4E86; VCG &#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x4E86;&#x4E0D;&#x53EF;&#x9884;&#x6D4B;&#x7684;&#x8D39;&#x7528;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4EFB;&#x4F55;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x5E94;&#x8BE5;&#x540C;&#x65F6;&#x89E3;&#x51B3;&#x8FD9;&#x4E24;&#x4E2A;&#x56E0;&#x7D20;&#xFF1B;&#x4EC5;&#x4EC5;&#x6539;&#x53D8;&#x8D39;&#x7528;&#x7684;&#x652F;&#x4ED8;&#x65B9;&#x5F0F;&#x662F;&#x4E0D;&#x591F;&#x7684;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Incentive incompatibility</strong> \(\quad\) A third critical repercussion of the current approach to transaction fee management is incentive incompatibility. In particular, in underutilized systems, it can introduce undesirable equilibria in terms of proposal strategies. Carlsten et al. show that in the absence of inflation, rational Bitcoin miners are no longer incentivized to mine on the longest chain [40]. The intuition is that if miners are only collecting transaction fees, then they are incentivized to include as many transactions as possible in each block. This means that right after a block is mined, the number of transactions available for inclusion in the next block is minimal, as is the associated reward. Thus, when choosing between forks, miners are incentivized to adopt one with fewer transactions in the final block, since such forks leave more transaction fees for the next miner. By exploiting this observation, selfish miners can convince other miners to build on side chains.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>&#x6FC0;&#x52B1;&#x4E0D;&#x76F8;&#x5BB9;</strong> \(\quad\) &#x5F53;&#x524D;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x7BA1;&#x7406;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x91CD;&#x8981;&#x5F71;&#x54CD;&#x662F;&#x6FC0;&#x52B1;&#x4E0D;&#x76F8;&#x5BB9;&#x3002;&#x7279;&#x522B;&#x662F;&#xFF0C;&#x5728;&#x672A;&#x5145;&#x5206;&#x5229;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x63D0;&#x6848;&#x7B56;&#x7565;&#x65B9;&#x9762;&#x5F15;&#x8D77;&#x4E00;&#x4E9B;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x5E73;&#x8861;&#x3002;Carlsten&#x7B49;&#x4EBA;&#x8868;&#x660E;&#x5728;&#x6CA1;&#x6709;&#x901A;&#x8D27;&#x81A8;&#x80C0;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7406;&#x6027;&#x7684;&#x6BD4;&#x7279;&#x5E01;&#x77FF;&#x5DE5;&#x4E0D;&#x518D;&#x88AB;&#x6FC0;&#x52B1;&#x5230;&#x6700;&#x957F;&#x94FE;&#x4E0A;&#x6316;&#x77FF;[40]&#x3002;&#x76F4;&#x89C9;&#x5730;&#xFF0C;&#x5982;&#x679C;&#x77FF;&#x5DE5;&#x53EA;&#x6536;&#x53D6;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x4F1A;&#x88AB;&#x6FC0;&#x52B1;&#x5728;&#x6BCF;&#x4E2A;&#x533A;&#x5757;&#x4E2D;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x5730;&#x6253;&#x5305;&#x4EA4;&#x6613;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x521A;&#x88AB;&#x6316;&#x51FA;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x5757;&#x4E2D;&#x7684;&#x4EA4;&#x6613;&#x6570;&#x91CF;&#x662F;&#x6700;&#x5C0F;&#x7684;&#xFF0C;&#x76F8;&#x5173;&#x7684;&#x5956;&#x52B1;&#x4E5F;&#x662F;&#x6700;&#x5C0F;&#x7684;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x53C9;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#x65F6;&#xFF0C;&#x77FF;&#x5DE5;&#x88AB;&#x9F13;&#x52B1;&#x91C7;&#x7528;&#x6700;&#x7EC8;&#x533A;&#x5757;&#x4E2D;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x8F83;&#x5C11;&#x7684;&#x5206;&#x53C9;&#xFF0C;&#x56E0;&#x4E3A;&#x6B64;&#x7C7B;&#x5206;&#x53C9;&#x4F1A;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x77FF;&#x5DE5;&#x7559;&#x4E0B;&#x66F4;&#x591A;&#x7684;&#x4EA4;&#x6613;&#x8D39;&#x7528;&#x3002;&#x901A;&#x8FC7;&#x5229;&#x7528;&#x8FD9;&#x79CD;&#x8A00;&#x8BBA;&#xFF0C;&#x81EA;&#x79C1;&#x6316;&#x77FF;&#x8005;&#x53EF;&#x4EE5;&#x8BF4;&#x670D;&#x5176;&#x4ED6;&#x77FF;&#x5DE5;&#x5EFA;&#x7ACB;&#x4FA7;&#x94FE;&#x3002;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>More precisely, [40] shows the existence of equilibria that do not involve honest mining. Their model is as follows: consider a constant stream of incoming transactions. For any time interval \(\mathcal {T} = [t_1,t_2]\), let  \(g(\mathcal {T}) = t_2 - t_1\) denote the fees accumulated by the transactions in interval \(\mathcal {T}\) (i.e. one unit of fees per unit time). Notice that the model considers transactions as continuous quantities that can be infinitesimally split between miners. Because of the one-to-one correspondence between transaction times and associated fees, we will interchangeably allow \(\mathcal {T}\) to denote both a time interval and a set of transactions; the meaning should be clear from context. Suppose there is no network latency, and no limit on block size (equivalently, there are few enough transactions in the system that a miner can always include all outstanding transactions in the next block). For a block \(B\), let \(o_B\) denote the node that proposed block \(B\). A key assumption is that when a miner mines a block at time t on block \(B\), it can choose to include any subset \(\mathcal{T}^{\prime} \subseteq[0, t]\) of outstanding transactions in the new block, thereby collecting fees \(g(\mathcal{T}^{\prime}) = \left|\mathcal{T}^{\prime}\right|\). Let \(L_B (t)\) denote the amount of outstanding transactions in interval \([0,t]\), i.e., transactions that have not been claimed by \(B\) or its predecessors. For an amount of outstanding transactions \(L_B (t)\), suppose agents use function \(f(L_B (t))\) to determine how many transactions to consume in the next block. The authors also assume that if the chain has height \(H\), a miner will either build on the chain at height \(H+1\) or fork the last block, and build a conflicting block at height \(H\); let \(H_B\) denote the height of block \(B\). Let \(M_H\) denote the block at height \(H\) that leaves the most unclaimed transactions, i.e.,</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x66F4;&#x51C6;&#x786E;&#x5730;&#x8BF4;&#xFF0C;[40]&#x663E;&#x793A;&#x4E86;&#x5B58;&#x5728;&#x4E00;&#x79CD;&#x4E0D;&#x6D89;&#x53CA;&#x8BDA;&#x5B9E;&#x91C7;&#x77FF;&#x7684;&#x5E73;&#x8861;&#x3002;&#x4ED6;&#x4EEC;&#x7684;&#x6A21;&#x578B;&#x5982;&#x4E0B;&#xFF1A;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x6301;&#x7EED;&#x7684;&#x4EA4;&#x6613;&#x8F93;&#x5165;&#x6D41;&#x3002;&#x5728;&#x4EFB;&#x610F;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694; \(\mathcal {T} = [t_1,t_2]\) &#xFF0C;&#x6211;&#x4EEC;&#x7528; \(g(\mathcal {T}) = t_2 - t_1\) &#x8868;&#x793A;&#x5728;&#x65F6;&#x95F4;&#x95F4;&#x9694; \(T\) &#x5185;&#x7684;&#x4EA4;&#x6613;&#x6240;&#x7D2F;&#x79EF;&#x7684;&#x8D39;&#x7528;&#xFF08;&#x5373;&#x6BCF;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x6536;&#x53D6;&#x4E00;&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x8D39;&#x7528;&#xFF09;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x6A21;&#x578B;&#x5C06;&#x4EA4;&#x6613;&#x770B;&#x4F5C;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x77FF;&#x5DE5;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x65E0;&#x9650;&#x5C0F;&#x5206;&#x5272;&#x7684;&#x8FDE;&#x7EED;&#x6570;&#x91CF;&#x3002;&#x7531;&#x4E8E;&#x4EA4;&#x6613;&#x65F6;&#x95F4;&#x548C;&#x76F8;&#x5173;&#x8D39;&#x7528;&#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x5BF9;&#x4E00;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5141;&#x8BB8; \(T\) &#x53EF;&#x4E92;&#x6362;&#x5730;&#x53BB;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x548C;&#x4E00;&#x7EC4;&#x4EA4;&#x6613;&#xFF1B;&#x5176;&#x542B;&#x4E49;&#x5E94;&#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x660E;&#x786E;&#x3002;&#x5047;&#x8BBE;&#x6CA1;&#x6709;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5BF9;&#x533A;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x9650;&#x5236;&#xFF08;&#x76F8;&#x5F53;&#x4E8E;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x4EA4;&#x6613;&#x8DB3;&#x591F;&#x5C11;&#xFF0C;&#x77FF;&#x5DE5;&#x603B;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x4E2D;&#x5305;&#x542B;&#x6240;&#x6709;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EA4;&#x6613;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x533A;&#x5757; \(B\)&#xFF0C;&#x6211;&#x4EEC;&#x7528; \(o_B\) &#x6765;&#x4EE3;&#x8868;&#x4E3A;&#x533A;&#x5757; \(B\) &#x505A;&#x63D0;&#x6848;&#x7684;&#x8282;&#x70B9;&#x3002;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x7684;&#x5047;&#x8BBE;&#x662F;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x77FF;&#x5DE5;&#x5728;&#x65F6;&#x95F4;t&#x5185;&#x4ECE;&#x533A;&#x5757; \(B\) &#x4E0A;&#x6316;&#x51FA;&#x4E00;&#x4E2A;&#x5757;&#x65F6;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5728;&#x65B0;&#x7684;&#x533A;&#x5757;&#x4E2D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x672A;&#x5B8C;&#x6210;&#x4EA4;&#x6613;&#x7684;&#x5B50;&#x96C6; \(\mathcal{T}^{\prime} \subseteq[0, t]\)&#xFF08;&#x5373;&#x65F6;&#x95F4;&#x533A;&#x95F4;\([0,t]\)&#x5185;&#x7684;&#x4EFB;&#x4F55;&#x4EA4;&#x6613;&#x7EC4;&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x6536;&#x53D6;&#x8D39;&#x7528; \(g(\mathcal{T}^{\prime}) = \left|\mathcal{T}^{\prime}\right|\)&#x3002;&#x6211;&#x4EEC;&#x7528; \(L_B (t)\) &#x6765;&#x8868;&#x793A;&#x65F6;&#x95F4;&#x95F4;&#x9694; \([0,t]\) &#x5185;&#x672A;&#x5B8C;&#x6210;&#x4EA4;&#x6613;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#xFF0C;&#x8FD8;&#x672A;&#x88AB;&#x533A;&#x5757;B&#x6216;&#x5176;&#x7236;&#x5757;&#x5E7F;&#x64AD;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x5BF9;&#x4E8E;&#x5927;&#x91CF;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EA4;&#x6613; \(L_B (t)\)&#xFF0C;&#x5047;&#x8BBE;&#x4EE3;&#x7406;&#x4F7F;&#x7528;&#x51FD;&#x6570; \(f(L_B (t))\) &#x6765;&#x786E;&#x5B9A;&#x4E0B;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x4E2D;&#x8981;&#x6D88;&#x8017;&#x591A;&#x5C11;&#x4EA4;&#x6613;&#x3002;&#x4F5C;&#x8005;&#x8FD8;&#x5047;&#x8BBE;&#xFF0C;&#x5982;&#x679C;&#x94FE;&#x7684;&#x9AD8;&#x5EA6;&#x4E3A; \(H\)&#xFF0C; &#x77FF;&#x5DE5;&#x8981;&#x4E48;&#x5728;&#x94FE;&#x9AD8;&#x5EA6; \(H+1\) &#x4E0A;&#x5EFA;&#x7ACB;&#x65B0;&#x533A;&#x5757;&#xFF0C;&#x8981;&#x4E48;&#x5206;&#x53C9;&#x4E0A;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#xFF0C;&#x5728;&#x9AD8;&#x5EA6;\(H\) &#x5EFA;&#x9020;&#x4E00;&#x4E2A;&#x4E89;&#x8BAE;&#x533A;&#x5757;&#xFF1B;&#x7528;\(H_B\) &#x6765;&#x8868;&#x793A;&#x533A;&#x5757; \(B\) &#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x7528; \(M_H\) &#x6765;&#x8868;&#x793A;&#x5728;&#x5757;&#x9AD8;&#x5EA6;&#x4E3A; \(H\) &#x65F6;&#x7559;&#x4E0B;&#x6700;&#x5927;&#x672A;&#x5E7F;&#x64AD;&#x4EA4;&#x6613;&#x7684;&#x90A3;&#x4E2A;&#x533A;&#x5757;&#xFF0C;&#x5373;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p>\begin{equation}
+M_{H} = \arg \max_{B} \{L_{B}(t) : H_{B} = H \}.
+\end{equation}</p>
+</div>
+<div class="paragraph">
+<p>&#xFF08;&#x5373; \(M_H\) &#x5C31;&#x662F;&#x5728;&#x533A;&#x5757;&#x9AD8;&#x5EA6; \(H_B=H\)&#x3001;&#x4F7F;&#x5F97;&#x51FD;&#x6570; \(L_B (t)\) &#x53D6;&#x5F97;&#x6700;&#x5927;&#x503C;&#x7684;&#x90A3;&#x4E2A;&#x533A;&#x5757; \(B\)&#xFF0C;&#x533A;&#x5757; \(B\) &#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6CDB;&#x6307;&#x7684;&#x533A;&#x5757;&#x3002;&#xFF09;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Similarly, let \(G_H (t) = L_{M_{H-1}} (t) - L_{M_H} (t)\) denote the gap between the most unclaimed fees available at height \(H-1\) and the most unclaimed fees at height \(H\). [40] considers a class of strategies where each miner chooses (a) which block to build on, and (b) how many transactions to consume in their block. Algorithm 1 describes this procedure.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x540C;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x7528; \(G_H (t) = L_{M_{H-1}} (t) - L_{M_H} (t)\) &#x8868;&#x793A;&#x5728;&#x5757;&#x9AD8;&#x5EA6; \(H-1\) &#x7684;&#x6700;&#x5927;&#x672A;&#x5E7F;&#x64AD;&#x8D39;&#x7528;&#x4E0E;&#x5728;&#x9AD8;&#x5EA6; \(H\) &#x7684;&#x6700;&#x5927;&#x672A;&#x5E7F;&#x64AD;&#x8D39;&#x7528;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x989D;&#x3002;[40]&#x8003;&#x8651;&#x4E86;&#x4E00;&#x7C7B;&#x7B56;&#x7565;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x77FF;&#x5DE5;&#x9009;&#x62E9;&#xFF08;a&#xFF09;&#x5728;&#x54EA;&#x4E2A;&#x5757;&#x4E0A;&#x6784;&#x5EFA;&#x65B0;&#x5757;&#xFF0C;&#x4EE5;&#x53CA;&#xFF08;b&#xFF09;&#x5728;&#x5176;&#x5757;&#x4E2D;&#x6D88;&#x8017;&#x591A;&#x5C11;&#x4EA4;&#x6613;&#x3002;&#x7B97;&#x6CD5; \(1\) &#x6B63;&#x597D;&#x63CF;&#x8FF0;&#x4E86;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="icons/Algorithm_1.png" alt="Algorithm_1"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Theorem 5 ([40]).</strong> \(\quad\) For any constant \(y\) such that \(2 y - \ln (y) \geq 2\), define</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x5B9A; &#x7406; 5&#xFF08;[40]&#xFF09;.</strong> \(\quad\) &#x5BF9;&#x4E8E;&#x6EE1;&#x8DB3; \(2 y - \ln (y) \geq 2\) &#x7684;&#x4EFB;&#x610F;&#x5E38;&#x6570; \(y\)&#xFF0C;&#x5B9A;&#x4E49;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p>\begin{equation}
+f(x) = \left \{ \begin{array}{ll}{x} &amp; {\text { if } x \leq y} \\ {-W_{0} \left(-y e^{x-2 y}\right)} &amp; {\text { if } x \in (y, 2 y-\ln (y)-1)} \\ {1} &amp; {\text { else }}\end{array}\right.
+\quad \quad \quad \quad \quad \quad (7.24)
+\end{equation}</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>where \(W_0 (&#xB7;)\) denotes the upper branch of the Lambert W function which satisfies \(W_0 (x e^x )=x\) for all \(x \in [-1/e,&#x251C; &#x221E;)\). Then it is an equilibrium for every miner to mine with strategy Function-fork(f) (Algorithm 1) as long as every miner is non-atomic, and miners only mine on top of chains of length H or H &#x2212;1, where H denotes the length of the longest chain in the system. Furthermore, in such an equilibrium, the expected number of unconfirmed transactions at time n&#x2208;R scales as &#x2126;(&#x221A;n).</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#x5F0F;&#x4E2D;&#xFF0C;W_0 (&#xB7;) &#x8868;&#x793A;Lambert W&#x51FD;&#x6570;&#x7684;&#x4E0A;&#x5206;&#x652F;&#xFF0C;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684; x&#x2208;[-1/e,&#x251C; &#x221E;)&#xFF0C;&#x5B83;&#x6EE1;&#x8DB3; W_0 (xe^x )=x&#x3002;&#x7136;&#x540E;&#xFF0C;&#x4F7F;&#x7528;fork&#x51FD;&#x6570;f&#x4F5C;&#x4E3A;&#x6316;&#x77FF;&#x7B56;&#x7565;&#xFF08;&#x7B97;&#x6CD5;1&#xFF09;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x77FF;&#x5DE5;&#x90FD;&#x662F;&#x4E00;&#x79CD;&#x5E73;&#x8861;&#xFF0C;&#x53EA;&#x8981;&#x6BCF;&#x4E2A;&#x77FF;&#x5DE5;&#x90FD;&#x662F;&#x975E;&#x539F;&#x5B50;&#x7EA7;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x77FF;&#x5DE5;&#x4EEC;&#x53EA;&#x5728;&#x94FE;&#x957F;&#x5EA6;H&#x6216;&#x8005;H-1&#x4E0A;&#x6316;&#x77FF;&#xFF0C;&#x5176;&#x4E2D;H&#x4EE3;&#x8868;&#x7CFB;&#x7EDF;&#x4E2D;&#x6700;&#x957F;&#x94FE;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x5747;&#x8861;&#x4E2D;&#xFF0C;&#x5728;&#x65F6;&#x95F4; n&#x2208;R &#x5185;&#xFF0C;&#x672A;&#x786E;&#x8BA4;&#x4EA4;&#x6613;&#x7684;&#x9884;&#x671F;&#x6570;&#x91CF;&#x7528; &#x2126;(&#x221A;n) &#x6765;&#x8861;&#x91CF;&#x3002;</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH02_Block_Rewards.html" class="navigation navigation-prev " aria-label="Previous page: Block Rewards">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CH04_Acknowledgement.html" class="navigation navigation-next " aria-label="Next page: Acknowledgement">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Transaction Fees","level":"1.1.4","depth":2,"next":{"title":"Acknowledgement","level":"1.1.5","depth":2,"path":"Chapter_7_Economics/CH04_Acknowledgement.asciidoc","ref":"./Chapter_7_Economics/CH04_Acknowledgement.asciidoc","articles":[]},"previous":{"title":"Block Rewards","level":"1.1.3","depth":2,"path":"Chapter_7_Economics/CH02_Block_Rewards.asciidoc","ref":"./Chapter_7_Economics/CH02_Block_Rewards.asciidoc","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","sectionx","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"sectionx":{},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Cryptoeconomics","gitbook":"*"},"file":{"path":"Chapter_7_Economics/CH03_Transaction_Fees.asciidoc","mtime":"2019-04-20T15:59:04.351Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-04-20T18:18:08.586Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

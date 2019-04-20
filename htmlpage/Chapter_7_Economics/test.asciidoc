@@ -1,0 +1,85 @@
+
+
+= The Dangerous and Thrilling Documentation Chronicles
+Kismet Chameleon
+:toc:
+:toclevels: 4
+:mathjax: true
+:stem: LaTex 
+
+
+
+https://asciidoctor.cn/docs/asciidoc-syntax-quick-reference/[AsciiDoc 语法快速参考]
+
+https://asciidoctor.org/docs/user-manual/[Asciidoctor用户手册]
+
+https://houqp.github.io/wbwa/wbwa.html[中语版的语法介绍]
+
+https://blog.csdn.net/weixin_34107955/article/details/87519211/[asciidoc语法整理]
+
+----
+:sectnums!:
+关闭章节编号
+:sectnums:
+启用章节编号
+----
+
+== 7.1  Valuation(估值)
+
+____
+. 第一步
+
+> asdf
+
+.. 估值
+.. 交易费
+. 第二步
+____
+
+____
+. 第一步
+.. 估值
+... 价格
+... 交易量
+.. 交易费
+. 第二步
+____
+
+
+=== link:Preface.asciidoc[7.1.1  A Simple Model with Fee-Based Rewards（一个基于费用奖励的简单模型）]
+
+> Consider a payment network. Suppose that in each period, the network processes retail transactions in the amount of stem:[Y_t]，measured in the ﬁat currency, “dollars.” Assume that the aggregate float of tokens is fixed, and without loss of generality equal to one. Let stem:[p_t] denote the equilibrium price of the tokens in terms of the fiat currency. Assume that the network is in a stationary growth regime: the volume of transactions is expected to grow at a constant rate [g_Y], so that
+ stem:[E_t[Y_(t+s)]] = stem:[Y_t(1+g_Y)^s].
+
+考虑一个支付网络，假如在**每个时期**，网络处理零售交易的**交易总额**为stem:[Y_t]，该交易总额以法币“美元”计量。假设代币的总流通量是固定的，我们不妨假设（不失一般性）其等于1。我们用 stem:[p_t] 表示代币对等的**法币价格**。假设支付网络处于平稳增长状态：**交易量预期增长率**恒定为 stem:[g_Y]，则有：
+stem:[E_t[Y_(t+s)]] = stem:[Y_t(1+g_Y)^s]
+
+\[
+E_t[Y_(t+s)] = Y_t(1+g_Y)^s
+\]
+
+latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon]
+
+\[
+\frac {dY_t} {Y_t} = g_Y(t)dt+ \sigma (t)dZ_t
+\]
+
+stem:[E_t]
+
+\[
+\sum_{i=0}^\infty \frac {\lambda^k e^{-\lambda}} {k!}
+\cdot
+\left\{
+\begin{gather}
+(q/p)^{k-z} & \text{if } k \leq z\\
+1           & \text{if } k >    z\\
+\end{gather}
+\right \}
+\]
+
+\[
+\sum_{i=0}^\infty \frac {\lambda^k e^{-\lambda}} {k!}
+\]
+
+
+$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$

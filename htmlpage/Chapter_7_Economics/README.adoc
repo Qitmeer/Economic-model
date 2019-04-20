@@ -1,0 +1,22 @@
+= Chapter 7  Economics
+
+____
+The Original: "Decentralized Payment Systems Principles and Design" +
+原文来自：《分布式支付系统原理与设计》 +
+
+Editors: Giulia Fanti and Pramod Viswanath +
+原文编辑：朱利亚·法蒂、普拉莫德·维斯瓦纳斯 +
+
+The Distributed Technology Research Foundation +
+出自：分布式技术研究基金会 +
+
+January 16, 2019 +
+原文发布于2019年1月16日 +
+
+Translator：听风（Cryptoeconomics Research Labs）
+____
+
+
+
+
+_本系列章节为论文《分布式支付系统原理与设计》第7章部分的中英双语译本，仅为知识传播学习与借鉴，不做商业用途，感谢 Giulia Fanti 和 Pramod Viswanath 对原文做出的贡献，原文版权归分布式技术研究基金会。_
