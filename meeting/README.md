@@ -8,9 +8,10 @@ The HalalChain Economic Model Team Meeting is a intra-team meetings intended to 
 
 No. |Date |Agenda	| Note |Type
 ---|---|---|---|---
-2 |Mon. 2019/05/27|  |  |weekly meet
+2 |Mon. 2019/05/27| [agenda][agenda02] |  |weekly meet
 1 |Mon. 2019/05/20|-|[note][01]|weekly meet
 
+[agenda02]: https://github.com/HalalChain/Economic-model/issues/15
 
 [01]: meeting_note_20190520.md
 
