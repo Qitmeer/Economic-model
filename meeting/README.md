@@ -27,7 +27,7 @@ Agenda are posted to https://github.com/HalalChain/Economic-model/issues by the 
 
 ### Meeting Node template （会议记录模板）
 
-see [meeting_note_20190520.md](meeting_note_20190520.md)
+see [meeting_note_yyyymmdd.md](meeting_note_yyyymmdd.md) or [meeting_note_20190520.md](meeting_note_20190520.md)
 
 
 ### Maintain guidance(维护指导)
