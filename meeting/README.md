@@ -25,7 +25,7 @@ No. |Date |Agenda	| Note |Type
 
 Agenda are posted to https://github.com/HalalChain/Economic-model/issues by the meeting propsor to open a agenda issue. It's closed if the meeting is canceled or when the meeting is finished successfully and the meeting note has been merged and the page has been updated.
 
-### Meeting Node template
+### Meeting Node template （会议记录模板）
 
 see [meeting_note_20190520.md](meeting_note_20190520.md)
 
