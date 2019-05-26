@@ -7,11 +7,12 @@ all member of economic model team
 @blocklee
 
 ## Agenda
-General update
 
 - Team member share weekly-update
 - Share the Study of Economic model of Nervos
 - Discuss how to build GitHub pages of HLCfans and MLSNews
+
+see also https://github.com/HalalChain/Economic-model/issues/15
 
 ## Meeting Note
 
