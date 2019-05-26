@@ -21,7 +21,7 @@ No. |Date |Agenda	| Note |Type
 
 ## How to proposal a meeting
 
-### Agenda Issue
+### Agenda Issue (issue议程安排)
 
 Agenda are posted to https://github.com/HalalChain/Economic-model/issues by the meeting propsor to open a agenda issue. It's closed if the meeting is canceled or when the meeting is finished successfully and the meeting note has been merged and the page has been updated.
 
