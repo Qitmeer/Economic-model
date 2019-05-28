@@ -22,7 +22,7 @@ see also https://github.com/HalalChain/Economic-model/issues/15
 
   - 文字工作
   - 税收是否必要
-  - 还需要继续研究
+ 
 
 - @JeremyChen01 
 
