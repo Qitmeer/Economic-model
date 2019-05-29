@@ -1,5 +1,5 @@
 # Understanding Tragedy of the Commons
-
+此文根据 @yatingzhou 在 [issue#11](https://github.com/HalalChain/Economic-model/issues/11) 发起的讨论整理。
 
 ## 在理解公地悲剧之前，首先了解几个人物：
 
