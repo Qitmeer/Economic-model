@@ -120,7 +120,7 @@ In the current block chain design, the vitality of the network mainly depends on
 
 [Carlsten et al.][Carlsten] show that in the absence of inflation, rational Bitcoin miners are no longer incentivized to mine on the longest chain.
 
-![](/image/Figure-1.png)
+![ ](/image/Figure-1.png)
 
 When choosing between forks, miners are incentivized to adopt one with fewer transactions in the final block, since such forks leave more transaction fees for the next miner. By exploiting this observation, selfish miners can convince other miners to build on side chains. This is the incentive incompatibility result from current fee mechanism.
 
@@ -192,5 +192,31 @@ zh-v:
 
 ### Transaction Fees
 
+Transaction fees is the cost of using blockchain network, and it is also another incentive for miners, which also pays for network operation. In the current design of crypto-currencies, funding of network functions would increasingly rely on the transaction fees over time. There will be a question here. It is uncertain whether transaction fees will be able to take on the incentive function of the network in the future. Whether the revenue of miners from transaction fees can fully compensate for their investment cost, and even have a surplus, we can only hope that the network will become more and more prosperous.
+
+In the current fee management system，most existing cryptocurrencies allow users to set their own fees; validators choose whether to process a given transaction based on whether the offered transaction fee is high enough. This natural approach to fee selection is widely adopted, but it has three important negative repercussions: high congestion, high fees, and incentive incompatibility. Current fee systems contribute critically to congestion. But both revenue and delay cost are strictly increasing in congestion [[1]][01]. In other words, validators are not incentivized to work without congestion.   
+
+Current fee systems
+
+[01]: https://f-labs.github.io/Cryptoeconomics/Decentralized_Payment_Systems_Economics/CH03_Transaction_Fees.html
+
+交易手续费是用户使用区块链网络的成本，也是对矿工的另一种激励手段，同样在为网络的运行买单。在当前的加密货币设计中，网络功能所需的运转资金将随着时间推移越来越依靠交易手续费。这里会有一个疑问，交易手续费是否能够在未来承担起网络的激励功能，这是不确定的。矿工通过手续费获取的收入能否完全弥补其投入成本，甚至还会有盈余，我们只能寄希望于网络是越来越繁荣的。
+
+在当前的费用管理体系中，大多数现存的加密货币都允许用户自己设定交易费用；验证者根据给出的交易费用是否足够高来选择是否处理一个指定的交易。这种很自然的费用选择方法被广泛采用，但它有三个重要的负面影响：高拥堵、高费用和激励不相容。目前的收费系统是引起拥堵的很重要的原因。但是收益和延迟成本都是随着拥堵情况而严格递增的。也就是说，没有拥堵，验证者是没有工作动力的。
+
+
 
 ## ICO 的本质
+
+ICO 最开始出现在以太坊网络创建之初，之后被疯狂地应用于各个项目作为一种区块链上的融资方式。不得不说，ICO的模式给所有人都带来了便利，即让所有人都更容易参与到一个项目中去，更为项目方提供了更便捷的融资途径。其功过是非在此不做探讨，这里只简要的说一说 ICO 的本质。
+
+ICO从本质上来说，是项目方为了融资进行的一次权益分配——把一定量的代币出售给认可其理念的人。将这种模式应用于商业项目来分散权益股份可能非常适合，但完全用它来创建一个独立的公链网络，显然是不合适的。因为一个独立的公链网络还需要更重要的参与者来处理交易，也就是矿工。对于矿工的工作我们是需要给与回报的，通常是以新铸造的币来激励他们。若是用 ICO 的方式将所有币都全部分配完了，那么矿工的激励从哪里来呢？失去激励的区块链网络是无法独立运行的，是没有生命力的。
+
+因此，把 ICO 的方式用于公链网络建设时，只能像以太坊那样，只分配其中很少部分的币，本质上来说就是一次预挖。通过 ICO 获得了网络早期开发所需的资金，本质上是预支了网络的一部分价值。
+
+## 税收在区块链网络上的应用
+
+
+
+## Layer 1 和 Layer 2 网络分层
+
