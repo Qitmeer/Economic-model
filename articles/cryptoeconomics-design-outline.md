@@ -196,15 +196,71 @@ Transaction fees is the cost of using blockchain network, and it is also another
 
 In the current fee management system，most existing cryptocurrencies allow users to set their own fees; validators choose whether to process a given transaction based on whether the offered transaction fee is high enough. This natural approach to fee selection is widely adopted, but it has three important negative repercussions: high congestion, high fees, and incentive incompatibility. Current fee systems contribute critically to congestion. But both revenue and delay cost are strictly increasing in congestion [[1]][01]. In other words, validators are not incentivized to work without congestion.   
 
-Current fee systems
+Current fee systems is a fee mode that proposed by users and validators can choose freely according to the level of fees. Users can get priority by paying a little more fees. This combination leads to the result of a Vickrey-Clark-Groves(VCG) auction, which makes the fees unpredictable. Transaction fees are unbounded under this kind of fee mechanism, it incentivizes miners to create congestion, and it is susceptible to strategic behavior. In view of these problems, some researchers have made some considerations on the design space of transaction costs from two directions: how to choose transaction fees and how to allocate them. As shown in the table below:
+
+| | Miner gets full transaction fees | Delcoupled rewards |
+|-----|-----|-----|
+User-selected fees | current fee system：Bitcoin, Ethereum | Cardano, Fruitchains
+Algorithmic fees  |  |
+
+To sum up, there are several directions of thinking:
+
+- The first is to ensure that there are always more transactions than there is space in each block: essentially, create congestion. 
+
+- The second is to decouple block rewards from the transactions they process. 
+  
+  If miners cannot significantly alter their rewards by optimizing the transactions in blocks, they are less incentivized to prioritize certain transactions over others. The basic idea is that the miner of a block does not necessarily reap all the transaction fees in that block, but shares them with other miners who have also contributed to network security and validation.
+  
+- The third is algorithmic fees.
+
+  Transaction fees mainly pay for two properties: security and convenience. This cost can be broken down into the internal (computational and storage) cost of validating and storing transactions, and the external (communication, security) cost of coming to consensus with the rest of the network. Internal costs are primarily governed by transaction byte size; the larger the transaction, the more resources are required to store the transaction. External costs are difficult to quantify. In addition, transaction value also plays an important role.  High-value transactions require higher processing cost(maybe need to wait longer before considering a high-value transaction as confirmed) and better security. So transaction fees should somehow scale with transaction value (not necessarily linearly). To establish such a charging function, it may be necessary to capture such parameters: transaction value, transaction byte size, and even the current level of network health. Including network health in the computation enables adaptive fees that respond to network conditions, such as congestion and/or gaps in security.
+
+   This charging function may need to satisfy a few basic properties:
+                                            
+   - Fees have upper and lower bound, the lower bound makes spamming attacks costly, and the upper bound should have a feedback adjustment.
+   - Monotonicity: The lower the transaction value, the lower the fee; the bigger the transaction byte, the higher the fee.
+
+In summary, the main purposes are: 1) to make transaction fees bounded; 2) to weaken the motivation of miners to prioritize certain transactions and enhance fairness among users.
+
+Another consideration in transaction fees design is the "Economic Abstraction" of transaction fees, in which transaction fees are paid in currencies other than native token, so as to realize the user-defined transaction fees and adaptability of it. However, considering that "Economic Abstraction" will threaten the intrinsic value of the native token, ultimately, the use of native token as a medium of liquidation is indispensable.
+
 
 [01]: https://f-labs.github.io/Cryptoeconomics/Decentralized_Payment_Systems_Economics/CH03_Transaction_Fees.html
+
+-----
+zh-v：
 
 交易手续费是用户使用区块链网络的成本，也是对矿工的另一种激励手段，同样在为网络的运行买单。在当前的加密货币设计中，网络功能所需的运转资金将随着时间推移越来越依靠交易手续费。这里会有一个疑问，交易手续费是否能够在未来承担起网络的激励功能，这是不确定的。矿工通过手续费获取的收入能否完全弥补其投入成本，甚至还会有盈余，我们只能寄希望于网络是越来越繁荣的。
 
 在当前的费用管理体系中，大多数现存的加密货币都允许用户自己设定交易费用；验证者根据给出的交易费用是否足够高来选择是否处理一个指定的交易。这种很自然的费用选择方法被广泛采用，但它有三个重要的负面影响：高拥堵、高费用和激励不相容。目前的收费系统是引起拥堵的很重要的原因。但是收益和延迟成本都是随着拥堵情况而严格递增的。也就是说，没有拥堵，验证者是没有工作动力的。
 
+当前的费用体系中是一个用户提出、验证者可以根据手续费高低自由选择的收费模式，用户是可以通过支付多一点手续费而获得优先处理权的，这种结合导致了一个 VCG 拍卖的结果，使得手续费变的不可预测。这种费用机制下的交易费用是没有限制的，是在激励矿工创造拥堵，易受到一些战略行为的影响。一些研究者针对这些问题，从交易手续费如何选择、如何分配两个方向对交易费用的设计空间做出了一些思考。如下表所示：
 
+| | 矿工获得全部手续费 | 分离奖励 |
+|-----|-----|-----|
+用户自选的收费 | 当前费用系统：BTC, ETH  | Cardano, Fruitchains
+通过算法收费 |  |
+
+总结起来就是这么几个思考方向：
+
+- 第一就是确保在每一个区块中总是有更多的交易而不是空间：本质上来说，就是创造拥堵。
+
+- 第二就是将区块奖励和其处理的交易分离。
+
+  如果矿工不能通过优化区块中的交易来显著改变其奖励，那么他们就没有动力去优先处理某些交易。基本思想就是，一个区块的矿工不一定要获得该区块中的所有交易费用，而是与其他矿工共享这些费用，因为其他矿工也为网络安全和验证做出了贡献。
+
+- 第三是通过算法来选择费用。
+
+  交易费用主要为两个属性买单：安全性和便利性。这个成本可以分解为验证和存储交易的内部（计算和存储）成本，以及与网络其他人达成共识的外部（通信、安全）成本。内部成本主要由交易尺寸的字节大小决定；交易尺寸越大，存储交易所需的资源就越多。外部成本则很难量化。除此之外，交易价值也有很重要的作用。高价值交易会需要更高的处理成本（可能会花费更长的等待确认时间）和安全性要求，因此交易手续费应该以某种方式和交易价值成比例（不一定的线性的）。要建立这么一个收费函数，可能需要捕获这么一些参数：交易价值，交易字节尺寸，甚至网络当前的健康水平。在计算中包含网络健康状况可以实现响应网络状况的自适应费用，例如拥堵和/或安全漏洞。
+  
+  这个收费函数可能需要满足以下特性：
+  
+  - 收费有上下边界，下边界是垃圾邮件攻击的成本，上边界最好有一个反馈调节。
+  - 单调性：交易价值低的收费低；交易字节越大，收费越高。
+
+总之，主要的目的就是：1）让交易费用是有边界的；2）削弱矿工优先处理某些交易的动力，增强用户之间的公平性。
+
+关于交易费用设计的另外一层考虑是交易费用的“经济抽象”，即使用本币之外的其他币种来支付交易手续费，以实现交易手续费的自定义与灵活性。但考虑到“经济抽象”会一定程度的威胁本币的内在价值，终究离不开使用本币作为清算媒介。
 
 ## ICO 的本质
 
@@ -214,9 +270,22 @@ ICO从本质上来说，是项目方为了融资进行的一次权益分配—�
 
 因此，把 ICO 的方式用于公链网络建设时，只能像以太坊那样，只分配其中很少部分的币，本质上来说就是一次预挖。通过 ICO 获得了网络早期开发所需的资金，本质上是预支了网络的一部分价值。
 
+
 ## 税收在区块链网络上的应用
 
+在传统的金融网络中，税收扮演着很重要的角色，它不仅是在为公共建设筹集必要的资金，还具有一定的调节作用。在区块链网络中，同样也需要一些公共生态的建设，这会惠及整个网络的所有用户。
 
+我们看到，当前的一些数字货币，比如 DCR，ZCash，Dash 等，已开始尝试在区块链网络中抽税作为发展基金。当然还有一些数字货币仅仅是为了奖励创始人及早期投资者而抽税，但税收的作用远不止于此。通过抽税建立的发展基金，最大的用途应该是如何扩大网络的生态建设，更重要的是考虑是否可以通过税收发挥调节作用，帮助网络的治理。这可能是一条有争议的探索之路。
+
+在设计时需要考虑以下问题：
+
+- 税源：即向谁收税，税从哪里来？最直接的操作可能是将一定比例的区块奖励作为税收。除此之外是否有其他的方式呢？
+  
+- 税率：收多少税，税率是固定的，还是变化的？还要考虑税率的合理性。
+
+- 税收用途：这是一个要怎么使用、谁来管理、如何监督的问题。有一个非常开阔的想法，用税收建立一个福利系统回馈网络。
+
+- 税期：永久抽税，还是阶段性抽税，这是一个值得探讨的问题。
 
 ## Layer 1 和 Layer 2 网络分层
 
