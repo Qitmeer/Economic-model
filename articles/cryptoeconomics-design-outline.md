@@ -103,10 +103,18 @@ zh-v：
   存储数据的日益积累，终将导致全节点运营成本的不断增加，同时也提高了矿工参与的门槛。这不仅会阻碍新矿工的加入，也会导致已有矿工由于成本越来越高而离开网络，这会对网络的去中心化和安全造成极大的威胁。
    
 - Governance Tragedy（治理悲剧）
+  
+  If blockchain is regarded as a public resource, each block can only handle a certain number of transactions, so it needs to pay a certain fee. The holders of most crypto-currencies certainly want to reduce transaction fees as much as possible. If governing blockchain with their wishes, the fees will continue to decrease, and the benefits of miners will be affected. Finally, the miners will withdraw from the network, because the fees are not enough to support the mining costs.
    
+  Whether it is the BIP signal system of Bitcoin, or the voting governance of ETH miners, or the governance of dBFT consensus mechanism, it is exploring a decentralized network governance mode. Some problems are summarized in the exploration：
+  
+  - Pure democracy can lead to the tragedy of the commons. Everyone votes for their own interests, but ultimately it may damage the common interests of the ecosystem, including themselves.  
+  - Controlling by founding team is a common way of governance, but this way is unsustainable, the founding team can not guarantee permanent governance, nor can it always represent the interests of all people in the ecosystem.
+  - Governance based on miners or token holders may conflict with the interests of consumers or other participants and ultimately lead to the collapse of the whole ecosystem.
+  - Adding additional governance after block chain deployment is very difficult, because there are too many participants in decentralized networks, and it is often difficult to reach a consensus.
+ 
   如果把区块链看做一个公共资源，每个区块只能处理一定数量的交易，所以需要支付一定的手续费。大部分币的持有者肯定希望尽量降低交易手续费，如果按照他们的意愿进行治理，使得手续费不断降低，矿工的收益就会受到影响，最后导致矿工退出网络，因为手续费收益不足以支撑挖矿成本。
   
-  Whether it is the BIP signal system of Bitcoin, or the voting governance of ETH miners, or the governance of dBFT consensus mechanism, it is exploring a decentralized network governance mode. Some problems are summarized in the exploration：
   无论是比特币BIP信号系统、以太坊矿工投票治理、还是dBFT共识机制的治理等，都是在探索一个去中心化的网络的治理方式。在探索中总结出了一些问题：
   
   - 纯粹的民主会导致公地悲剧，每个人都出于自己的利益进行投票，但是最终有可能损害生态的共同利益，包括他们自己；
@@ -262,16 +270,70 @@ zh-v：
 
 关于交易费用设计的另外一层考虑是交易费用的“经济抽象”，即使用本币之外的其他币种来支付交易手续费，以实现交易手续费的自定义与灵活性。但考虑到“经济抽象”会一定程度的威胁本币的内在价值，终究离不开使用本币作为清算媒介。
 
-## ICO 的本质
+## ICO 的含义
 
-ICO 最开始出现在以太坊网络创建之初，之后被疯狂地应用于各个项目作为一种区块链上的融资方式。不得不说，ICO的模式给所有人都带来了便利，即让所有人都更容易参与到一个项目中去，更为项目方提供了更便捷的融资途径。其功过是非在此不做探讨，这里只简要的说一说 ICO 的本质。
+ICO stands for “initial coin offering,” and refers to the creation and sale of digital tokens. In an ICO, a project creates a certain amount of a digital token and sells it to the public, usually in exchange for other cryptocurrencies such as bitcoin or ether.
 
-ICO从本质上来说，是项目方为了融资进行的一次权益分配——把一定量的代币出售给认可其理念的人。将这种模式应用于商业项目来分散权益股份可能非常适合，但完全用它来创建一个独立的公链网络，显然是不合适的。因为一个独立的公链网络还需要更重要的参与者来处理交易，也就是矿工。对于矿工的工作我们是需要给与回报的，通常是以新铸造的币来激励他们。若是用 ICO 的方式将所有币都全部分配完了，那么矿工的激励从哪里来呢？失去激励的区块链网络是无法独立运行的，是没有生命力的。
+The public could be interested in the tokens on offer for either or both of the following reasons:
+
+1) The token has an inherent benefit – it grants the holder access to a service, a say in an outcome or a share in the project’s earnings.
+
+2) The benefit will be in increasing demand, which will push up the market price of the token.
+
+Tokens, especially those of successful sales, are usually listed on exchanges, where initial buyers can sell their holdings and new buyers can come in at any time.
+
+As a type of digital crowdfunding, token sales enable startups not only to raise funds without giving up equity, but also to bootstrap the project’s adoption by incentivizing its use by token holders.
+
+The first token sales appeared in 2014, when seven projects raised a total of $30 million. The largest that year was ethereum – over 50 million ethers were created and sold to the public, raising over $18 million. Then in 2017, it was crazily applied to various projects as a way of financing on blockchain networks. 
+
+It has to be said that the ICO model has brought convenience to everyone, it makes it easier for everyone to participate in a project, and provides more convenient financing channels for the project side.
+
+But essentially, ICO is a token allocation for financing by the project side - selling a certain amount of tokens to people who recognize their ideas, or who want to speculate. It may be very suitable to apply this model to commercial projects to disperse token holdings, but it is obviously inappropriate to use it to create an independent public chain network. Because an independent public chain network also needs more important participants to deal with transactions, that is, miners. We need to reward miners for their work, usually by encouraging them with newly minted coins. If ICO is used to distribute all the token, where does the miner's incentive come from? Block chain network without incentive can not run independently and has no vitality. Understanding this is very important for us to do ICO  design and solve historical problems in the transition to public chain network.
+
+Therefore, when ICO is used in the construction of public chain network, It can only be like the ether，only a small part of the tokens can be allocated, which is essentially a pre-mining. Through ICO, the funds needed for the early development of the network are obtained, which essentially prepaid a part of the value of the network.
+
+------
+zh-v：
+
+ICO代表“首次代币发行”，指的是数字代币的创建和销售。在ICO中，项目创建一定数量的数字令牌并将其出售给公众，通常用于交换其他加密货币，如比特币或以太币。
+
+公众可能对代币提供的以下任一或两个原因感兴趣：
+
+1) 令牌具有固有的好处——它允许持有者获得一项服务、一项成果的发言权或项目收益的份额。
+
+2) 其好处在于需求的增加，这将推高代币的市场价格。
+
+代币，尤其是成功销售的代币，通常在交易所上市，最初的买家可以出售其持有的币，新买家可以随时进来。
+
+作为一种数字众筹方式，代币销售不仅使初创企业能够在不放弃股权的情况下筹集资金，而且能够通过鼓励代币持有人使用代币来引导项目的采用。
+
+第一次代币销售出现在2014年，当时7个项目共筹集到3000万美元。那一年最大的是以太坊——超过5000万台以太坊被创建并出售给公众，筹集了超过1800万美元。之后在2017年被疯狂的应用于各个项目作为一种区块链上的融资方式。
+
+不得不说，ICO的模式给所有人都带来了便利，即让所有人都更容易参与到一个项目中去，更为项目方提供了更便捷的融资途径。
+
+但从本质上来说，ICO是项目方为了融资进行的一次权益分配——把一定量的代币出售给认可其理念的人，或者想要投机的人。将这种模式应用于商业项目来分散代币持有可能非常适合，但完全用它来创建一个独立的公链网络，显然是不合适的。因为一个独立的公链网络还需要更重要的参与者来处理交易，也就是矿工。对于矿工的工作我们是需要给与回报的，通常是以新铸造的币来激励他们。若是用 ICO 的方式将所有币都全部分配完了，那么矿工的激励从哪里来呢？失去激励的区块链网络是无法独立运行的，是没有生命力的。理解这一点对于我们做 ICO 设计以及在转型为公链网络时解决历史问题是非常有帮助的。
 
 因此，把 ICO 的方式用于公链网络建设时，只能像以太坊那样，只分配其中很少部分的币，本质上来说就是一次预挖。通过 ICO 获得了网络早期开发所需的资金，本质上是预支了网络的一部分价值。
 
 
-## 税收在区块链网络上的应用
+## Application of Taxation in Blockchain Network（税收在区块链网络上的应用）
+
+In the traditional financial network, tax plays an important role. It not only raises necessary funds for public construction, but also has a certain regulatory role. In the blockchain network, there is also a need for some public ecological construction, which will benefit all users of the whole network.
+
+We see that some current crypto-currencies, such as DCR, ZCash, Dash and so on, have begun to try to tax in blockchain networks as development funds. Of course, there are some crypto-currencies that tax just to reward founders and early investors, but the role of taxation goes far beyond that. The most important purpose of the development fund established through tax collection should be to expand the ecological construction of the network, and more importantly, to consider whether tax can play a regulatory role in helping the governance of the network. This may be a controversial way to explore.
+
+The following problems need to be considered in design:
+
+- Tax Source: To whom do you collect taxes and where do they come from? Perhaps the most direct operation is to use a certain proportion of block reward as tax revenue. Is there any other way besides that?
+
+- Tax Rate: How much tax is levied? Is the tax rate fixed or variable? Consideration should also be given to the rationality of tax rates.
+
+- Tax purposes: This is a question of how to use, who to manage and how to supervise. There is a very bold idea of using tax revenue to build a welfare system feedback network.
+
+- Tax Period: Permanent Taxation or Stage Taxation, this is a question worth discussing.
+
+-----
+zh-v:
 
 在传统的金融网络中，税收扮演着很重要的角色，它不仅是在为公共建设筹集必要的资金，还具有一定的调节作用。在区块链网络中，同样也需要一些公共生态的建设，这会惠及整个网络的所有用户。
 
@@ -283,7 +345,7 @@ ICO从本质上来说，是项目方为了融资进行的一次权益分配—�
   
 - 税率：收多少税，税率是固定的，还是变化的？还要考虑税率的合理性。
 
-- 税收用途：这是一个要怎么使用、谁来管理、如何监督的问题。有一个非常开阔的想法，用税收建立一个福利系统回馈网络。
+- 税收用途：这是一个要怎么使用、谁来管理、如何监督的问题。有一个非常大胆的想法，用税收建立一个福利系统回馈网络。
 
 - 税期：永久抽税，还是阶段性抽税，这是一个值得探讨的问题。
 
