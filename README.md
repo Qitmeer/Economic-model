@@ -1,5 +1,17 @@
 # Economic-model
-The Economic model for HalalChain
+The Economic model research for HalalChain.
 
- To know some useful knowledge about the economics design of a decentralized payment systems,we can read the pages:
- https://f-labs.github.io/Cryptoeconomics/
+- Draft Conception of HLC Economic Model:
+
+  - [Version for Chinese](./Version_zh)
+  - [Version for English](./Version_en)
+
+- Related research documents:
+
+    - [Cryptoeconomics and incentive design of a decentralized payment systems](https://f-labs.github.io/Cryptoeconomics/)
+  - [Cryptoeconomics Design Outline for Public Chain](./articles/cryptoeconomics-design-outline.md)
+  - [Understanding Tragedy of the Commons](./articles/Understanding_Tragedy_of_the_Commons.md)
+  - [Study of Economic model of Nervos](./articles/Study_of_Economic_model_of_Nervos.md)
+
+
+- Related research discussion in [issues](https://github.com/HalalChain/Economic-model/issues)
