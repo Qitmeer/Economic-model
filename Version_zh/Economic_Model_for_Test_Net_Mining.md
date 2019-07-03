@@ -1,5 +1,6 @@
 title: Economic Model for Test Net Mining  
-description: 挖出p-meer销毁hlc的总量恒定模型
+description: 挖出p-meer销毁hlc的总量恒定模型  
+Status: Draft
 
 # HLC测试网挖矿经济模型设计
 
@@ -140,5 +141,4 @@ A、B、C 需由基金会进行资产清算后给出具体数量，A + B + C = 1
 ## Version History
 
 - 2019/07/03 Initial draft
-
 
