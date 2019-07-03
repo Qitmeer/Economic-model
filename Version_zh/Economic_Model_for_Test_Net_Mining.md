@@ -137,5 +137,8 @@ A、B、C 需由基金会进行资产清算后给出具体数量，A + B + C = 1
    
    
 
+## Version History
+
+- 2019/07/03 Initial draft
 
 
