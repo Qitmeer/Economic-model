@@ -4,7 +4,11 @@ The Economic model research for HalalChain.
 - Draft Conception of HLC Economic Model:
 
   - [Version for Chinese](./Version_zh)
+  
+    [Economic Model for Test Net Mining](./Version_en/Economic_Model_for_Test_Net_Mining.md)
+    
   - [Version for English](./Version_en)
+  
 
 - Related research documents:
 
