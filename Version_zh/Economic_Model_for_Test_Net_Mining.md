@@ -1,4 +1,4 @@
-title: HLC测试网挖矿经济模型设计  
+title: Economic Model for Test Net Mining 
 description: 挖出p-meer销毁hlc的总量恒定模型
 
 # HLC测试网挖矿经济模型设计
