@@ -5,7 +5,7 @@ The Economic model research for HalalChain.
 
   - [Version for Chinese](./Version_zh)
   
-    - [Economic Model for Test Net Mining](./Version_zh/Economic_Model_for_Test_Net_Mining.md)
+    - [Economic Model for Test Net Mining](Version_zh/Economic_Model_for_Test_Net_Mining（draft）.md)
     
   - [Version for English](./Version_en)
   

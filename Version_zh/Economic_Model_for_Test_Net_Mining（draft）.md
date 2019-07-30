@@ -1,6 +1,6 @@
 title: Economic Model for Test Net Mining  
 description: 挖出p-meer销毁hlc的总量恒定模型  
-Status: Draft
+Status: Draft  
 
 # HLC测试网挖矿经济模型设计
 
@@ -137,17 +137,17 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
 
   - p-meer 的映射权重为 Y/(X+Y) = Y/10; 其映射比为：
   
-    ![](../image/f_Y.png)
+    ![](../image/f_Y1.png)
     
     需要注意的是,理论上销毁了P亿的HLC，就要产生出P亿p-meer出来，但实践中可能会因为其他终止条件导致p-meer实际产生的数量可能小于P，则以实际数量及权重计算。
   
   - 销毁的 P 亿 HLC的映射权重为 P/(X+Y) = P/10; 其映射比为：
     
-    ![](../image/f_P.png)
+    ![](../image/testnet/f_P.png)
   
   - 剩余未参与销毁的HLC，即 X，映射权重为 1 - Y/10 - P/10 = (10-Y-P)/10；其映射比为：
     
-    ![](../image/f_X.png) 
+    ![](../image/f_X1.png) 
     
     若pmeer实际产量等于P，则X部分映射权重为(X-P)/10。
      
