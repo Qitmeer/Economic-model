@@ -2,7 +2,7 @@ title: Economic Model for Test Net Mining
 description: 挖出p-meer销毁hlc的总量恒定模型  
 Status: Draft  
 
-# HLC测试网挖矿经济模型设计
+# HLC测试网挖矿经济模型设计思考 （draft）
 
 ## Definition
 
@@ -165,7 +165,7 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
    
 
 
-### 操作细节
+### 操作细节  （draft 0.1）
 
 - HLC和p-meer的兑换
 
