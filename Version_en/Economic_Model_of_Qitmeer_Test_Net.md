@@ -1,6 +1,6 @@
-title: Economic Model of Qitmeer Test Net 
-description: burning HLC, mining pmeer   
-Status: v 1.01
+title: Economic Model of Qitmeer Test Net   
+description: burning HLC, mining pmeer     
+Status: v 1.01  
 
 # Economic Model of Qitmeer Test Net
 
