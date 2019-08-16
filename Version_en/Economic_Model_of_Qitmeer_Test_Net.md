@@ -113,13 +113,25 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
 
 #### Parameter Setting
 
-- Block rate: close to main network.
+- **Block time t**: A block rate is the interval time that a new block generate. This will be the result of a comprehensive consideration. 
 
-- Block reward r: the block reward setting during test network is related to the amount of tokens planned to be issued and the duration of the plan.
+  In PoW, this value is statistical, the actual situation is sometimes large and sometimes small, in Bitcoin, the statistical expectation is 10 minutes. The determination of this value needs to take into account the block broadcast delay, which not only ensures the security of transaction confirmation, but also reduces the fork rate. In the current Internet environment, it takes about 10 seconds to broadcast to more than 90% of the nodes. At the same time, the value also guides the direction of difficulty adjustment. When the real block time (the average value of a period of time) is less than t, the difficulty will increase; otherwise, the difficulty will be reduced. 
 
-  Assuming that the block rate is 30s of each block, and block reward r=500 tokens, then the total output of tokens in one year will be 5.256 hundred million. It would be 1 million 440 thousand in one day.
+  Qitmeer adopts a hybrid consensus that combines SPECTRE and GHOSTDAG in order to achieve fast confirmation and high throughput. Compared with Bitcoin, the block time has been significantly reduced, and the throughput has also been significantly improved. In Qitmeer test network, the block time is tentatively set at 120 seconds.
+     
+
+- **Block reward r**: A block reward is the rate of growth of the token pool, representing the number of reward tokens a miner can obtain from a single block, and is of central interest. 
+
+  On the surface, the property of block rewards is that they add to the total token supply. But more importantly, it ensures a long-term economic viability of network, which provides sufficient incentives for user adoption and participation of miners. In a new system, funding of network functions would mainly rely on the block rewards.
+
+  The block reward setting during Qitmeer test network is related to the amount of tokens planned to be issued and the duration of the plan.
+
+  Assuming that the block rate is 120s of each block, and block reward r=400 tokens, then the total output of tokens in one year will be 1.0512 hundred million. It would be 1 million 288 thousand in one day.
+
   
-- Difficulty of mining: the initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.
+- **Difficulty of mining**: The process of PoW mining is actually a random hash collision process, looking for a solution less than the target hash value. The probability of finding a solution that satisfies the condition is the difficulty of mining. This difficulty value will be adjusted automatically according to certain rules with the change of hashrate to ensure the stability of block time.
+
+  The initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.
 
 #### Termination Conditions of Test Network
 
@@ -135,3 +147,4 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
 ## Version History
 
 - 2019/08/03  v1.01 : initial darft
+- 2019/08/16  v1.02 : update config
