@@ -4,20 +4,32 @@ Status: v 1.01
 
 # Economic Model of Qitmeer Test Net
 
-##  Definition
+
+## Abstract
+
+Qitmeer Network is a BlockDAG network based on PoW consensus algorithm. It is an exploration of integrating classical UTXO model and advanced DAG technology. Qitmeer's BlockDAG is a collaboration model based on SPECRE protocol. In mining, this collaboration model achieves an ideal balance between security, openness, fairness and scalability of classical blockchain measurement.
+
+Qitmeer is an open block chain network. Qitmeer consensus abides by the classical blockchain settings: open, fair, secure and scalable. Free access to the network can be achieved by proof-of-work. BlockDAG's collaboration model allows solo mining and pool mining to have the same opportunity cost. At the same time, Qitmeer uses anti-ASIC mining algorithm to prevent concentration of hash rate.
+
+Qitmeer testing network will introduce real miners for testing to ensure the gradual maturity and stability of the network. This is a gradual transition to the Qitmeer main network. The economic model of the test network should not only solve the incentive problems in the transition stage, but also solve the historical problems after the transformation.
+
+
+## Introduction
+
+### Definition
 
 - HalalChain ERC20 token：HLC
 - Qitmeer test net token：pmeer
 -  Native token of Qitmeer network：Meer 
 
-## Summary
+### Background
 
-Economic Model of Qitmeer Test Net is a transitional scheme to the main network. On the one hand, at this period, we will introduce real miners' hashrate to test the Qitmeer network. On the other hand, we will complete the transition and mapping from HLC token (also and pmeer) to Qitmeer main network.
+Qitmeer Network is a public chain transformed from HalalChain. HalalChain's original idea was to use Consortium  Blockchain to implement business applications, and in the process of implementation, ultimately decided to transform and establish the underlying public chain. Qitmeer test network is a transitional stage to the main network. On the one hand, at this period, we will introduce real miners' hashrate to test the Qitmeer network. On the other hand, we will complete the transition and mapping from HLC token (also and pmeer) to Qitmeer main network.
 
-During test network, one pmeer minted by miners, correspondingly, one HLC token burnt. The total number of pmeer and HLC remained at 1 billion. The number of pmeer which can be minted will be directly related to the number of HLC token which are burnt. At the end of the test network, the dual-channel mapping of HLC --> Meer and pmeer --> Meer will be established.
+Economic Model of Qitmeer Test Net is a transitional scheme to the main network. During test network, one pmeer minted by miners, correspondingly, one HLC token burnt. The total number of pmeer and HLC remained at 1 billion. The number of pmeer which can be minted will be directly related to the number of HLC token which are burnt. At the end of the test network, the dual-channel mapping of HLC --> Meer and pmeer --> Meer will be established.
 
 
-## Current Structure of HLC token
+### Current Structure of HLC token
 
 HLC token have been allocated via ICO, mainly in the following parts: the market part sold by ICO, development fund and development team award.
 
@@ -28,6 +40,7 @@ HLC token have been allocated via ICO, mainly in the following parts: the market
 - the team award: personal assets that haven’t allocated,assuming C.
 
 The exact number of A, B and C will be announced by HLC foundation, A+B+C=1 billion.
+
 
 ## Modeling Design
 
@@ -42,6 +55,7 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 - **Exchange freely**: pmeer holders and HLC holders can exchange freely on their own initiative.
 
 - **Mapping priority**: the HLC participating in burning will obtain the priority of mapping, it means giving them priority according to its proportion in the network at the time of allocation.
+
 
 ### Modeling 
 
@@ -88,15 +102,11 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
   
   **mapping ratio of B-HLC (f<sub>P</sub>)**:
   
-  f<sub>P</sub> = (N<sub>0</sub>*P/10)/P = (w * N * P/10)/P = ((P/10) * N * P/10)/P = PN/100
-  
   ![](../image/testnet/f_P.png)
   
   **mapping ratio of HLC (f<sub>X</sub>) and that of pmeer (f<sub>Y</sub>)**:
   
   since 1 pmeer = _β_ HLC, so Y pmeer = _β_ Y HLC. Assuming that the mapping ratio of HLC token is f<sub>X</sub> and that of pmeer is f<sub>Y</sub>, then f<sub>Y</sub>=_β_ f<sub>X</sub>. Therefore:
-  
-   f<sub>X</sub> = (N<sub>0</sub>*(1-P/10))/(X + _β_ Y) = (w * N * (1-P/10))/(X + _β_ Y) = {(P/10) * N * (1-P/10)}/(X + _β_ Y) = PN(10-P)/(100 (X + _β_ Y))
 
   ![](../image/testnet/f_X0.png)
   
@@ -148,3 +158,4 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
 
 - 2019/08/03  v1.01 : initial darft
 - 2019/08/16  v1.02 : update config
+- 2019/08/21  v1.03 : update structure

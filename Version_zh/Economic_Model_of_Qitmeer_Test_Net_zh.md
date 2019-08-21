@@ -4,19 +4,34 @@ Status: v1.01
 
 # Qitmeer 测试网经济模型   
 
-## 定义
+
+## 摘要
+
+Qitmeer Network 是一条基于 PoW 共识算法的 BlockDAG 网络，是融合经典 UTXO 模型和前沿 DAG 技术的一次探索。Qitmeer 的 BlockDAG 是一个基于 SPECTRE 协议的协作模型，在挖矿中，这种协作模型在安全性、开放性、公平性和可扩展性之间实现了经典区块链度量的理想平衡。
+
+Qitmeer 是一个开放的区块链网络，Qitmeer 共识符合经典区块链设定：开放，公平，安全，可扩展性。通过工作量证明机制，可以自由进出网络。BlockDAG 的协作模型使得独立挖矿和矿池挖矿具有相同的机会成本。同时，Qitmeer采用了抗ASIC 挖矿算法防止算力集中。
+
+Qitmeer 测试网将引入真实矿工进行测试，以确保网络的逐步成熟与稳定。这是一个向 Qitmeer 主网逐步过渡的阶段。而测试网的经济模型既要解决过渡阶段的激励问题，又要解决转型后的历史问题。
+
+
+## 介绍
+
+### 名词定义
 
 - HalalChain ERC20 代币：HLC
 - Qitmeer 测试网代币：pmeer
-- Qitmeer 主网本币：meer 
+- Qitmeer 主网本币：Meer
 
-## 概要
 
-Qitmeer 测试网经济模型是一个向Qitmeer主网的过渡模型。一方面，在此期间，我们将引入真实的矿工算力对Qitmeer网络进行测试；另一方面，我们将完成HLC token（以及测试网）向主网的过渡与映射。
+### 背景
 
-在测试网之间，矿工每挖出一个pmeer，需对应销毁一个HLC，pmeer 数量和 HLC 数量总和保持在 10 亿。pmeer 的可挖量将和HLC token的销毁量直接关联。在测试网结束时，建立 HLC --> meer 和 pmeer --> meer 的双通道映射。
+Qitmeer Network 是由 HalalChain 转型发展而来的一条共有链。HalalChain 最初的设想是利用联盟链实现商业应用，在实现的过程中最终决定转型建立底层公有链。Qitmeer 测试网是一个向主网的过渡阶段。一方面，在此期间，我们将引入真实的矿工算力对 Qitmeer 网络进行测试；另一方面，我们将完成HLC token（以及测试网）向主网的过渡与映射。
 
-## HLC 目前的结构
+
+Qitmeer 测试网经济模型是一个向 Qitmeer 主网的过渡模型。在测试网之间，矿工每挖出一个 pmeer，需对应销毁一个HLC，pmeer 数量和 HLC 数量总和保持在 10 亿。pmeer 的可挖量将和 HLC token 的销毁量直接关联。在测试网结束时，建立 HLC --> meer 和 pmeer --> meer 的双通道映射。
+
+
+### HLC 目前的结构
 
 HLC代币已通过ICO进行了分配，主要包括以下部分：ICO出售的市场部分、发展基金和开发团队奖励。
 
@@ -27,6 +42,7 @@ HLC代币已通过ICO进行了分配，主要包括以下部分：ICO出售的�
 - 团队奖励：属于尚未分配的个人资产，假设为C。
 
 A、B和C的确切数字将由HLC基金会公布，A+B+C＝10亿。
+
 
 ## 模型设计
 
@@ -88,15 +104,11 @@ _β_ 反映了二者的价值不对等性。其中 _β_ 的取值以最终稳定
   
   **B-HLC 的映射比（f<sub>P</sub>）**：
   
-  f<sub>P</sub> = (N<sub>0</sub>*P/10)/P = (w * N * P/10)/P = ((P/10) * N * P/10)/P = PN/100
-  
   ![](../image/testnet/f_P.png)
   
   **HLC 的映射比（f<sub>X</sub>）和 pmeer 的映射比（f<sub>Y</sub>）**：
   
   由于 1 pmeer = _β_ HLC，则 Y pmeer = _β_ Y HLC。假设 HLC token 的映射比为 f<sub>X</sub> ，pmeer的映射比为 f<sub>Y</sub> ，则 f<sub>Y</sub> = _β_ f<sub>X</sub>。因此：
-  
-  f<sub>X</sub> = (N<sub>0</sub>*(1-P/10))/(X + _β_ Y) = (w * N * (1-P/10))/(X + _β_ Y) = {(P/10) * N * (1-P/10)}/(X + _β_ Y) = PN(10-P)/(100 (X + _β_ Y))
   
   ![](../image/testnet/f_X0.png)
   
@@ -141,6 +153,7 @@ _β_ 反映了二者的价值不对等性。其中 _β_ 的取值以最终稳定
 
 ## Version History
 
-- 2019/07/30  v1.0 : initial darft
+- 2019/07/30  v1.0 : initial draft
 - 2019/08/03  v1.01 : modify config
 - 2019/08/16  v1.02 : update config
+- 2019/08/21  v1.03 : update structure

@@ -1,7 +1,8 @@
 # Economic-model
-The Economic model research for HalalChain.
 
-- Draft Conception of HLC Economic Model:
+The Economic model research for Qitmeer (HalalChain to Qitmeer).
+
+- Draft Conception of Qitmeer Economic Model:
 
   - [Version for Chinese](./Version_zh)
   
