@@ -57,9 +57,7 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 - **Mapping priority**: the HLC participating in burning will obtain the priority of mapping, it means giving them priority according to its proportion in the network at the time of allocation.
 
 
-### Modeling 
-
-#### Total Number of pmeer
+### Total Number of pmeer
 
 The total number of pmeers allowed to be minted will be determined by the number of HLCs burnt. It means the real output of pmeer is less than or equal to the number of HLCs burnt.
 
@@ -67,7 +65,7 @@ The total number of pmeers allowed to be minted will be determined by the number
 
 - Assuming that the number of HLCs burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means the real output of pmeer is less than or equal to P.
 
-#### Burning of HLC Token
+### Burning of HLC Token
 
 Since the total number of pmeers allowed to be minted will be determined by the number of HLCs burnt, a burning pool will be established. Everyone of HLC holders can participate in HLC burning. All HLC tokens transferred into burning pool during the test period will be directly eligible for the main network mapping, and will be able to obtain priority options and other preferential rights in mapping.
 
@@ -75,7 +73,7 @@ In order to ensure that all users participating in HLC burning can obtain corres
 
 For the convenience of description, we will replace the HLC token to be burnt with B-HLC.
 
-#### Exchange of HLC token and pmeer
+### Exchange of HLC token and pmeer
 
 PMEER holders and HLC holders can exchange freely on their own initiative. If there is a _β_ satisfying the following conditions:
 
@@ -83,7 +81,7 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 Among them, _β_ reflects the value inequality of the two. The value of _β_ is calculated by the average value of the final stable state.
 
-#### Mapping Rules
+### Mapping Rules
 
 - Determination of the mapping proportion (w) in the whole Qitmeer network
 
@@ -121,7 +119,7 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
   Since the actual output of pmeer may be less than P, the value of Y is based on the actual output.
   
 
-#### Parameter Setting
+### Parameter Setting
 
 - **Block time t**: A block rate is the interval time that a new block generate. This will be the result of a comprehensive consideration. 
 
@@ -143,13 +141,15 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
 
   The initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.
 
-#### Termination Conditions of Test Network
+### Termination Conditions of Test Network
 
-- Time Indicators
+With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. At that time, the Foundation will announce the specific end time.
 
-- Total Amount Index
+- Time Indicators: The running time of the test network is about 18 months, and the corresponding block height is about 388800.
 
-- Development Progress of Main Network
+- Total Amount Index: Since the total amount of pmeer generated during the test network is determined by the number of HLCs which would be burnt (that is, the number of B-HLCs), the termination condition will be triggered if the actual production of pmeer reaches the upper limit of the number of B-HLCs ahead of the time.
+
+- Development Progress of Main Network: If the development of Qitmeer main network is successful, the network and ecological development are healthy and stable for a long time, the foundation may announce the termination of test network as appropriate according to the actual situation.
 
 - Mining Cost Index (Difficulty Index)
 
@@ -159,3 +159,4 @@ Among them, _β_ reflects the value inequality of the two. The value of _β_ is 
 - 2019/08/03  v1.01 : initial darft
 - 2019/08/16  v1.02 : update config
 - 2019/08/21  v1.03 : update structure
+- 2019/08/22  v1.04 : update config
