@@ -1,6 +1,6 @@
 title: Economic Model of Qitmeer Test Net   
 description: burning HLC, mining pmeer     
-Status: v 1.01  
+Status: v 1.04  
 
 # Economic Model of Qitmeer Test Net
 
@@ -79,7 +79,21 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 **1 pmeer = _β_ HLC**.
 
-Among them, _β_ reflects the value inequality of the two. The value of _β_ is calculated by the average value of the final stable state.
+Among them, _β_ reflects the value inequality of the two. The value of _β_ is calculated by the weighted average value according to their daily exchange volume.
+
+
+day(i) | total volume of pmeer (v<sub>i</sub>)| total volume of HLC (n<sub>i</sub>) | _β_<sub>i</sub> 
+------|--------|--------|-------
+1 | v<sub>1</sub> | n<sub>1</sub> | _β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
+2 | v<sub>2</sub> | n<sub>2</sub> | _β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
+... | ... | ... | ...
+i | v<sub>i</sub> | n<sub>i</sub> | _β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+
+
+The weighted average of _β_  is:
+
+![](../image/testnet/beta.png)
+
 
 ### Mapping Rules
 
