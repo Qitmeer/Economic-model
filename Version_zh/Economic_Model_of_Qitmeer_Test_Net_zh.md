@@ -82,7 +82,24 @@ pmeer 持有者和 HLC 持有者在双方自愿的情况下自由交换，假如
 
 **1 pmeer = _β_ HLC**
 
-_β_ 反映了二者的价值不对等性。其中 _β_ 的取值以最终稳定状态下的均值计算。 
+_β_ 反映了二者的价值不对等性。 
+
+其中 _β_ 的取值将根据二者每天的兑换交易额取加权平均值。
+
+
+
+第 i 天 | pmeer兑换交易额 (v<sub>i</sub>)| HLC兑换交易额(n<sub>i</sub>) | _β_<sub>i</sub> 
+------|--------|--------|-------
+1 | v<sub>1</sub> | n<sub>1</sub> | _β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
+2 | v<sub>2</sub> | n<sub>2</sub> | _β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
+... | ... | ... | ...
+i | v<sub>i</sub> | n<sub>i</sub> | _β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+
+
+_β_ 的加权平均值为：
+
+![](../image/testnet/beta.png)
+
 
 ### 映射规则
 
