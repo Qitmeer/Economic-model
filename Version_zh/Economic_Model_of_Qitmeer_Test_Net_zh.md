@@ -1,6 +1,6 @@
 title: Qitmeer 测试网经济模型   
 description: 销毁HLC，挖出pmeer     
-Status: v1.01
+Status: v1.04
 
 # Qitmeer 测试网经济模型   
 
