@@ -1,6 +1,6 @@
 title: Economic Model of Qitmeer Test Net   
 description: burning HLC, mining pmeer     
-Status: v 1.04  
+Status: v 1.05  
 
 # Economic Model of Qitmeer Test Net
 
@@ -24,9 +24,12 @@ Qitmeer testing network will introduce real miners for testing to ensure the gra
 
 ### Background
 
-Qitmeer Network is a public chain transformed from HalalChain. HalalChain's original idea was to use Consortium  Blockchain to implement business applications, and in the process of implementation, ultimately decided to transform and establish the underlying public chain. Qitmeer test network is a transitional stage to the main network. On the one hand, at this period, we will introduce real miners' hashrate to test the Qitmeer network. On the other hand, we will complete the transition and mapping from HLC token (also and pmeer) to Qitmeer main network.
+Qitmeer Network is a public chain transformed from HalalChain. HalalChain's original idea was to use Consortium Blockchain to implement business applications, and in the process of implementation, ultimately decided to transform and establish the underlying public chain. Qitmeer is an innovation and exploration of classical blockchain and a step forward from chain structure to graphic structure of blockchain.
 
-Economic Model of Qitmeer Test Net is a transitional scheme to the main network. During test network, one pmeer minted by miners, correspondingly, one HLC token burnt. The total number of pmeer and HLC remained at 1 billion. The number of pmeer which can be minted will be directly related to the number of HLC token which are burnt. At the end of the test network, the dual-channel mapping of HLC --> Meer and pmeer --> Meer will be established.
+
+Qitmeer test network is a transitional stage to the main network. On the one hand, at this period, we will introduce real miners' hashrate to test the Qitmeer network. On the other hand, we will complete the transition and mapping from HLC token (also and pmeer) to Qitmeer main network.
+
+Economic Model of Qitmeer Test Net is a transitional scheme to the main network. During test network, one pmeer minted by miners, correspondingly, one HLC token burnt. The total number of pmeer and HLC remained at 1 billion. The number of pmeer which can be minted will be directly related to the number of HLC token which are burnt. At the end of the test network, the dual-channel mapping of HLC to Meer and pmeer to Meer will be established.
 
 
 ### Current Structure of HLC token
@@ -59,15 +62,15 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 
 ### Total Number of pmeer
 
-The total number of pmeers allowed to be minted will be determined by the number of HLCs burnt. It means the real output of pmeer is less than or equal to the number of HLCs burnt.
+The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
 
-- Assuming that the number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y = 10.
+- Assuming that the number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y ≤ 10.
 
-- Assuming that the number of HLCs burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means the real output of pmeer is less than or equal to P.
+- Assuming that the number of HLC which would be burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means the real output of pmeer is less than or equal to P.
 
 ### Burning of HLC Token
 
-Since the total number of pmeers allowed to be minted will be determined by the number of HLCs burnt, a burning pool will be established. Everyone of HLC holders can participate in HLC burning. All HLC tokens transferred into burning pool during the test period will be directly eligible for the main network mapping, and will be able to obtain priority options and other preferential rights in mapping.
+Since the total number of pmeer allowed to be minted will be determined by the number of HLC that have been burnt, a burning pool will be established. Everyone of HLC holders can participate in HLC burning. All HLC tokens transferred into burning pool during the test-net period will be directly eligible for the main network mapping, and will be able to obtain priority options and other preferential rights in mapping.
 
 In order to ensure that all users participating in HLC burning can obtain corresponding rights and interests, each user participating in HLC burning will receive a certificate of burning, which can be used to participate in the main network mapping and obtain other preferential rights and interests.
 
@@ -79,9 +82,9 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 **1 pmeer = _β_ HLC**.
 
-Among them, _β_ reflects the value inequality of the two. The value of _β_ is calculated by the weighted average value according to their daily exchange volume.
+Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
 
-Assuming that the exchange volume of pmeer and HLC on day i is v<sub>i</sub>, n<sub>i</sub>, respectively. So,
+Assuming that the exchange volume of pmeer and HLC on day i is v<sub>i</sub> and n<sub>i</sub>, respectively. So,
 
 
 day(i) | total volume of pmeer (v<sub>i</sub>)| total volume of HLC (n<sub>i</sub>) | _β_<sub>i</sub> 
@@ -96,6 +99,7 @@ The weighted average of _β_  is:
 
 ![](../image/testnet/beta.png)
 
+The _β_ reflects the value inequality of the two, which will ultimately be reflected in the difference of the mapping ratio of them.
 
 ### Mapping Rules
 
@@ -137,7 +141,7 @@ The weighted average of _β_  is:
 
 ### Parameter Setting
 
-- **Block time t**: A block rate is the interval time that a new block generate. This will be the result of a comprehensive consideration. 
+- **Block time t**: A block time is the interval time that a new block generate. This will be the result of a comprehensive consideration. 
 
   In PoW, this value is statistical, the actual situation is sometimes large and sometimes small, in Bitcoin, the statistical expectation is 10 minutes. The determination of this value needs to take into account the block broadcast delay, which not only ensures the security of transaction confirmation, but also reduces the fork rate. In the current Internet environment, it takes about 10 seconds to broadcast to more than 90% of the nodes. At the same time, the value also guides the direction of difficulty adjustment. When the real block time (the average value of a period of time) is less than t, the difficulty will increase; otherwise, the difficulty will be reduced. 
 
@@ -161,7 +165,7 @@ The weighted average of _β_  is:
 
 With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. At that time, the Foundation will announce the specific end time.
 
-- Time Indicators: The running time of the test network is about 18 months, and the corresponding block height is about 388800.
+- Time Indicators: The running time of the test network is tentatively set at 18 months, and the corresponding block height is about 388800. This indicator does not exclude adjustment according to actual situation.
 
 - Total Amount Index: Since the total amount of pmeer generated during the test network is determined by the number of HLCs which would be burnt (that is, the number of B-HLCs), the termination condition will be triggered if the actual production of pmeer reaches the upper limit of the number of B-HLCs ahead of the time.
 
@@ -176,3 +180,4 @@ With the steady running of Qitmeer test network, when some of the following cond
 - 2019/08/16  v1.02 : update config
 - 2019/08/21  v1.03 : update structure
 - 2019/08/22  v1.04 : update config
+- 2019/08/28  v1.05 : update config
