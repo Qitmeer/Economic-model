@@ -131,7 +131,7 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
 
   在这样的情况下，**p-meer可产生的数量就是 P 亿，w 的值由 P 确定**，即 Y = P。而 w = N0/N = Y/(X+Y)，故：
     
-  ![](../image/w.png)
+  ![](../image/testnet/w.png)
 
 - 销毁的 P 亿的 HLC 与 p-meer 同权映射，优先计算。
 
