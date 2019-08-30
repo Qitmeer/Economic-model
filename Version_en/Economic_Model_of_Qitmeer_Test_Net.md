@@ -64,7 +64,7 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 
 ### Total Number of pmeer
 
-We adhere to the principle of constant total amount, and there is no unprovoked life, nor unprovoked death. The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
+We adhere to the principle of constant total amount, value will not arise out of nothing, nor will it disappear for no reason. The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
 
 - Assuming that the total number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y = 10.
 
