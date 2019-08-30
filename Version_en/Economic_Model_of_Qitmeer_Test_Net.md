@@ -1,6 +1,6 @@
 title: Economic Model of Qitmeer Test Net   
 description: burning HLC, mining pmeer     
-Status: v 1.05  
+Status: v 1.06  
 
 # Economic Model of Qitmeer Test Net
 
@@ -49,6 +49,8 @@ The exact number of A, B and C will be announced by HLC foundation, A+B+C=1 bill
 
 ### Goals and Rules
 
+The spirit of the blockchain is full decentralization and community governance. As a public chain, Qitmeer will follow this spirit in the design of its economic model. Therefore, the Qitmeer test network economic model will be a free game model of the community rather than a model dominated by a fund.
+
 The core idea of this model is to attract real miners to test the Qitmeer network, on the other hand, to determine the mapping proportion of the whole Qitmeer network according to the number of HLC token burnt. The final result is obtained by the free game of all parties. The whole process follows the following rules:
 
 - **Burning and mining**: one HLC token burnt, one pmeer can be minted by miners.
@@ -62,11 +64,11 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 
 ### Total Number of pmeer
 
-The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
+We adhere to the principle of constant total amount, and there is no unprovoked life, nor unprovoked death. The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
 
-- Assuming that the number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y ≤ 10.
+- Assuming that the total number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y = 10.
 
-- Assuming that the number of HLC which would be burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means the real output of pmeer is less than or equal to P.
+- Assuming that the number of HLC which would be burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means Y ≤ P.
 
 ### Burning of HLC Token
 
@@ -109,7 +111,7 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
   The number of B-HLC determines the quantity of pmeer that can be minted at the expense of liquidity, while HLC and pmeer have the potential to profit in the market. Therefore, the value of w is mainly determined by the number of the HLC token to be burnt (i.e. B-HLC), i.e. **w = P/10**.
  
-  ![](../image/w.png)
+  ![](../image/testnet/w.png)
   
 
 - Determination of mapping ratio (f)
@@ -132,12 +134,13 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
   
   ![](../image/testnet/f_X.png) 
   
-  and
+  In view of the principle of constant total amount, **the final value of Y is based on the maximum output of pmeer, that is Y = P**. Therefore, the final mapping ratio mainly depends on the P value. Namely： 
   
+  ![](../image/testnet/f_X-final.png)
+  
+    and
+    
   ![](../image/testnet/f_Y.png)
-  
-  Since the actual output of pmeer may be less than P, the value of Y is based on the actual output.
-  
 
 ### Parameter Setting
 
@@ -165,13 +168,11 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
 With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. At that time, the Foundation will announce the specific end time.
 
-- Time Indicators: The running time of the test network is tentatively set at 18 months, and the corresponding block height is about 388800. This indicator does not exclude adjustment according to actual situation.
+- Time Indicators: The maximum running time of the test network is not more than 18 months, and the corresponding block height is about 388800. This indicator does not exclude adjustment according to actual situation.
 
 - Total Amount Index: Since the total amount of pmeer generated during the test network is determined by the number of HLCs which would be burnt (that is, the number of B-HLCs), the termination condition will be triggered if the actual production of pmeer reaches the upper limit of the number of B-HLCs ahead of the time.
 
 - Development Progress of Main Network: If the development of Qitmeer main network is successful, the network and ecological development are healthy and stable for a long time, the foundation may announce the termination of test network as appropriate according to the actual situation.
-
-- Mining Cost Index (Difficulty Index)
 
 
 ## Version History
@@ -181,3 +182,4 @@ With the steady running of Qitmeer test network, when some of the following cond
 - 2019/08/21  v1.03 : update structure
 - 2019/08/22  v1.04 : update config
 - 2019/08/28  v1.05 : update config
+- 2019/08/30  v1.06 : modify config
