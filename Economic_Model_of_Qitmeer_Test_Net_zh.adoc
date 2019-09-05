@@ -129,7 +129,6 @@ f_P = \frac {N_0 \times \frac {P} {10}} {P}
 \ = \frac {PN} {100}
 \]
 
-image:../image/testnet/f_P.png[]
 
 *HLC 的映射比（stem:[f_X]）和 pmeer 的映射比（stem:[f_Y]）*：
 
@@ -142,8 +141,6 @@ f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
 \ = \frac {PN(10-P)} {100(X + βY)}
 \]
 
-image:../image/testnet/f_X0.png[]
-
 由于 stem:[X = 10 - P]，故
 
 \[
@@ -151,16 +148,12 @@ f_X = \frac {PN(10-P)} {100(X + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βY)}
 \]
 
-image:../image/testnet/f_X.png[] 
-
 鉴于总量恒定原则，**_Y_ 的最终取值以 pmeer 的最大可产出总量为计算标准，即 _Y_ = _P_**。因此，最终映射比的确定主要取决于 _P_ 值。即：
 
 \[
 f_X = \frac {PN(10-P)} {100(10 - P + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βP)}
 \]
-
-image:../image/testnet/f_X-final.png[]
 
 而
 
@@ -170,7 +163,6 @@ f_Y = β f_X
 \ = \frac {βPN(10-P)} {100(10 - P + βP)}
 \]
 
-image:../image/testnet/f_Y.png[]
 
 === 参数设定
 

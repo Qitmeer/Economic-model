@@ -80,7 +80,7 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
 
-Assuming that the exchange volume of pmeer and HLC on day i is stem:[v_i] and n<sub>i</sub>, respectively. So,
+Assuming that the exchange volume of pmeer and HLC on day stem:[i] is stem:[v_i] and n<sub>i</sub>, respectively. So,
 
 |===
 |day(stem:[i]) |total volume of pmeer (stem:[v_i]) |total volume of HLC (stem:[n_i]) |stem:[β_i]
@@ -97,7 +97,6 @@ The weighted average of _β_ is:
 \bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 +...+ \beta_i \times v_i} {v_1 + v_2 + ... + v_i}
 \]
 
-image:../image/testnet/beta.png[]
 
 The _β_ reflects the value inequality of the two, which will ultimately be reflected in the difference of the mapping ratio of them.
 
@@ -129,7 +128,6 @@ f_P = \frac {N_0 \times \frac {P} {10}} {P}
 \ = \frac {PN} {100}
 \]
 
-image:../image/testnet/f_P.png[]
 
 *mapping ratio of HLC (stem:[f_X]) and that of pmeer (stem:[f_Y])*:
 
@@ -142,8 +140,6 @@ f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
 \ = \frac {PN(10-P)} {100(X + βY)}
 \]
 
-image:../image/testnet/f_X0.png[]
-
 since stem:[X = 10 - P], so:
 
 \[
@@ -151,7 +147,6 @@ f_X = \frac {PN(10-P)} {100(X + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βY)}
 \]
 
-image:../image/testnet/f_X.png[] 
 
 In view of the principle of constant total amount, *the final value of _Y_ is based on the maximum output of pmeer, that is _Y_ = _P_*. Therefore, the final mapping ratio mainly depends on the _P_ value. Namely：
 
@@ -159,8 +154,6 @@ In view of the principle of constant total amount, *the final value of _Y_ is ba
 f_X = \frac {PN(10-P)} {100(10 - P + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βP)}
 \]
-
-image:../image/testnet/f_X-final.png[]
 
 and
 
@@ -170,7 +163,6 @@ f_Y = β f_X
 \ = \frac {βPN(10-P)} {100(10 - P + βP)}
 \]
 
-image:../image/testnet/f_Y.png[]
 
 === Parameter Setting
 
