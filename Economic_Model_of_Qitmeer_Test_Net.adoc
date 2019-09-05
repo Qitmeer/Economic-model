@@ -1,3 +1,6 @@
+:toc:
+:toclevels: 4
+:stem: latexmath
 
 = Economic Model of Qitmeer Test Net
 
@@ -29,13 +32,13 @@ Economic Model of Qitmeer Test Net is a transitional scheme to the main network.
 
 HLC token have been allocated via ICO, mainly in the following parts: the market part sold by ICO, development fund and development team award.
 
-* the market part: personal assets that have confirmed ownership,assuming A.
+* the market part: personal assets that have confirmed ownership,assuming stem:[A].
 
-* the development fund: public assets of the chain which will be used for ecological development,assuming B.
+* the development fund: public assets of the chain which will be used for ecological development,assuming stem:[B].
 
-* the team award: personal assets that haven’t allocated,assuming C.
+* the team award: personal assets that haven’t allocated,assuming stem:[C].
 
-The exact number of A, B and C will be announced by HLC foundation, A+B+C=1 billion.
+The exact number of stem:[A], stem:[B] and stem:[C] will be announced by HLC foundation, stem:[A+B+C=1] billion.
 
 == Modeling Design
 
@@ -57,9 +60,9 @@ The core idea of this model is to attract real miners to test the Qitmeer networ
 
 We adhere to the principle of constant total amount, value will not arise out of nothing, nor will it disappear for no reason. The total number of pmeers allowed to be minted will be determined by the number of HLC that would be burnt. It means the real output of pmeer is less than or equal to the number of HLC that have been burnt.
 
-* Assuming that the total number of HLC tokens and pmeers in the market at a certain time is X hundred million and Y hundred million, then X+Y = 10.
+* Assuming that the total number of HLC tokens and pmeers in the market at a certain time is stem:[X] hundred million and stem:[Y] hundred million, then steem:[X+Y = 10].
 
-* Assuming that the number of HLC which would be burnt is P hundred million, then the maximum number of pmeer is P hundred million. It means Y ≤ P.
+* Assuming that the number of HLC which would be burnt is stem:[P] hundred million, then the maximum number of pmeer is stem:[P] hundred million. It means stem:[Y ≤ P].
 
 === Burning of HLC Token
 
@@ -77,18 +80,22 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
 
-Assuming that the exchange volume of pmeer and HLC on day i is v<sub>i</sub> and n<sub>i</sub>, respectively. So,
+Assuming that the exchange volume of pmeer and HLC on day i is stem:[v_i] and n<sub>i</sub>, respectively. So,
 
 |===
-|day(i) |total volume of pmeer (v<sub>i</sub>) |total volume of HLC (n<sub>i</sub>) |_β_<sub>i</sub>
+|day(stem:[i]) |total volume of pmeer (stem:[v_i]) |total volume of HLC (stem:[n_i]) |stem:[β_i]
 
-|1 |v<sub>1</sub> |n<sub>1</sub> |_β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
-|2 |v<sub>2</sub> |n<sub>2</sub> |_β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
+|1 |stem:[v_1] |stem:[n_1] |stem:[β_1 = n_1 /v_1]
+|2 |stem:[v_2] |stem:[n_2] |stem:[β_2 = n_2 /v_2]
 |… |… |… |…
-|i |v<sub>i</sub> |n<sub>i</sub> |_β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+|i |stem:[v_i] |stem:[n_i] |stem:[β_i = n_i /v_i]
 |===
 
 The weighted average of _β_ is:
+
+\[
+\bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 +...+ \beta_i \times v_i} {v_1 + v_2 + ... + v_i}
+\]
 
 image:../image/testnet/beta.png[]
 
@@ -96,53 +103,84 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
 === Mapping Rules
 
-* Determination of the mapping proportion (w) in the whole Qitmeer network
+* Determination of the mapping proportion (stem:[w]) in the whole Qitmeer network
 
-Assuming that the total number of meers is N hundred million, and the total number of meers that mapped to HLC, pmeer and B-HLC as a whole is N<sub>0</sub> hundred million. So *N<sub>0</sub> = w · N*. 
+Assuming that the total number of meers is stem:[N] hundred million, and the total number of meers that mapped to HLC, pmeer and B-HLC as a whole is stem:[N_0] hundred million. So *stem:[N_0 = w · N]*.
 
-The number of B-HLC determines the quantity of pmeer that can be minted at the expense of liquidity, while HLC and pmeer have the potential to profit in the market. Therefore, the value of w is mainly determined by the number of the HLC token to be burnt (i.e. B-HLC), i.e. *w = P/10*.
+The number of B-HLC determines the quantity of pmeer that can be minted at the expense of liquidity, while HLC and pmeer have the potential to profit in the market. Therefore, the value of stem:[w] is mainly determined by the number of the HLC token to be burnt (i.e. B-HLC), i.e. ,
 
-image:../image/testnet/w.png[]
+\[
+w = \frac {N_0} {N} = \frac {P} {10}
+\]
 
-* Determination of mapping ratio (f)
 
-Define mapping ratio f: The number of meers obtained when a single token mapping, i.e. *1 token = f meer*. 
+* Determination of mapping ratio ( _f_ )
 
-The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is w, and the corresponding number of meers is N<sub>0</sub>. The P hundred million of HLC that burt will take the priority of P/10 share, and the remaining (1-P/10) share will be shared by HLC and pmeer.
+Define mapping ratio _f_ : The number of meers obtained when a single token mapping, i.e. *1 token = _f_ meer*.
 
-*mapping ratio of B-HLC (f<sub>P</sub>)*:
+The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is stem:[w], and the corresponding number of meers is stem:[N_0]. The stem:[P] hundred million of HLC that burt will take the priority of stem:[P/10] share, and the remaining (stem:[1 - P/10]) share will be shared by HLC and pmeer.
+
+*mapping ratio of B-HLC (stem:[f_P])*:
+
+\[
+f_P = \frac {N_0 \times \frac {P} {10}} {P}
+\ = \frac {w \times N \times \frac {P} {10}} {P}
+\ = \frac {\frac {P} {10} \times N \times \frac {P} {10}} {P}
+\ = \frac {PN} {100}
+\]
 
 image:../image/testnet/f_P.png[]
 
-*mapping ratio of HLC (f<sub>X</sub>) and that of pmeer (f<sub>Y</sub>)*:
+*mapping ratio of HLC (stem:[f_X]) and that of pmeer (stem:[f_Y])*:
 
-since 1 pmeer = _β_ HLC, so Y pmeer = _β_ Y HLC. Assuming that the mapping ratio of HLC token is f<sub>X</sub> and that of pmeer is f<sub>Y</sub>, then f<sub>Y</sub>=_β_ f<sub>X</sub>. Therefore:
+since 1 pmeer = _β_ HLC, so _Y_ pmeer = _β_ _Y_ HLC. Assuming that the mapping ratio of HLC token is stem:[f_X] and that of pmeer is stem:[f_Y], then stem:[f_Y = β f_X]. Therefore:
+
+\[
+f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {w \times N \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {\frac {P} {10} \times N \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {PN(10-P)} {100(X + βY)}
+\]
 
 image:../image/testnet/f_X0.png[]
 
-since X = 10 - P, so:
+since stem:[X = 10 - P], so:
+
+\[
+f_X = \frac {PN(10-P)} {100(X + βY)}
+\ = \frac {PN(10-P)} {100(10 - P + βY)}
+\]
 
 image:../image/testnet/f_X.png[] 
 
-In view of the principle of constant total amount, *the final value of Y is based on the maximum output of pmeer, that is Y = P*. Therefore, the final mapping ratio mainly depends on the P value. Namely： 
+In view of the principle of constant total amount, *the final value of _Y_ is based on the maximum output of pmeer, that is _Y_ = _P_*. Therefore, the final mapping ratio mainly depends on the _P_ value. Namely：
+
+\[
+f_X = \frac {PN(10-P)} {100(10 - P + βY)}
+\ = \frac {PN(10-P)} {100(10 - P + βP)}
+\]
 
 image:../image/testnet/f_X-final.png[]
 
-----
 and
-----
+
+\[
+f_Y = β f_X
+\ = \frac {βPN(10-P)} {100(10 - P + βY)}
+\ = \frac {βPN(10-P)} {100(10 - P + βP)}
+\]
 
 image:../image/testnet/f_Y.png[]
 
 === Parameter Setting
 
-* *Block time t*: A block time is the interval time that a new block generate. This will be the result of a comprehensive consideration.
+* *Block time _t_*: A block time is the interval time that a new block generate. This will be the result of a comprehensive consideration.
 
 In PoW, this value is statistical, the actual situation is sometimes large and sometimes small, in Bitcoin, the statistical expectation is 10 minutes. The determination of this value needs to take into account the block broadcast delay, which not only ensures the security of transaction confirmation, but also reduces the fork rate. In the current Internet environment, it takes about 10 seconds to broadcast to more than 90% of the nodes. At the same time, the value also guides the direction of difficulty adjustment. When the real block time (the average value of a period of time) is less than t, the difficulty will increase; otherwise, the difficulty will be reduced. 
 
 Qitmeer adopts a hybrid consensus that combines SPECTRE and GHOSTDAG in order to achieve fast confirmation and high throughput. Compared with Bitcoin, the block time has been significantly reduced, and the throughput has also been significantly improved. In Qitmeer test network, the block time is tentatively set at 120 seconds.
 
-* *Block reward r*: A block reward is the rate of growth of the token pool, representing the number of reward tokens a miner can obtain from a single block, and is of central interest.
+* *Block reward _r_*: A block reward is the rate of growth of the token pool, representing the number of reward tokens a miner can obtain from a single block, and is of central interest.
 
 On the surface, the property of block rewards is that they add to the total token supply. But more importantly, it ensures a long-term economic viability of network, which provides sufficient incentives for user adoption and participation of miners. In a new system, funding of network functions would mainly rely on the block rewards.
 

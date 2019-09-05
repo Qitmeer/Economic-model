@@ -1,3 +1,6 @@
+:toc:
+:toclevels: 4
+:stem: latexmath
 
 = Qitmeer 测试网经济模型
 
@@ -17,7 +20,7 @@ Qitmeer 测试网将引入真实矿工进行测试，以确保网络的逐步成
 * Qitmeer 测试网代币：pmeer
 * Qitmeer 主网本币：Meer
 
-=== 背景
+=== 背  景
 
 Qitmeer Network 是由 HalalChain 转型发展而来的一条公有链。HalalChain 最初的设想是利用联盟链实现商业应用，在实现的过程中最终决定转型建立底层公有链。Qitmeer 是对经典区块链的一次创新与探索，是区块链从链式结构向图式结构的一次迈进。
 
@@ -29,13 +32,13 @@ Qitmeer 测试网经济模型是一个向 Qitmeer 主网的过渡模型。在测
 
 HLC代币已通过ICO进行了分配，主要包括以下部分：ICO出售的市场部分、发展基金和开发团队奖励。
 
-* 市场部分：属于已确认所有权的个人资产，假设为A。
+* 市场部分：属于已确认所有权的个人资产，假设为 stem:[A]。
 
-* 发展基金：用于生态发展的公共资产，假设为B。
+* 发展基金：用于生态发展的公共资产，假设为 stem:[B]。
 
-* 团队奖励：属于尚未分配的个人资产，假设为C。
+* 团队奖励：属于尚未分配的个人资产，假设为 stem:[C]。
 
-A、B和C的确切数字将由HLC基金会公布，A+B+C＝10亿。
+stem:[A]、stem:[B] 和 stem:[C] 的确切数字将由HLC基金会公布，stem:[A+B+C＝10]亿。
 
 == 模型设计
 
@@ -57,9 +60,9 @@ A、B和C的确切数字将由HLC基金会公布，A+B+C＝10亿。
 
 我们秉持总量恒定原则，价值不会无中生有的产生，也不会无缘无故的消失。pmeer 可产出上限将由销毁的 HLC token 数量决定。意味着 pmeer 的实际产量将小于或等于销毁的 HLC 数量。
 
-* 假定在某一时刻市场中 HLC token 的总数量为 X亿，pmeer的总数量为 Y亿，则 X+Y=10。
+* 假定在某一时刻市场中 HLC token 的总数量为 stem:[X] 亿，pmeer的总数量为 stem:[Y] 亿，则 stem:[X+Y=10]。
 
-* 假定参与销毁的 HLC token数量为 P 亿，则代表 pmeer 的可产出总量为 P 亿。意味着 Y ≤ P。
+* 假定参与销毁的 HLC token数量为 stem:[P] 亿，则代表 pmeer 的可产出总量为 stem:[P] 亿。意味着 stem:[Y ≤ P]。
 
 === HLC token的销毁
 
@@ -79,76 +82,111 @@ _β_ 反映了二者的价值不对等性。
 
 其中 _β_ 的取值将根据二者每天的兑换交易额取加权平均值。
 
-假定在第 i 天 pmeer 和 HLC 的兑换交易额分别时 v<sub>i</sub>， n<sub>i</sub>，则：
+假定在第 stem:[i] 天 pmeer 和 HLC 的兑换交易额分别时 stem:[v_i]， stem:[n_i]，则：
 
 |===
-|第 i 天 |pmeer兑换交易额 (v<sub>i</sub>) |HLC兑换交易额(n<sub>i</sub>) |_β_<sub>i</sub>
+|第 stem:[i] 天 |pmeer兑换交易额 (stem:[v_i]) |HLC兑换交易额(stem:[n_i]) |stem:[β_i]
 
-|1 |v<sub>1</sub> |n<sub>1</sub> |_β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
-|2 |v<sub>2</sub> |n<sub>2</sub> |_β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
+|1 |stem:[v_1] |stem:[n_1] |stem:[β_1 = n_1 /v_1]
+|2 |stem:[v_2] |stem:[n_2] |stem:[β_2 = n_2 /v_2]
 |… |… |… |…
-|i |v<sub>i</sub> |n<sub>i</sub> |_β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+|i |stem:[v_i] |stem:[n_i] |stem:[β_i = n_i /v_i]
 |===
 
 _β_ 的加权平均值为：
 
-image:../image/testnet/beta.png[]
+\[
+\bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 +...+ \beta_i \times v_i} {v_1 + v_2 + ... + v_i}
+\]
 
 _β_ 反映了二者的价值不对等性，这也将最终体现在二者映射比的差别上。
 
 === 映射规则
 
-* 确定在主网的占比（w）
+* 确定在主网的占比（stem:[w]）
 
-假设最终在映射时 HLC、pmeer 和 B-HLC 整体对应的主网币（设为 N<sub>0</sub> 亿）占主网总量（设为 N 亿）的比例为 w，则 *w·N = N<sub>0</sub>*。
+假设最终在映射时 HLC、pmeer 和 B-HLC 整体对应的主网币（设为 stem:[N_0] 亿）占主网总量（设为 _N_ 亿）的比例为 stem:[w]，则 *stem:[w·N = N_0]*。
 
-B-HLC 的数量确定了 pmeer 的可产出数量，牺牲了流通性，而 HLC 和 pmeer 拥有在市场获利的可能，w 的取值由销毁的HLC（B-HLC）数量决定，即 w = P/10，
+B-HLC 的数量确定了 pmeer 的可产出数量，牺牲了流通性，而 HLC 和 pmeer 拥有在市场获利的可能，stem:[w] 的取值由销毁的HLC（B-HLC）数量决定，即，
 
-image:../image/testnet/w.png[]
+\[
+w = \frac {N_0} {N} = \frac {P} {10}
+\]
 
-* 映射比（f）的确定
 
-定义映射比 f：单个token映射时获得 meer 的数量，即 1 token = f meer。
+* 映射比（_f_）的确定
 
-HLC、pmeer 和 B-HLC 整体在主网的占比是 w，对应的 meer 数量是 N<sub>0</sub>, 销毁的 P 亿 HLC 将优先占有 P/10 的份额，剩余的（1 - P/10）的份额由 HLC 和 pmeer 共同分配。
+定义映射比 _f_：单个token映射时获得 meer 的数量，即 1 token = _f_ meer。
 
-*B-HLC 的映射比（f<sub>P</sub>）*：
+HLC、pmeer 和 B-HLC 整体在主网的占比是 stem:[w]，对应的 meer 数量是 stem:[N_0], 销毁的 _P_ 亿 HLC 将优先占有 stem:[P/10] 的份额，剩余的（stem:[1 - P/10]）的份额由 HLC 和 pmeer 共同分配。
+
+*B-HLC 的映射比（stem:[f_P]）*：
+
+\[
+f_P = \frac {N_0 \times \frac {P} {10}} {P}
+\ = \frac {w \times N \times \frac {P} {10}} {P}
+\ = \frac {\frac {P} {10} \times N \times \frac {P} {10}} {P}
+\ = \frac {PN} {100}
+\]
 
 image:../image/testnet/f_P.png[]
 
-*HLC 的映射比（f<sub>X</sub>）和 pmeer 的映射比（f<sub>Y</sub>）*：
+*HLC 的映射比（stem:[f_X]）和 pmeer 的映射比（stem:[f_Y]）*：
 
-由于 1 pmeer = _β_ HLC，则 Y pmeer = _β_ Y HLC。假设 HLC token 的映射比为 f<sub>X</sub> ，pmeer的映射比为 f<sub>Y</sub> ，则 f<sub>Y</sub> = _β_ f<sub>X</sub>。因此：
+由于 1 pmeer = _β_ HLC，则 _Y_ pmeer = _β_ _Y_ HLC。假设 HLC token 的映射比为 stem:[f_X] ，pmeer的映射比为 stem:[f_Y] ，则 stem:[f_Y = β f_X]。因此：
+
+\[
+f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {w \times N \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {\frac {P} {10} \times N \times (1 - \frac {P} {10})} {X + βY}
+\ = \frac {PN(10-P)} {100(X + βY)}
+\]
 
 image:../image/testnet/f_X0.png[]
 
-由于 X = 10 - P，故
+由于 stem:[X = 10 - P]，故
+
+\[
+f_X = \frac {PN(10-P)} {100(X + βY)}
+\ = \frac {PN(10-P)} {100(10 - P + βY)}
+\]
 
 image:../image/testnet/f_X.png[] 
 
-鉴于总量恒定原则，**Y 的最终取值以 pmeer 的最大可产出总量为计算标准，即 Y = P**。因此，最终映射比的确定主要取决于 P 值。即：
+鉴于总量恒定原则，**_Y_ 的最终取值以 pmeer 的最大可产出总量为计算标准，即 _Y_ = _P_**。因此，最终映射比的确定主要取决于 _P_ 值。即：
+
+\[
+f_X = \frac {PN(10-P)} {100(10 - P + βY)}
+\ = \frac {PN(10-P)} {100(10 - P + βP)}
+\]
 
 image:../image/testnet/f_X-final.png[]
 
 而
 
+\[
+f_Y = β f_X
+\ = \frac {βPN(10-P)} {100(10 - P + βY)}
+\ = \frac {βPN(10-P)} {100(10 - P + βP)}
+\]
+
 image:../image/testnet/f_Y.png[]
 
 === 参数设定
 
-* *出块时间 t*：出块时间是单个区块产生的时间间隔。这将是一个综合考虑的结果。
+* *出块时间 _t_*：出块时间是单个区块产生的时间间隔。这将是一个综合考虑的结果。
 
 在 PoW 中，这个值是统计意义上的，实际情况是时大时小，在比特币中这个统计期望是10分钟。该值的确定需要考虑到区块广播延迟，既要保证交易确认的安全性，又要减少分叉率。当前的互联网环境，大致需要 10 秒可以广播到 90% 以上的节点。同时，该值也指导着难度调整方向。当真实出块时间（一段时间的平均值）小于 t 时，难度将会增加；否则，难度将调低。
 
 Qitmeer 采用了 SPECTRE 与 GHOSTDAG 的混合共识，实现了快速确认和高吞吐量。相较于比特币，出块时间得到了显著缩减，吞吐量也得到了明显提高。在 Qitmeer 测试网中，出块时间暂定为 120s。
 
-* *区块奖励 r*：区块奖励是代币池的增长率，代表了矿工可以从单个区块中获得的代币奖励数量，是核心利益所在。
+* *区块奖励 _r_*：区块奖励是代币池的增长率，代表了矿工可以从单个区块中获得的代币奖励数量，是核心利益所在。
 
 表面上，区块奖励的性质是增加代币供应量。但更重要的是，它确保了网络的长期经济可行性，为用户的采用和矿工的参与提供了充分的激励。在一个新系统中，网络功能的运转资金主要依靠区块奖励。
 
 Qitmeer 测试网期间的区块奖励设定，与计划发放的货币量及计划持续时间有关。
 
-假设出块时间为120s，出块奖励r=400，则一年时间约可产出币量 400*365*24*3600/120=1.0512亿，每一天产币量为 400*24*3600/30 = 28.8万。
+假设出块时间为120s，出块奖励r=400，则一年时间约可产出币量 stem:[400*365*24*3600/120=1.0512]亿，每一天产币量为 stem:[400*24*3600/30 = 28.8]万。
 
 * 挖矿难度：PoW 挖矿的过程实际上是随机的 hash 碰撞过程，寻找一个小于目标hash值的解。而找到满足条件的解的概率就是挖矿难度。该难度值会随着算力的变化按照一定规则自动调节，以保证出块时间的稳定。
 
