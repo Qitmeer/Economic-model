@@ -1,4 +1,5 @@
 :stem: latexmath
+:source-highlighter: rouge
 
 = Economic Model of Qitmeer Test Net
 
