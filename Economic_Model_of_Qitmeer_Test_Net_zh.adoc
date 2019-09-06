@@ -1,4 +1,5 @@
 :stem: latexmath
+:source-highlighter: rouge
 
 = Qitmeer 测试网经济模型
 
