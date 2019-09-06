@@ -78,7 +78,7 @@ PMEER holders and HLC holders can exchange freely on their own initiative. If th
 
 Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
 
-Assuming that the exchange volume of pmeer and HLC on day stem:[i] is stem:[v_i] and n<sub>i</sub>, respectively. So,
+Assuming that the exchange volume of pmeer and HLC on day stem:[i] is stem:[v_i] and stem:[n_i], respectively. So,
 
 |===
 |day(stem:[i]) |total volume of pmeer (stem:[v_i]) |total volume of HLC (stem:[n_i]) |stem:[β_i]

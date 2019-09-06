@@ -1,5 +1,3 @@
-:toc:
-:toclevels: 4
 :stem: latexmath
 
 = Qitmeer 测试网经济模型
