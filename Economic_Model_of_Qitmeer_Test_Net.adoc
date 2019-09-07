@@ -1,5 +1,10 @@
 :stem: latexmath
+:reproducible:
+//:source-highlighter: coderay
 :source-highlighter: rouge
+:listing-caption: Listing
+// Uncomment next line to set page size (default is A4)
+//:pdf-page-size: Letter
 
 = Economic Model of Qitmeer Test Net
 
@@ -114,7 +119,7 @@ Assuming that the total number of meers is stem:[N] hundred million, and the tot
 The number of B-HLC determines the quantity of pmeer that can be minted at the expense of liquidity, while HLC and pmeer have the potential to profit in the market. Therefore, the value of stem:[w] is mainly determined by the number of the HLC token to be burnt (i.e. B-HLC), i.e. ,
 
 \[
-w = \frac {N_0} {N} = \frac {P} {10}
+\ w = \frac {N_0} {N} = \frac {P} {10}
 \]
 
 
@@ -124,10 +129,11 @@ Define mapping ratio _f_ : The number of meers obtained when a single token mapp
 
 The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is stem:[w], and the corresponding number of meers is stem:[N_0]. The stem:[P] hundred million of HLC that burt will take the priority of stem:[P/10] share, and the remaining (stem:[1 - P/10]) share will be shared by HLC and pmeer.
 
+
 *mapping ratio of B-HLC (stem:[f_P])*:
 
 \[
-f_P = \frac {N_0 \times \frac {P} {10}} {P}
+\ f_P= \frac {N_0 \times \frac {P} {10}} {P}
 \ = \frac {w \times N \times \frac {P} {10}} {P}
 \ = \frac {\frac {P} {10} \times N \times \frac {P} {10}} {P}
 \ = \frac {PN} {100}
@@ -139,7 +145,7 @@ f_P = \frac {N_0 \times \frac {P} {10}} {P}
 since 1 pmeer = _β_ HLC, so _Y_ pmeer = _β_ _Y_ HLC. Assuming that the mapping ratio of HLC token is stem:[f_X] and that of pmeer is stem:[f_Y], then stem:[f_Y = β f_X]. Therefore:
 
 \[
-f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
+\ f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
 \ = \frac {w \times N \times (1 - \frac {P} {10})} {X + βY}
 \ = \frac {\frac {P} {10} \times N \times (1 - \frac {P} {10})} {X + βY}
 \ = \frac {PN(10-P)} {100(X + βY)}
@@ -148,7 +154,7 @@ f_X = \frac {N_0 \times (1 - \frac {P} {10})} {X + βY}
 since stem:[X = 10 - P], so:
 
 \[
-f_X = \frac {PN(10-P)} {100(X + βY)}
+\ f_X = \frac {PN(10-P)} {100(X + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βY)}
 \]
 
@@ -156,14 +162,14 @@ f_X = \frac {PN(10-P)} {100(X + βY)}
 In view of the principle of constant total amount, *the final value of _Y_ is based on the maximum output of pmeer, that is _Y_ = _P_*. Therefore, the final mapping ratio mainly depends on the _P_ value. Namely：
 
 \[
-f_X = \frac {PN(10-P)} {100(10 - P + βY)}
+\ f_X = \frac {PN(10-P)} {100(10 - P + βY)}
 \ = \frac {PN(10-P)} {100(10 - P + βP)}
 \]
 
 and
 
 \[
-f_Y = β f_X
+\ f_Y = β f_X
 \ = \frac {βPN(10-P)} {100(10 - P + βY)}
 \ = \frac {βPN(10-P)} {100(10 - P + βP)}
 \]
