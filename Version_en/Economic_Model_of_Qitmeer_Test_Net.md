@@ -1,6 +1,6 @@
 title: Economic Model of Qitmeer Test Net   
 description: burning HLC, mining pmeer     
-Status: v 1.06  
+Status: v 1.07  
 
 # Economic Model of Qitmeer Test Net
 
@@ -77,6 +77,12 @@ Since the total number of pmeer allowed to be minted will be determined by the n
 In order to ensure that all users participating in HLC burning can obtain corresponding rights and interests, each user participating in HLC burning will receive a certificate of burning, which can be used to participate in the main network mapping and obtain other preferential rights and interests.
 
 For the convenience of description, we will replace the HLC token to be burnt with B-HLC.
+
+The burning of HLC token is not only free, but also a process of self-game and multi-party game. The number of HLC tokens that burnt will determine the values of the following three parameters:
+
+1. The proportion of the whole test network in the main network
+2. Mining period of test network
+3. Mapping ratio of each token
 
 ### Exchange of HLC token and pmeer
 
@@ -155,10 +161,11 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
   On the surface, the property of block rewards is that they add to the total token supply. But more importantly, it ensures a long-term economic viability of network, which provides sufficient incentives for user adoption and participation of miners. In a new system, funding of network functions would mainly rely on the block rewards.
 
-  The block reward setting during Qitmeer test network is related to the amount of tokens planned to be issued and the duration of the plan.
+  The block reward setting during Qitmeer test network is related to the amount of tokens planned to be issued and the duration of the plan. Considering the comprehensive factors such as mining cost and token supply rate, after comprehensive trade-offs, the block reward during Qitmeer test network is set at 500 pmeer per block.
 
-  Assuming that the block rate is 120s of each block, and block reward r=400 tokens, then the total output of tokens in one year will be 1.0512 hundred million. It would be 1 million 288 thousand in one day.
+  In the case of block rate is 120s of each block, and block reward r = 500 tokens, the total output of tokens in one year will be about 131.4 million. It would be 360 thousand in one day.
 
+  It is worth mentioning that because Qitmeer's BlockDAG model is a collaboration model, the block reward may no longer be exclusive to a certain miner, and the block reward will be distributed gradiently according to whether or not it is on the main chain. 
   
 - **Difficulty of mining**: The process of PoW mining is actually a random hash collision process, looking for a solution less than the target hash value. The probability of finding a solution that satisfies the condition is the difficulty of mining. This difficulty value will be adjusted automatically according to certain rules with the change of hashrate to ensure the stability of block time.
 
@@ -166,13 +173,13 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
 ### Termination Conditions of Test Network
 
-With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. At that time, the Foundation will announce the specific end time.
+With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. 
 
-- Time Indicators: The maximum running time of the test network is not more than 18 months, and the corresponding block height is about 388800. This indicator does not exclude adjustment according to actual situation.
+- Time Indicators: The maximum running time of the test network is not more than 18 months, and the corresponding block height is about 388800. In view of the principle that how much is burnt, how much should be mined, this indicator does not exclude adjustment according to actual situation.
 
 - Total Amount Index: Since the total amount of pmeer generated during the test network is determined by the number of HLCs which would be burnt (that is, the number of B-HLCs), the termination condition will be triggered if the actual production of pmeer reaches the upper limit of the number of B-HLCs ahead of the time.
 
-- Development Progress of Main Network: If the development of Qitmeer main network is successful, the network and ecological development are healthy and stable for a long time, the foundation may announce the termination of test network as appropriate according to the actual situation.
+- Development Progress of Main Network: If the development of Qitmeer main network is successful, the network and ecological development are healthy and stable for a long time, community consensus can be reached according to the actual situation to terminate the operation of the test network.
 
 
 ## Version History
@@ -183,3 +190,4 @@ With the steady running of Qitmeer test network, when some of the following cond
 - 2019/08/22  v1.04 : update config
 - 2019/08/28  v1.05 : update config
 - 2019/08/30  v1.06 : modify config
+- 2019/09/07  v1.07 : update config
