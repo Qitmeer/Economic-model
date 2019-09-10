@@ -6,7 +6,12 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 
-= Economic Model of Qitmeer Test Net
+= Economic Model of Qitmeer Test Network
+
+Authors：yatingzhou and blocklee +
+Qitmeer Economic Team +
+September 9, 2019 +
+Version: 1.08 +
 
 == Abstract
 

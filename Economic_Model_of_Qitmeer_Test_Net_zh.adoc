@@ -8,6 +8,11 @@
 
 = Qitmeer 测试网经济模型
 
+Authors：yatingzhou and blocklee +
+Qitmeer Economic Team +
+September 9, 2019 +
+Version: 1.08 +
+
 == 摘要
 
 Qitmeer Network 是一条基于 PoW 共识算法的 BlockDAG 网络，是融合经典 UTXO 模型和前沿 DAG 技术的一次探索。Qitmeer 的 BlockDAG 是一个基于 SPECTRE 协议的协作模型，在挖矿中，这种协作模型在安全性、开放性、公平性和可扩展性之间实现了经典区块链度量的理想平衡。
