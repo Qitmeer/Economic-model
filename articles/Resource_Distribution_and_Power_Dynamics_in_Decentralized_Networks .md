@@ -104,7 +104,9 @@ While the idealized vision for decentralized networks is certainly compelling an
 Field theory, as a general theory of local social orders, represents one approach to these issues. It can and should be combined with other existing theories, and in the future, entirely new ones that will account for some of the more unique features that decentralized networks have in contrast to more traditional forms of social organization.
 
 ...
+
 I’d like to thank Chris Burniske and Alex Evans for their helpful feedback on earlier versions of this text.
+
 ...
 
 
