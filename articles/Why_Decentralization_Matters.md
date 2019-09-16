@@ -1,7 +1,7 @@
 # Why Decentralization Matters  
 
-Author: Chris Dixon
-Feb 19, 2018, on medium  
+Author: Chris Dixon    
+Feb 19, 2018, on medium   
 https://medium.com/s/story/why-decentralization-matters-5e3f79f7638e  
 
 ## The first two eras of the internet
