@@ -1,3 +1,5 @@
+# Resource Distribution and Power Dynamics in Decentralized Networks【分布式网络中的资源分配与运行动力学】
+
 Athor: Mario Laul  
 Aug 11, 2018,published on medium   
 https://medium.com/@mariolaul/resource-distribution-and-power-dynamics-in-decentralized-networks-ab0610bee6e1  
