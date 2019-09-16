@@ -25,19 +25,19 @@ The boundaries of a field are not always clear or fixed and the concept can be a
 
 Decentralized networks can also be thought of as fields that are challengers in broader, incumbent-dominated fields within various areas of economic activity. Approaching cryptonetworks from such a perspective has analytical benefits because all fields are characterized by similar properties and tendencies. For example:
 
-- Fields initially form when a large enough group is able to establish a local social order (a game worthy of playing, so to speak), potentially to compete with or within an existing field.
+- **Fields initially form when a large enough group is able to establish a local social order** (a game worthy of playing, so to speak), potentially to compete with or within an existing field.
 
-- Competition and cooperation over field-specific resources, including the power to legitimately define and impose the fundamental rules of the game.
+- **Competition and cooperation over field-specific resources**, including the power to legitimately define and impose the fundamental rules of the game.
 
-- Unequal distribution of these resources and, as a result, structuring into dominant and subordinate positions. However, this does not preclude a field from having a relatively egalitarian power structure.
+- **Unequal distribution of these resources** and, as a result, **structuring into dominant and subordinate positions**. However, this does not preclude a field from having a relatively egalitarian power structure.
 
-- Tendency of the dominant positions to struggle for consolidation and conservation, and subordinate positions for disruption and change. Large structural shifts become possible as existing rules and arrangements break down, often in the context of some sort of crisis, allowing the structure and culture of the field to be redefined through individual and collective agency.
+- **Tendency of the dominant positions to struggle for consolidation** and conservation, **and subordinate positions for disruption and change**. Large structural shifts become possible as existing rules and arrangements break down, often in the context of some sort of crisis, allowing the structure and culture of the field to be redefined through individual and collective agency.
 
-- Tendency of the dominant groups to justify the reality and effects of unequal resource and power distribution, often relying on a set of fundamental beliefs and assumptions about humans and society.
+- **Tendency of the dominant groups to justify the reality and effects of unequal resource and power distribution**, often relying on a set of fundamental beliefs and assumptions about humans and society.
 
-- Relative position in the field has an impact on individual predispositions, although the full meaning and effect of this is not necessarily acknowledged or understood by the participants themselves.
+- **Relative position in the field has an impact on individual predispositions**, although the full meaning and effect of this is not necessarily acknowledged or understood by the participants themselves.
 
-- Tendency to have economically and culturally dominant poles as discrete resources accumulate in the hands of different constituents. This often leads certain groups to fight for goals and values that go beyond strictly individual or financial self-interest (“public purpose”).
+- **Tendency to have economically and culturally dominant poles** as discrete resources accumulate in the hands of different constituents. This often leads certain groups to fight for goals and values that go beyond strictly individual or financial self-interest (“public purpose”).
 
 Different iterations of field theory include additional nuances (there’s a list of further reading material for anyone interested below), but for the purposes of this post, these are sufficient to raise the following question: what would basic ‘field analysis’ consist of when applied to decentralized networks?
 
