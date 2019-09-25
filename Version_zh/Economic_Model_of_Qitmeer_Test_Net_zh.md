@@ -1,6 +1,6 @@
 title: Qitmeer 测试网经济模型   
 description: 销毁HLC，挖出pmeer     
-Status: v1.08
+Status: v1.09
 
 # Qitmeer 测试网经济模型   
 
@@ -91,31 +91,45 @@ A、B和C的确切数字将由HLC基金会公布，A+B+C＝10亿。
 2. 测试网的挖矿周期约为 17.8 个月（按出块时间120s，区块奖励520计算，即挖矿周期 T=200000000÷520×120÷3600÷24÷30=17.8月）；
 3. B-HLC和主网映时的权重占比为 20%，剩余 80% 用于给 HLC token 和 pmeer持有者映射，其映射比和关系将通过下文的博弈设计体现。
 
-### HLC token 和 p-meer 的兑换
+### HLC token 和 p-meer 的价值不对等性
 
-pmeer 持有者和 HLC 持有者在双方自愿的情况下自由交换，假如存在一个 _β_ 满足：
+pmeer 持有者和 HLC 持有者可在双方自愿的情况下自由交换，但对于 Qitmeer 网络而言，一个 HLC token 和一个 p-meer 的价值是不对等的，这种价值不对等性将体现在单个 token 分配权重的不同。在同主网映射时，我们将根据二者的流通市值比例确定其分配权重。
 
-**1 pmeer = _β_ HLC**
+在 HLC 的分配结构中，我们知道发展基金部分和剩余的团队奖励部分是由 HLC 基金会管理的，这两部分（具体数量将由基金会给出，这里姑且假定为C，**C为常数**）将做锁仓处理，不会进入流通市场，同时不参与销毁。即，将有 C 亿的 HLC token 由基金会对其进行锁仓。
 
-_β_ 反映了二者的价值不对等性。 
+假设 HLC token 的市场价格为 u，pmeer 的市场价格为 v，则：
 
-其中 _β_ 的取值将根据二者每天的兑换交易额取加权平均值。
+- HLC 的流通市值为：u·(X-C)
+- pmeer 的流通市值为：v·Y
 
-假定在第 i 天 pmeer 和 HLC 的兑换交易额分别时 v<sub>i</sub>， n<sub>i</sub>，则：
+二者的总市值为 (u(X-C) + vY)，其中，HLC 占比 u(X-C) / (u(X-C) + vY)，pmeer 占比 v·Y / (u(X-C) + vY)。  
 
-第 i 天 | pmeer兑换交易额 (v<sub>i</sub>)| HLC兑换交易额(n<sub>i</sub>) | _β_<sub>i</sub> 
-------|--------|--------|-------
-1 | v<sub>1</sub> | n<sub>1</sub> | _β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
-2 | v<sub>2</sub> | n<sub>2</sub> | _β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
-... | ... | ... | ...
-i | v<sub>i</sub> | n<sub>i</sub> | _β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+那么他们的分配权重将是：
 
+- HLC 的整体分配权重：u(X-C) / (u(X-C) + vY) 
+- pmeer 的整体分配权重： vY / (u(X-C) + vY) 
 
-_β_ 的加权平均值为：
+对应到单个 token 的权重是：
 
-![](../image/testnet/beta.png)
+- 单个 HLC 的分配权重：α<sub>1</sub> = \[u(X-C) / (u(X-C) + vY)] ÷ X = u(X-C) / X(u(X-C) + vY)
 
-_β_ 反映了二者的价值不对等性，这也将最终体现在二者映射比的差别上。
+  ![](../image/testnet/alpha1.png)
+  
+- 单个 pmeer 的分配权重：α<sub>2</sub> = \[vY / (u(X-C) + vY)] ÷ Y = v / (u(X-C) + vY)
+
+  ![](../image/testnet/alpha2.png)
+
+我们定义 **_β_ = α<sub>2</sub> / α<sub>1</sub>** ，那么 _β_ 则体现了二者的价值不对等，直观体现就是映射权重的不同。1 个 pmeer 的映射权重相当于是 _β_ 个 HLC，即 **1 pmeer = _β_ HLC** 。代入 α<sub>1</sub> 和 α<sub>2</sub>，化简后可得
+
+![](../image/testnet/new_beta.png)
+ 
+由于 HLC token 和 pmeer 的价格是动态的，以某一天的价格作为计算依据是不恰当的。因此，我们将在测试网期间统计 u 和 v 的**每日均价**，然后求其平均值，以此平均值作为计算依据。统计周期为测试网开始到测试网结束。
+
+每日均价 v<sub>i</sub> = （每日开盘价 + 每日收盘价 ）/ 2 ，
+
+u = (u<sub>1</sub> + u<sub>2</sub> + ⋯ + u<sub>i</sub>) / i ，
+
+v = (v<sub>1</sub> + v<sub>2</sub> + ⋯ + v<sub>i</sub>) / i 。
 
 ### 映射规则
 
@@ -202,3 +216,4 @@ _β_ 反映了二者的价值不对等性，这也将最终体现在二者映射
 - 2019/08/30  v1.06 : modify config
 - 2019/09/07  v1.07 : update config
 - 2019/09/07  v1.08 : update config
+- 2019/09/24  v1.09 : update definition of β
