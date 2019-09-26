@@ -142,7 +142,7 @@ The average daily price v<sub>i</sub> = (daily opening price + daily closing pri
 
   Define mapping ratio f: The number of meers obtained when a single token mapping, i.e. **1 token = f meer**. 
   
-  The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is w, and the corresponding number of meers is N<sub>0</sub>. The P hundred million of HLC that burt will take the priority of P/10 share, and the remaining (1-P/10) share will be shared by HLC and pmeer.
+  The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is w, and the corresponding number of meers is N<sub>0</sub>. The P hundred million of HLC that burnt will take the priority of P/10 share, and the remaining (1-P/10) share will be shared by HLC and pmeer.
   
   **mapping ratio of B-HLC (f<sub>P</sub>)**:
   
