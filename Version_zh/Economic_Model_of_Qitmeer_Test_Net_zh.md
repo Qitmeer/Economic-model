@@ -97,21 +97,21 @@ pmeer 持有者和 HLC 持有者可在双方自愿的情况下自由交换，但
 
 在 HLC 的分配结构中，我们知道发展基金部分和剩余的团队奖励部分是由 HLC 基金会管理的，这两部分（具体数量将由基金会给出，这里姑且假定为C，**C为常数**）将做锁仓处理，不会进入流通市场，同时不参与销毁。即，将有 C 亿的 HLC token 由基金会对其进行锁仓。
 
-假设 HLC token 的市场价格为 u，pmeer 的市场价格为 v，则：
+假设 **HLC token 的市场价格为 u，pmeer 的市场价格为 v**，则：
 
-- HLC 的流通市值为：u·(X-C)
-- pmeer 的流通市值为：v·Y
+- HLC 的流通市值为：u(X-C)
+- pmeer 的流通市值为：vY
 
-二者的总市值为 (u(X-C) + vY)，其中，HLC 占比 u(X-C) / (u(X-C) + vY)，pmeer 占比 v·Y / (u(X-C) + vY)。  
+二者的总市值为 (u(X-C) + vY)，其中，HLC 占比 u(X-C)/(u(X-C)+vY)，pmeer 占比 vY/(u(X-C)+vY)。  
 
 那么他们的分配权重将是：
 
-- HLC 的整体分配权重：u(X-C) / (u(X-C) + vY) 
-- pmeer 的整体分配权重： vY / (u(X-C) + vY) 
+- HLC 的整体分配权重：u(X-C)/(u(X-C) + vY) 
+- pmeer 的整体分配权重： vY/(u(X-C) + vY) 
 
 对应到单个 token 的权重是：
 
-- 单个 HLC 的分配权重：α<sub>1</sub> = \[u(X-C) / (u(X-C) + vY)] ÷ X = u(X-C) / X(u(X-C) + vY)
+- 单个 HLC 的分配权重：α<sub>1</sub> = \[u(X-C)/(u(X-C) + vY)] ÷ X = u(X-C) / X(u(X-C) + vY)
 
   ![](../image/testnet/alpha1.png)
   
@@ -193,7 +193,19 @@ v = (v<sub>1</sub> + v<sub>2</sub> + ⋯ + v<sub>i</sub>) / i 。
 
   测试网挖矿初始难度以普通电脑可以参与为基准，随着算力的增加自动调节。
 
-  
+#### 特别说明
+
+在 Qitmeer 中所使用的 SPECTRE 协议是一个可以快速确认的 BlockDAG 协议，甚至可以达到秒级确认，前文所定的 120s 的出块时间是相对保守的。在 Qitmeer 的测试网期间，为了探索 BlockDAG 网络的性能极限，不排除会做一些条件参数上的变更，这其中就有可能会有出块时间的调整。为了保持货币供应速率的稳定，如果对出块时间做了调整，相应地也会调整区块奖励，以确保每日货币供应总量的恒定。
+
+下表将给出出块时间可能的调整目标，以及对应的区块奖励：
+
+| 出块时间 t | 区块奖励 r |
+| --------- | ---------- |
+| 120s | 520 |
+| 60s  | 260 |
+| 30s  | 130 |
+| 15s  | 65  |
+   
 ### 测试网终止条件
 
 随着 Qitmeer 测试网运行的逐渐稳定，当满足以下某一条件时，将终止测试网运行，启动 Qitmeer 主网运行。
@@ -217,3 +229,4 @@ v = (v<sub>1</sub> + v<sub>2</sub> + ⋯ + v<sub>i</sub>) / i 。
 - 2019/09/07  v1.07 : update config
 - 2019/09/07  v1.08 : update config
 - 2019/09/24  v1.09 : update definition of β
+- 2019/09/24  v1.09 : add note of block time adjustment
