@@ -11,6 +11,8 @@ The Economic model research for Qitmeer (HalalChain to Qitmeer).
   - [Version for English](./Version_en)
   
     - [Economic Model for Test Net Mining (en)](Version_en/Economic_Model_of_Qitmeer_Test_Net.md)
+    
+ Download PDF documents：[releases](https://github.com/Qitmeer/Economic-model/releases)    
 
 - Related research documents and references:
 
