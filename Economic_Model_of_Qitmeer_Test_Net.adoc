@@ -10,8 +10,8 @@
 
 Authors：yatingzhou and blocklee +
 Qitmeer Economic Team +
-September 9, 2019 +
-Version: 1.08 +
+September 26, 2019 +
+Version: 1.09 +
 
 == Abstract
 
@@ -94,33 +94,47 @@ If 200 million HLC tokens were burnt,
 3. The weight ratio of B-HLC when mapping to main network will be 20%. The remaining 80% is used for the mapping of HLC token and pmeer holders. The mapping ratio and relationship will be reflected by the game design below.
 
 
-=== Exchange of HLC token and pmeer
+=== The Value Inequality of HLC Token and PMEER
 
-PMEER holders and HLC holders can exchange freely on their own initiative. If there is a _β_ satisfying the following conditions:
+PMEER holders and HLC holders can exchange freely on their own initiative, but for Qitmeer networks, the value of one HLC token and one pmeer is unequal, and this value inequality will be reflected in the different distribution weights of a single token. When mapping to the main network, we will determine their distribution weights according to the ratio of the circulation market value of the two tokens.
 
-*1 pmeer = _β_ HLC*.
+In the allocation structure of HLC, we know that the development fund and the rest of the team awards are managed by the HLC Foundation. These two parts (the specific quantity will be given by the Foundation, assuming stem:[C] here, and *stem:[C] is a constant*) will be locked up, not entering the circulation market, and not participating in burning. That is to say, there will be stem:[C] hundred million of HLC tokens locked by the Foundation.
 
-Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
+Assuming that *the market price of HLC token is stem:[u] and that of pmeer is stem:[v]*, then:
 
-Assuming that the exchange volume of pmeer and HLC on day stem:[i] is stem:[v_i] and stem:[n_i], respectively. So,
+* The circulation market value of HLC is stem:[u(X-C)].
+* The market value of pmeer is stem:[vY].
 
-|===
-|day(stem:[i]) |total volume of pmeer (stem:[v_i]) |total volume of HLC (stem:[n_i]) |stem:[β_i]
+The total market value of the two is stem:[(u(X-C)+vY)], in which HLC accounts for the share of stem:[u(X-C)/(u(X-C)+vY)] and pmeer for stem:[vY/(u(X-C)+vY)].
 
-|1 |stem:[v_1] |stem:[n_1] |stem:[β_1 = n_1 /v_1]
-|2 |stem:[v_2] |stem:[n_2] |stem:[β_2 = n_2 /v_2]
-|… |… |… |…
-|i |stem:[v_i] |stem:[n_i] |stem:[β_i = n_i /v_i]
-|===
+Then their distribution weights will be:
 
-The weighted average of _β_ is:
+* The overall distribution weights of HLC: stem:[u(X-C)/(u(X-C)+vY)] .
+* The overall distribution weights of pmeer: stem:[vY/(u(X-C)+vY)] .
+
+The weights corresponding to a single token are:
+
+* Distribution weights of a single HLC stem:[α_1]:
 
 \[
-\bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 +...+ \beta_i \times v_i} {v_1 + v_2 + ... + v_i}
+\ α_1 = \frac {u(X-C)} {u(X-C)+vY} ÷ X = \frac {u(X-C)} {X(u(X-C)+vY)}
 \]
 
+* Distribution weights of a single pmeer α2:
 
-The _β_ reflects the value inequality of the two, which will ultimately be reflected in the difference of the mapping ratio of them.
+\[
+\ α_2 = \frac {vY} {u(X-C)+vY} ÷ Y = \frac {v} {u(X-C)+vY}
+\]
+
+We define stem:[β = α_2 / α_1], then stem:[β] reflects the value inequality of the two, and intuitively reflects the different mapping weights. The mapping weights of one pmeer is equivalent to β HLC, that is stem:[1 pmeer = β HLC]. Substitute stem:[α_1] and stem:[α_2], then simplifying, we will get
+
+\[
+\ β = \frac {α_2} {α_1} = \frac {vX} {u(X-C)}
+\]
+
+Because the prices of HLC token and pmeer are dynamic, it is inappropriate to use the price of a certain day as the basis of calculation. Therefore, we will count the *daily average of stem:[u] and stem:[v]* during the test network, and then calculate its average value, which will be used as the basis for calculation. The statistical period is from the beginning of the test network to the end of the test network.
+
+The average daily price stem:[v_i] = (daily opening price + daily closing price) / 2, and stem:[u = (u_1 + u_2 + ⋯ + u_i) / i]，and stem:[v = (v_1 + v_2 + ⋯ + v_i) / i].
 
 === Mapping Rules
 
@@ -139,7 +153,7 @@ The number of B-HLC determines the quantity of pmeer that can be minted at the e
 
 Define mapping ratio _f_ : The number of meers obtained when a single token mapping, i.e. *1 token = _f_ meer*.
 
-The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is stem:[w], and the corresponding number of meers is stem:[N_0]. The stem:[P] hundred million of HLC that burt will take the priority of stem:[P/10] share, and the remaining (stem:[1 - P/10]) share will be shared by HLC and pmeer.
+The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is stem:[w], and the corresponding number of meers is stem:[N_0]. The stem:[P] hundred million of HLC that burnt will take the priority of stem:[P/10] share, and the remaining (stem:[1 - P/10]) share will be shared by HLC and pmeer.
 
 
 *mapping ratio of B-HLC (stem:[f_P])*:
@@ -208,6 +222,24 @@ It is worth mentioning that because Qitmeer's BlockDAG model is a collaboration 
 *Difficulty of mining*: The process of PoW mining is actually a random hash collision process, looking for a solution less than the target hash value. The probability of finding a solution that satisfies the condition is the difficulty of mining. This difficulty value will be adjusted automatically according to certain rules with the change of hashrate to ensure the stability of block time.
 
 The initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.
+
+==== Special Note
+
+The SPECTRE protocol used in Qitmeer is a BlockDAG protocol that can achieve speedy confirmation, even can achieve second-level confirmation. The 120 seconds block time given above is relatively conservative. During Qitmeer's test network, in order to explore the performance limit of BlockDAG network, it is not excluded that some conditional parameters will be changed, which may have block time adjustment. In order to maintain the stability of the currency supply rate, if the block time is adjusted, the block reward will be adjusted accordingly to ensure that the total amount of currency supply per day is constant.
+
+The following table will show possible adjustment targets for block time and corresponding block rewards:
+
+|===
+|block time stem:[t] |	block reward stem:[r]
+
+|120s |520
+
+|60s |260
+
+|30s |130
+
+|15s | 65
+|===
 
 === Termination Conditions of Test Network
 

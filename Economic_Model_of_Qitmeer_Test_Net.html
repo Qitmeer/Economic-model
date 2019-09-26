@@ -446,8 +446,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Authors：yatingzhou and blocklee<br>
 Qitmeer Economic Team<br>
-September 9, 2019<br>
-Version: 1.08<br></p>
+September 26, 2019<br>
+Version: 1.09<br></p>
 </div>
 </div>
 </div>
@@ -609,71 +609,82 @@ Version: 1.08<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_exchange_of_hlc_token_and_pmeer">Exchange of HLC token and pmeer</h3>
+<h3 id="_the_value_inequality_of_hlc_token_and_pmeer">The Value Inequality of HLC Token and PMEER</h3>
 <div class="paragraph">
-<p>PMEER holders and HLC holders can exchange freely on their own initiative. If there is a <em>β</em> satisfying the following conditions:</p>
+<p>PMEER holders and HLC holders can exchange freely on their own initiative, but for Qitmeer networks, the value of one HLC token and one pmeer is unequal, and this value inequality will be reflected in the different distribution weights of a single token. When mapping to the main network, we will determine their distribution weights according to the ratio of the circulation market value of the two tokens.</p>
 </div>
 <div class="paragraph">
-<p><strong>1 pmeer = <em>β</em> HLC</strong>.</p>
+<p>In the allocation structure of HLC, we know that the development fund and the rest of the team awards are managed by the HLC Foundation. These two parts (the specific quantity will be given by the Foundation, assuming \(C\) here, and <strong>\(C\) is a constant</strong>) will be locked up, not entering the circulation market, and not participating in burning. That is to say, there will be \(C\) hundred million of HLC tokens locked by the Foundation.</p>
 </div>
 <div class="paragraph">
-<p>Among them, <em>β</em> reflects the value inequality of the two. The value of <em>β</em> will be calculated by the weighted average value according to their daily exchange volume.</p>
+<p>Assuming that <strong>the market price of HLC token is \(u\) and that of pmeer is \(v\)</strong>, then:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The circulation market value of HLC is \(u(X-C)\).</p>
+</li>
+<li>
+<p>The market value of pmeer is \(vY\).</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Assuming that the exchange volume of pmeer and HLC on day \(i\) is \(v_i\) and \(n_i\), respectively. So,</p>
+<p>The total market value of the two is \((u(X-C)+vY)\), in which HLC accounts for the share of \(u(X-C)/(u(X-C)+vY)\) and pmeer for \(vY/(u(X-C)+vY)\).</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">day(\(i\))</th>
-<th class="tableblock halign-left valign-top">total volume of pmeer (\(v_i\))</th>
-<th class="tableblock halign-left valign-top">total volume of HLC (\(n_i\))</th>
-<th class="tableblock halign-left valign-top">\(β_i\)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_1\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_1\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_1 = n_1 /v_1\)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_2\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_2\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_2 = n_2 /v_2\)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_i\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_i\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_i = n_i /v_i\)</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
-<p>The weighted average of <em>β</em> is:</p>
+<p>Then their distribution weights will be:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The overall distribution weights of HLC: \(u(X-C)/(u(X-C)+vY)\) .</p>
+</li>
+<li>
+<p>The overall distribution weights of pmeer: \(vY/(u(X-C)+vY)\) .</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The weights corresponding to a single token are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Distribution weights of a single HLC \(α_1\):</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>\[
-\bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 ... \beta_i \times v_i} {v_1 + v_2 + &#8230;&#8203; + v_i}
+\ α_1 = \frac {u(X-C)} {u(X-C)+vY} ÷ X = \frac {u(X-C)} {X(u(X-C)+vY)}
+\]</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Distribution weights of a single pmeer α2:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>\[
+\ α_2 = \frac {vY} {u(X-C)+vY} ÷ Y = \frac {v} {u(X-C)+vY}
 \]</p>
 </div>
 <div class="paragraph">
-<p>The <em>β</em> reflects the value inequality of the two, which will ultimately be reflected in the difference of the mapping ratio of them.</p>
+<p>We define \(β = α_2 / α_1\), then \(β\) reflects the value inequality of the two, and intuitively reflects the different mapping weights. The mapping weights of one pmeer is equivalent to β HLC, that is \(1 pmeer = β HLC\). Substitute \(α_1\) and \(α_2\), then simplifying, we will get</p>
+</div>
+<div class="paragraph">
+<p>\[
+\ β = \frac {α_2} {α_1} = \frac {vX} {u(X-C)}
+\]</p>
+</div>
+<div class="paragraph">
+<p>Because the prices of HLC token and pmeer are dynamic, it is inappropriate to use the price of a certain day as the basis of calculation. Therefore, we will count the <strong>daily average of \(u\) and \(v\)</strong> during the test network, and then calculate its average value, which will be used as the basis for calculation. The statistical period is from the beginning of the test network to the end of the test network.</p>
+</div>
+<div class="paragraph">
+<p>The average daily price \(v_i\) = (daily opening price + daily closing price) / 2, and \(u = (u_1 + u_2 + ⋯ + u_i) / i\)，and \(v = (v_1 + v_2 + ⋯ + v_i) / i\).</p>
 </div>
 </div>
 <div class="sect2">
@@ -707,7 +718,7 @@ Version: 1.08<br></p>
 <p>Define mapping ratio <em>f</em> : The number of meers obtained when a single token mapping, i.e. <strong>1 token = <em>f</em> meer</strong>.</p>
 </div>
 <div class="paragraph">
-<p>The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is \(w\), and the corresponding number of meers is \(N_0\). The \(P\) hundred million of HLC that burt will take the priority of \(P/10\) share, and the remaining (\(1 - P/10\)) share will be shared by HLC and pmeer.</p>
+<p>The mapping proportion of HLC, pmeer and B-HLC (HLC to be burnt) in the main network is \(w\), and the corresponding number of meers is \(N_0\). The \(P\) hundred million of HLC that burnt will take the priority of \(P/10\) share, and the remaining (\(1 - P/10\)) share will be shared by HLC and pmeer.</p>
 </div>
 <div class="paragraph">
 <p><strong>mapping ratio of B-HLC (\(f_P\))</strong>:</p>
@@ -794,6 +805,45 @@ Version: 1.08<br></p>
 </div>
 <div class="paragraph">
 <p>The initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.</p>
+</div>
+<div class="sect3">
+<h4 id="_special_note">Special Note</h4>
+<div class="paragraph">
+<p>The SPECTRE protocol used in Qitmeer is a BlockDAG protocol that can achieve speedy confirmation, even can achieve second-level confirmation. The 120 seconds block time given above is relatively conservative. During Qitmeer&#8217;s test network, in order to explore the performance limit of BlockDAG network, it is not excluded that some conditional parameters will be changed, which may have block time adjustment. In order to maintain the stability of the currency supply rate, if the block time is adjusted, the block reward will be adjusted accordingly to ensure that the total amount of currency supply per day is constant.</p>
+</div>
+<div class="paragraph">
+<p>The following table will show possible adjustment targets for block time and corresponding block rewards:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">block time \(t\)</th>
+<th class="tableblock halign-left valign-top">block reward \(r\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">120s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">520</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">260</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">130</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">65</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect2">

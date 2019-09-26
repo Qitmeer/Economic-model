@@ -446,8 +446,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Authors：yatingzhou and blocklee<br>
 Qitmeer Economic Team<br>
-September 9, 2019<br>
-Version: 1.08<br></p>
+September 26, 2019<br>
+Version: 1.09<br></p>
 </div>
 </div>
 </div>
@@ -549,7 +549,7 @@ Version: 1.08<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_p_meer总量定义">p-meer总量定义</h3>
+<h3 id="_pmeer总量定义">pmeer总量定义</h3>
 <div class="paragraph">
 <p>我们秉持总量恒定原则，价值不会无中生有的产生，也不会无缘无故的消失。pmeer 可产出上限将由销毁的 HLC token 数量决定。意味着 pmeer 的实际产量将小于或等于销毁的 HLC 数量。</p>
 </div>
@@ -609,74 +609,82 @@ Version: 1.08<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_hlc_token_和_p_meer_的兑换">HLC token 和 p-meer 的兑换</h3>
+<h3 id="_hlc_token_和_p_meer_的价值不对等性">HLC token 和 p-meer 的价值不对等性</h3>
 <div class="paragraph">
-<p>pmeer 持有者和 HLC 持有者在双方自愿的情况下自由交换，假如存在一个 <em>β</em> 满足：</p>
+<p>pmeer 持有者和 HLC 持有者可在双方自愿的情况下自由交换，但对于 Qitmeer 网络而言，一个 HLC token 和一个 pmeer 的价值是不对等的，这种价值不对等性将体现在单个 token 分配权重的不同。在同主网映射时，我们将根据二者的流通市值比例确定其分配权重。</p>
 </div>
 <div class="paragraph">
-<p><strong>1 pmeer = <em>β</em> HLC</strong></p>
+<p>在 HLC 的分配结构中，我们知道发展基金部分和剩余的团队奖励部分是由 HLC 基金会管理的，这两部分（具体数量将由基金会给出，这里姑且假定为 \(C\)，<strong>\(C\) 为常数</strong>）将做锁仓处理，不会进入流通市场，同时不参与销毁。即，将有 \(C\) 亿的 HLC token 由基金会对其进行锁仓。</p>
 </div>
 <div class="paragraph">
-<p><em>β</em> 反映了二者的价值不对等性。</p>
+<p>假设 HLC token 的市场价格为 \(u\)，pmeer 的市场价格为 \(v\)，则：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HLC 的流通市值为：\(u(X-C)\)</p>
+</li>
+<li>
+<p>pmeer 的流通市值为：\(vY\)</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>其中 <em>β</em> 的取值将根据二者每天的兑换交易额取加权平均值。</p>
+<p>二者的总市值为 \((u(X-C) + vY)\)，其中，HLC 占比 \(u(X-C)/(u(X-C)+vY)\)，pmeer 占比 \(vY/(u(X-C)+vY)\)。</p>
 </div>
 <div class="paragraph">
-<p>假定在第 \(i\) 天 pmeer 和 HLC 的兑换交易额分别时 \(v_i\)， \(n_i\)，则：</p>
+<p>那么他们的分配权重将是：</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">第 \(i\) 天</th>
-<th class="tableblock halign-left valign-top">pmeer兑换交易额 (\(v_i\))</th>
-<th class="tableblock halign-left valign-top">HLC兑换交易额(\(n_i\))</th>
-<th class="tableblock halign-left valign-top">\(β_i\)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_1\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_1\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_1 = n_1 /v_1\)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_2\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_2\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_2 = n_2 /v_2\)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">…</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(v_i\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(n_i\)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">\(β_i = n_i /v_i\)</p></td>
-</tr>
-</tbody>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>HLC 的整体分配权重：\(u(X-C)/(u(X-C) + vY\)</p>
+</li>
+<li>
+<p>pmeer 的整体分配权重： \(vY/(u(X-C) + vY)\)</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p><em>β</em> 的加权平均值为：</p>
+<p>对应到单个 token 的权重是：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>单个 HLC 的分配权重：</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>\[
-\bar \beta = \frac {\beta_1 \times v_1 + \beta_2 \times v_2 ... \beta_i \times v_i} {v_1 + v_2 + &#8230;&#8203; + v_i}
+\ α_1 = \frac {u(X-C)} {u(X-C)+vY} ÷ X = \frac {u(X-C)} {X(u(X-C)+vY)}
+\]</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>单个 pmeer 的分配权重：</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>\[
+\ α_2 = \frac {vY} {u(X-C)+vY} ÷ Y = \frac {v} {u(X-C)+vY}
 \]</p>
 </div>
 <div class="paragraph">
-<p><em>β</em> 反映了二者的价值不对等性，这也将最终体现在二者映射比的差别上。</p>
+<p>我们定义 \(β = α_2 / α_1\) ，那么 \(β\) 则体现了二者的价值不对等，直观体现就是映射权重的不同。1 个 pmeer 的映射权重相当于是 β 个 HLC，即 \(1 pmeer = β HLC\) 。代入 \(α_1\) 和 \(α_2\)，化简后可得:</p>
+</div>
+<div class="paragraph">
+<p>\[
+\ β = \frac {α_2} {α_1} = \frac {vX} {u(X-C)}
+\]</p>
+</div>
+<div class="paragraph">
+<p>由于 HLC token 和 pmeer 的价格是动态的，以某一天的价格作为计算依据是不恰当的。因此，我们将在测试网期间统计 \(u\) 和 \(v\) 的每日均价，然后求其平均值，以此平均值作为计算依据。统计周期为测试网开始到测试网结束。</p>
+</div>
+<div class="paragraph">
+<p>每日均价 \(v_i = (每日开盘价 + 每日收盘价)/ 2\) ， 而 \(u = (u_1 + u_2 + ⋯ + u_i) / i\)， \(v = (v_1 + v_2 + ⋯ + v_i) / i\) 。</p>
 </div>
 </div>
 <div class="sect2">
@@ -797,6 +805,45 @@ f_Y = β f_X
 </div>
 <div class="paragraph">
 <p>测试网挖矿初始难度以普通电脑可以参与为基准，随着算力的增加自动调节。</p>
+</div>
+<div class="sect3">
+<h4 id="_特别说明">特别说明</h4>
+<div class="paragraph">
+<p>在 Qitmeer 中所使用的 SPECTRE 协议是一个可以快速确认的 BlockDAG 协议，甚至可以达到秒级确认，前文所定的 120s 的出块时间是相对保守的。在 Qitmeer 的测试网期间，为了探索 BlockDAG 网络的性能极限，不排除会做一些条件参数上的变更，这其中就有可能会有出块时间的调整。为了保持货币供应速率的稳定，如果对出块时间做了调整，相应地也会调整区块奖励，以确保每日货币供应总量的恒定。</p>
+</div>
+<div class="paragraph">
+<p>下表将给出出块时间可能的调整目标，以及对应的区块奖励：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">出块时间 \(t\)</th>
+<th class="tableblock halign-left valign-top">区块奖励 \(r\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">120s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">520</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">260</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">130</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">65</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect2">
