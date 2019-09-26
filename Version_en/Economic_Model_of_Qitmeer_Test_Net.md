@@ -1,6 +1,6 @@
 title: Economic Model of Qitmeer Test Net   
 description: burning HLC, mining pmeer     
-Status: v 1.08  
+Status: v 1.09  
 
 # Economic Model of Qitmeer Test Net
 
@@ -91,30 +91,41 @@ If 200 million HLC tokens were burnt,
 3. The weight ratio of B-HLC when mapping to main network will be 20%. The remaining 80% is used for the mapping of HLC token and pmeer holders. The mapping ratio and relationship will be reflected by the game design below.
 
 
-### Exchange of HLC token and pmeer
+### The Value Inequality of HLC Token and PMEER
 
-PMEER holders and HLC holders can exchange freely on their own initiative. If there is a _β_ satisfying the following conditions:
+PMEER holders and HLC holders can exchange freely on their own initiative, but for Qitmeer networks, the value of one HLC token and one pmeer is unequal, and this value inequality will be reflected in the different distribution weights of a single token. When mapping to the main network, we will determine their distribution weights according to the ratio of the circulation market value of the two tokens.
 
-**1 pmeer = _β_ HLC**.
+In the allocation structure of HLC, we know that the development fund and the rest of the team awards are managed by the HLC Foundation. These two parts (the specific quantity will be given by the Foundation, assuming C here, and **C is a constant**) will be locked up, not entering the circulation market, and not participating in burning. That is to say, there will be C hundred million of HLC tokens locked by the Foundation.
 
-Among them, _β_ reflects the value inequality of the two. The value of _β_ will be calculated by the weighted average value according to their daily exchange volume.
+Assuming that **the market price of HLC token is u and that of pmeer is v**, then:
 
-Assuming that the exchange volume of pmeer and HLC on day i is v<sub>i</sub> and n<sub>i</sub>, respectively. So,
+- The circulation market value of HLC is u(X-C).
+- The market value of pmeer is vY.
 
+The total market value of the two is (u(X-C)+vY), in which HLC accounts for the share of u(X-C)/(u(X-C)+vY) and pmeer for vY/(u(X-C)+vY).
 
-day(i) | total volume of pmeer (v<sub>i</sub>)| total volume of HLC (n<sub>i</sub>) | _β_<sub>i</sub> 
-------|--------|--------|-------
-1 | v<sub>1</sub> | n<sub>1</sub> | _β_<sub>1</sub>=n<sub>1</sub>/v<sub>1</sub>
-2 | v<sub>2</sub> | n<sub>2</sub> | _β_<sub>2</sub>=n<sub>2</sub>/v<sub>2</sub>
-... | ... | ... | ...
-i | v<sub>i</sub> | n<sub>i</sub> | _β_<sub>i</sub>=n<sub>i</sub>/v<sub>i</sub>
+Then their distribution weights will be:
 
+- The overall distribution weights of HLC: u(X-C)/(u(X-C)+vY) .
+- The overall distribution weights of pmeer: vY/(u(X-C)+vY) .
 
-The weighted average of _β_  is:
+The weights corresponding to a single token are:
 
-![](../image/testnet/beta.png)
+- Distribution weights of a single HLC α<sub>1</sub>: 
 
-The _β_ reflects the value inequality of the two, which will ultimately be reflected in the difference of the mapping ratio of them.
+  ![](../image/testnet/alpha1.png)
+  
+- Distribution weights of a single pmeer α<sub>2</sub>: 
+
+  ![](../image/testnet/alpha2.png)
+  
+We define **_β_ = α<sub>2</sub> / α<sub>1</sub>**, then _β_ reflects the value inequality of the two, and intuitively reflects the different mapping weights. The mapping weights of one pmeer is equivalent to _β_ HLC, that is **1 pmeer =  _β_ HLC**. Substitute α<sub>1</sub> and α<sub>2</sub>, then simplifying, we will get
+
+![](../image/testnet/new_beta.png) 
+
+Because the prices of HLC token and pmeer are dynamic, it is inappropriate to use the price of a certain day as the basis of calculation. Therefore, we will count the **daily average** of u and v during the test network, and then calculate its average value, which will be used as the basis for calculation. The statistical period is from the beginning of the test network to the end of the test network.
+
+The average daily price v<sub>i</sub> = (daily opening price + daily closing price) / 2, and u = (u<sub>1</sub> + u<sub>2</sub> + ⋯ + u<sub>i</sub>) / i，and v = (v<sub>1</sub> + v<sub>2</sub> + ⋯ + v<sub>i</sub>) / i.  
 
 ### Mapping Rules
 
@@ -178,6 +189,20 @@ The _β_ reflects the value inequality of the two, which will ultimately be refl
 
   The initial difficulty of test net mining is based on the participation of ordinary computer, which can be adjusted automatically with the increase of hashrate.
 
+#### Special Note
+
+The SPECTRE protocol used in Qitmeer is a BlockDAG protocol that can achieve speedy confirmation, even can achieve second-level confirmation. The 120 seconds block time given above is relatively conservative. During Qitmeer's test network, in order to explore the performance limit of BlockDAG network, it is not excluded that some conditional parameters will be changed, which may have block time adjustment. In order to maintain the stability of the currency supply rate, if the block time is adjusted, the block reward will be adjusted accordingly to ensure that the total amount of currency supply per day is constant.
+
+The following table will show possible adjustment targets for block time and corresponding block rewards:
+
+| block time t | block reward r |
+| --------- | ---------- |
+| 120s | 520 |
+| 60s  | 260 |
+| 30s  | 130 |
+| 15s  | 65  |
+
+
 ### Termination Conditions of Test Network
 
 With the steady running of Qitmeer test network, when some of the following conditions are met, the test network will be terminated and Qitmeer main network will be started. 
@@ -199,3 +224,4 @@ With the steady running of Qitmeer test network, when some of the following cond
 - 2019/08/30  v1.06 : modify config
 - 2019/09/07  v1.07 : update config
 - 2019/09/07  v1.08 : update config
+- 2019/09/26  v1.09 : update definition of β & add note of block time adjustment
