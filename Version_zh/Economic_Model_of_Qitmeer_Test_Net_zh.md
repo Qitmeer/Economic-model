@@ -229,4 +229,4 @@ v = (v<sub>1</sub> + v<sub>2</sub> + ⋯ + v<sub>i</sub>) / i 。
 - 2019/09/07  v1.07 : update config
 - 2019/09/07  v1.08 : update config
 - 2019/09/24  v1.09 : update definition of β
-- 2019/09/24  v1.09 : add note of block time adjustment
+- 2019/09/26  v1.09 : add note of block time adjustment
