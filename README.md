@@ -31,7 +31,7 @@ The Economic model research for Qitmeer (HalalChain to Qitmeer).
   
   - [*Blockchain Governance: Programming Our Future](./articles/Blockchain_Governance_Programming_Our_Future.md)
  
- 
+  - [区块链网络需要一个怎样的组织形式?](./articles/区块链网络需要一个怎样的组织形式.md)
   
 
 - Related research discussion in [issues](https://github.com/HalalChain/Economic-model/issues)
