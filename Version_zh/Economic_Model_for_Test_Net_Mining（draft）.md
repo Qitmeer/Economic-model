@@ -64,14 +64,14 @@ A、B、C 需由基金会进行资产清算后给出具体数量，A + B + C = 1
 - HLC 销毁上限：B
 - p-meer 产出上限：B
 
-![model](../image/hlc-pmeer-01.jpg)
+![model](../image/others/hlc-pmeer-01.jpg)
 
 设在某一时刻 HLC 数量为 X， p-meer 数量为 Y，则 X + Y = 10亿。则：0 ≤ Y ≤ B, A+C ≤ X ≤ 10亿。 
 
 
 ### p-meer 产量扩展模型 （draft 0.1）
 
-![](../image/hlc-pmeer-02.jpg)
+![](../image/others/hlc-pmeer-02.jpg)
 
 在该模型中 p-meer 产出总量将超过 B，假设超出的部分为 P。
 
@@ -117,11 +117,11 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
  
 定义映射比 f：单个token映射得meer数，假定hlc销毁全部来源于B，那么hlc和p-meer映射同权，即
 
-![](../image/f.png)
+![](../image/others/f.png)
 
 若p-meer产量 Y=B=2.5亿，且销毁部分全部来源于B，则
 
-![](../image/f-0.png)  
+![](../image/others/f-0.png)  
 
 #### 基于p-meer产量扩展的模型的映射 （draft 0.2）
 
@@ -137,7 +137,7 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
 
   - p-meer 的映射权重为 Y/(X+Y) = Y/10; 其映射比为：
   
-    ![](../image/f_Y1.png)
+    ![](../image/others/f_Y1.png)
     
     需要注意的是,理论上销毁了P亿的HLC，就要产生出P亿p-meer出来，但实践中可能会因为其他终止条件导致p-meer实际产生的数量可能小于P，则以实际数量及权重计算。
   
@@ -147,7 +147,7 @@ P 具有积极贡献，扩展了p-meer的可产量。最终也会导致整体在
   
   - 剩余未参与销毁的HLC，即 X，映射权重为 1 - Y/10 - P/10 = (10-Y-P)/10；其映射比为：
     
-    ![](../image/f_X1.png) 
+    ![](../image/others/f_X1.png) 
     
     若pmeer实际产量等于P，则X部分映射权重为(X-P)/10。
      

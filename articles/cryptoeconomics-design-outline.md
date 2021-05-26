@@ -128,7 +128,7 @@ In the current block chain design, the vitality of the network mainly depends on
 
 [Carlsten et al.][Carlsten] show that in the absence of inflation, rational Bitcoin miners are no longer incentivized to mine on the longest chain.
 
-![ ](/image/Figure-1.png)
+![](../image/others/Figure-1.png)
 
 When choosing between forks, miners are incentivized to adopt one with fewer transactions in the final block, since such forks leave more transaction fees for the next miner. By exploiting this observation, selfish miners can convince other miners to build on side chains. This is the incentive incompatibility result from current fee mechanism.
 
@@ -139,7 +139,8 @@ zh-v：
 
 完全依靠交易手续费作为激励的网络会存在一个潜在的威胁：激励不相容。Carlsten等人表明在没有通货膨胀的情况下，理性的比特币矿商不再被激励在最长的链上开采。
 
-![](/image/Figure-1.png)
+![](../image/others/Figure-1.png)
+
 
 当需要在分叉之间做出选择时，矿工会被激励去采用最终区块中包含了更少的交易的分叉，因为这样的分叉会留取更多的交易费用给下一个矿工。利用这样的论断，自私挖矿者可以说服其他矿工建立侧链。这便是现行收费机制导致的激励不相容性。
 
