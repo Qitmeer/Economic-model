@@ -1,5 +1,5 @@
 title: Economics of Qitmeer Umayyad Network  
-Status: v1.0
+Status: v1.01
 
 
 # Economics of Qitmeer Umayyad Network
@@ -52,7 +52,9 @@ where u and v are the market prices of HLC and Pmeer, respectively; X is the tot
 
 Since the market state at any single moment is not representative of the overall level of the HLC and Pmeer games, we need to average the market data from one game stage to determine the value of β. First, we will determine the average price of HLC and Pmeer based on their daily opening price and closing price. Then, we will determine the final value of β by taking the average of the prices over the statistical period of the game data.
 
-(Determined values of β will be given at the end of the statistical period and the data statistics are available at https://activity.qitmeer.io/)
+![](../image/Umayyad/game-price-en.png)
+
+We calculated the data for 90 days of the game period and came up with the final results: the average price of HLC is about 0.00661214 USDT, the average price of Pmeer is about 0.01850104 USDT, and the final value of β is 6.40471626.
 
 ### 2.3. Mapping ratio of HLC(unburned) and Pmeer
 
@@ -66,12 +68,13 @@ The calculation formula of HLC mapping ratio f<sub>X</sub> is as follows:
 
 ![](../image/Umayyad/fx.png)
 
-Where P is the total amount of HLC burned and N is the total amount of base currency in the Qitmeer main network.
+i.e., one HLC can swap 0.01617033 Meer. Where P is the total amount of HLC burned and N is the total amount of base currency in the Qitmeer main network.
 
 The calculation formula of Pmeer mapping ratio f<sub>Y</sub> is as follows:
 
 ![](../image/Umayyad/fy.png)
 
+i.e., one Pmeer can swap 0.10356637 Meer.
 
 ## 3. Block Reward 
 
@@ -85,7 +88,7 @@ In the development of the Internet, there is a famous Metcalfe's Law, which is t
 
 In a blockchain network, the most important and fundamental node is the full node that runs a complete blockchain ledger. Full nodes are always synchronized with all blockchain data, can independently verify all transactions on the blockchain and update data in real time, and are responsible for broadcasting and verifying blockchain transactions in the blockchain decentralized ledger. The number of full nodes is directly related to the security of the network and the strength of consensus. In blockchains such as Bitcoin, miners are the primary full node runners. However, with mining becoming more and more centralized in pool mining, the individual miners do not run a full node anymore, and if a single group of miners remains the sole beneficiary of these "inflation taxes" (newly minted tokens allocated in the form of block rewards), it will not fully exploit the incentive of block rewards to maintain network security and stimulate network development, and will directly affect the scale of network development.
 
-Bitcoin, the leader in the blockchain world, has been developing for ten years, and its hashrate of the whole network has grown almost exponentially in recent years, gaining wide recognition in the world, but the number of full nodes it currently has is only about 10,000 (https://bitnodes.io/). Other blockchain networks have even fewer full nodes. One of the reasons for this is the concentration of hashrate in mining pools, where most miners no longer run full nodes, while miners are the only incentivized ones in the network. Another reason is that there is no economic incentive for full nodes to meet the growing demand of the network; it costs a certain amount of money to run a full node, and as the block data grows, the required storage space will become larger and larger, and the maintenance cost of full nodes will become higher and higher, which is not only unfriendly to building commercial applications on the blockchain, but also will inhibit the growth of the number of full nodes and even it will cause the loss of full nodes at a later stage.
+Bitcoin, the leader in the blockchain world, has been developing for ten years, and its hashrate of the whole network has grown almost exponentially in recent years, gaining wide recognition in the world, but the number of full nodes it currently has is only about 10,000 (https://bitnodes.io). Other blockchain networks have even fewer full nodes. One of the reasons for this is the concentration of hashrate in mining pools, where most miners no longer run full nodes, while miners are the only incentivized ones in the network. Another reason is that there is no economic incentive for full nodes to meet the growing demand of the network; it costs a certain amount of money to run a full node, and as the block data grows, the required storage space will become larger and larger, and the maintenance cost of full nodes will become higher and higher, which is not only unfriendly to building commercial applications on the blockchain, but also will inhibit the growth of the number of full nodes and even it will cause the loss of full nodes at a later stage.
 
 If hashrate is the first layer of defense in a PoW network, then an ecological network of full nodes is the second layer of defense, and Qitmeer, a PoW network for Inclusive Finance, was designed with the idea that miners should not be the only beneficiaries of block rewards. There is no doubt that we need the hashrate provided by miners to ensure the security of the ledger, but we also need a large enough number of full nodes to improve the ease of use of the network and hopefully to incentivize more people to build an ecosystem on this network to scale it up. We believe that having a large enough base of full nodes is the foundation for breeding more ecosystems and businesses. Therefore, incentive for full nodes will be another important task for Qitmeer block rewards.
 
