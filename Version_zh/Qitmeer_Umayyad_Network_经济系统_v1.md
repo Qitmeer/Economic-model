@@ -21,7 +21,7 @@ Qitmeer 主网的本币命名为 Meer，最小单位为 Qit，1Meer = 100000000 
 
 进入 Umayyad 时期的 Qitmeer，象征着网络正逐渐走向成熟稳定，但这完全得益于 Mecca 时期和 Medina 时期所奠定的基础。这两个时期的价值是不容忽视的，因此，在 Umayyad 网络启动时，需要首先创世产生一部分 Meer 用于继承从 Mecca 时期和 Medina 时期转移而来的价值。
 
-Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照一定的比例转换成为主网代币（meer）。根据 Qitmeer 测试网经济模型的规则，整个测试网在 Qitmeer Network 中所占的比例为 20.0287911%，这是一个 Medina 网络初期通过民主决策得来的数值。也就是说，在 Umayyad 创世时，需要先创世出 20.0287911% 的 Meer 用于给 HLC 和 Pmeer 映射。即，用于给 HLC 和 Pmeer 兑换的 Meer 总量为：N<sub>0</sub> = 20.0287911%×210240000 = 42108530.40864 Meer。
+Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照一定的比例转换成为主网代币（meer）。根据 Qitmeer Medina 网络经济模型的规则，整个Medina 网络在 Qitmeer Network 中所占的比例为 20.0287911%，这是一个 Medina 网络初期通过民主决策得来的数值。也就是说，在 Umayyad 创世时，需要先创世出 20.0287911% 的 Meer 用于给 HLC 和 Pmeer 映射。即，用于给 HLC 和 Pmeer 兑换的 Meer 总量为：N<sub>0</sub> = 20.0287911%×210240000 = 42108530.40864 Meer。
 
 此外，将同时创世出 3% 作为对创始团队的激励。因此，Umayyad 时期，Qitmeer Network 的创世总量为：N<sub>g</sub> = N<sub>0</sub> + 3%N = 48415730.40864 Meer。
 
@@ -29,9 +29,9 @@ Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照�
 
 ### 2.1. 已销毁的 HLC（B-HLC）的兑换比例
 
-在 Qitmeer 的发展史上，Medina 时期是 Qitmeer 从区块链精神觉醒到逐渐走向成熟的重要过渡，是 Qitmeer 成为一条具有自主标准的公有链的重要过程。而 HLC Token 的销毁事件则是 Medina 网络开启的重要标志与准备，这也是 Qitmeer Network 用户进行的第一次重大的民主决策。它决定了 Medina 网络 PoW 挖矿的可产出总量上限，也决定了整个测试网在 Qitmeer Network 中所占的比重。
+在 Qitmeer 的发展史上，Medina 时期是 Qitmeer 从区块链精神觉醒到逐渐走向成熟的重要过渡，是 Qitmeer 成为一条具有自主标准的公有链的重要过程。而 HLC Token 的销毁事件则是 Medina 网络开启的重要标志与准备，这也是 Qitmeer Network 用户进行的第一次重大的民主决策。它决定了 Medina 网络 PoW 挖矿的可产出总量上限，也决定了整个Medina 网络在 Qitmeer Network 中所占的比重。
 
-在这次销毁计划中，HLC 持币用户总计销毁了 200287911 枚 HLC Token，占比 20.0287911%。因此，根据测试网经济模型的规定，销毁的 HLC（B-HLC）可以优先确定映射比例，将优先分配映射创世总量的 20.0287911% 用于给销毁的 HLC 做兑换，以弥补其主动放弃流动性而为 Medina 网络做出的贡献。
+在这次销毁计划中，HLC 持币用户总计销毁了 200287911 枚 HLC Token，占比 20.0287911%。因此，根据Medina 网络经济模型的规定，销毁的 HLC（B-HLC）可以优先确定映射比例，将优先分配映射创世总量的 20.0287911% 用于给销毁的 HLC 做兑换，以弥补其主动放弃流动性而为 Medina 网络做出的贡献。
 
 因此，这 200287911 枚的 B-HLC 在 Umayyad 网络中的映射总量为 20.0287911% N<sub>0</sub>，约 8433829.59082648 Meer。相应的，单个 Token 的映射比例为 f<sub>P</sub> = 0.04210853，即一个 B-HLC 可以兑换 0.04210853 个 Meer。
 
@@ -64,7 +64,7 @@ Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照�
 
 HLC 和 Pmeer 分别作为 Mecca 时期和 Medina 时期的价值载体，它们共存于 Medina 时期，二者之间存在着自由的竞争博弈关系，并且在 Medina 时期结束时，将同时映射到 Umayyad 网络。由于二者属于不同的价值载体，因此不能等同视之，在进行映射分配时，二者将通过自由市场的博弈来确定分配时的权重。
 
-根据 Qitmeer 测试网 Token 总数量不变的原则，Medina 网络的 Pmeer 可产出上限是由 HLC 销毁的总量确定的。在 Medina 网络启动之前，共销毁了 2.00287911亿 HLC，因此 Pmeer 的总量是 2.00287911亿，而剩余未销毁的 HLC 总量是 7.99712089亿。
+根据 Qitmeer Medina 网络 Token 总数量不变的原则，Medina 网络的 Pmeer 可产出上限是由 HLC 销毁的总量确定的。在 Medina 网络启动之前，共销毁了 2.00287911亿 HLC，因此 Pmeer 的总量是 2.00287911亿，而剩余未销毁的 HLC 总量是 7.99712089亿。
 
 在 B-HLC（已销毁的HLC）优先分配掉映射创世总量的 20.0287911% 用于映射后，剩余的 79.9712089% 将用于给 HLC 和 Pmeer 做映射，即二者兑换 Meer 的总数量为 79.9712089% N<sub>0</sub> =  Meer。二者的映射比例将随着双币博弈参数 β 的确定而最终得以确定。
 
