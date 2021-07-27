@@ -21,7 +21,7 @@ Qitmeer 主网的本币命名为 Meer，最小单位为 Qit，1Meer = 100000000 
 
 进入 Umayyad 时期的 Qitmeer，象征着网络正逐渐走向成熟稳定，但这完全得益于 Mecca 时期和 Medina 时期所奠定的基础。这两个时期的价值是不容忽视的，因此，在 Umayyad 网络启动时，需要首先创世产生一部分 Meer 用于继承从 Mecca 时期和 Medina 时期转移而来的价值。
 
-Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照一定的比例转换成为主网代币（meer）。根据 Qitmeer Medina 网络经济模型的规则，整个Medina 网络在 Qitmeer Network 中所占的比例为 20.0287911%，这是一个 Medina 网络初期通过民主决策得来的数值。也就是说，在 Umayyad 创世时，需要先创世出 20.0287911% 的 Meer 用于给 HLC 和 Pmeer 映射。即，用于给 HLC 和 Pmeer 兑换的 Meer 总量为：N<sub>0</sub> = 20.0287911%×210240000 = 42108530.40864 Meer。
+Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照一定的比例转换成为主网代币（meer）。根据 Qitmeer Medina 网络经济模型的规则，整个 Medina 网络在 Qitmeer Network 中所占的比例为 20.0287911%，这是一个 Medina 网络初期通过民主决策得来的数值。也就是说，在 Umayyad 创世时，需要先创世出 20.0287911% 的 Meer 用于给 HLC 和 Pmeer 映射。即，用于给 HLC 和 Pmeer 兑换的 Meer 总量为：N<sub>0</sub> = 20.0287911%×210240000 = 42108530.40864 Meer。
 
 此外，将同时创世出 3% 作为对创始团队的激励。因此，Umayyad 时期，Qitmeer Network 的创世总量为：N<sub>g</sub> = N<sub>0</sub> + 3%N = 48415730.40864 Meer。
 
@@ -29,9 +29,9 @@ Mecca 时期的代币（HLC）和 Medina 时期的代币（Pmeer）都将按照�
 
 ### 2.1. 已销毁的 HLC（B-HLC）的兑换比例
 
-在 Qitmeer 的发展史上，Medina 时期是 Qitmeer 从区块链精神觉醒到逐渐走向成熟的重要过渡，是 Qitmeer 成为一条具有自主标准的公有链的重要过程。而 HLC Token 的销毁事件则是 Medina 网络开启的重要标志与准备，这也是 Qitmeer Network 用户进行的第一次重大的民主决策。它决定了 Medina 网络 PoW 挖矿的可产出总量上限，也决定了整个Medina 网络在 Qitmeer Network 中所占的比重。
+在 Qitmeer 的发展史上，Medina 时期是 Qitmeer 从区块链精神觉醒到逐渐走向成熟的重要过渡，是 Qitmeer 成为一条具有自主标准的公有链的重要过程。而 HLC Token 的销毁事件则是 Medina 网络开启的重要标志与准备，这也是 Qitmeer Network 用户进行的第一次重大的民主决策。它决定了 Medina 网络 PoW 挖矿的可产出总量上限，也决定了整个 Medina 网络在 Qitmeer Network 中所占的比重。
 
-在这次销毁计划中，HLC 持币用户总计销毁了 200287911 枚 HLC Token，占比 20.0287911%。因此，根据Medina 网络经济模型的规定，销毁的 HLC（B-HLC）可以优先确定映射比例，将优先分配映射创世总量的 20.0287911% 用于给销毁的 HLC 做兑换，以弥补其主动放弃流动性而为 Medina 网络做出的贡献。
+在这次销毁计划中，HLC 持币用户总计销毁了 200287911 枚 HLC Token，占比 20.0287911%。因此，根据 Medina 网络经济模型的规定，销毁的 HLC（B-HLC）可以优先确定映射比例，将优先分配映射创世总量的 20.0287911% 用于给销毁的 HLC 做兑换，以弥补其主动放弃流动性而为 Medina 网络做出的贡献。
 
 因此，这 200287911 枚的 B-HLC 在 Umayyad 网络中的映射总量为 20.0287911% N<sub>0</sub>，约 8433829.59082648 Meer。相应的，单个 Token 的映射比例为 f<sub>P</sub> = 0.04210853，即一个 B-HLC 可以兑换 0.04210853 个 Meer。
 
@@ -118,7 +118,7 @@ Pmeer 映射比例 f<sub>Y</sub> 计算公式为：
 
 在 Qitmeer 的区块奖励计划设计中，我们将 50% 的区块奖励用于对矿工的激励，作为其提供硬件设备维护网络的回报；其次，将其余 50% 的区块奖励作为主节点质押的收益。
 
-在 Umayyad 时期，Qitmeer 主网平均出块时间设定为 15 秒，每个块的初始区块奖励设定为 10 Meer。其中 5 Meer 用于 PoW 矿工激励，5 Meer 用于主节点激励。
+在 Umayyad 时期，Qitmeer 主网平均出块时间设定为 30 秒，每个块的初始区块奖励设定为 20 Meer。其中 10 Meer 用于 PoW 矿工激励，10 Meer 用于主节点激励。
 
 按照这样的设定，Qitmeer 的每日初始发行量约为 57600 Meer，其中 28800 Meer 直接分配给矿工，28800 Meer 发放到主节点质押激励池。由于 Qitmeer 的 MeerDAG 协议支持并发出块，因此每日的实际铸币量将大于 57600 Meer，平均并发率量约5%。
 
@@ -131,7 +131,7 @@ Pmeer 映射比例 f<sub>Y</sub> 计算公式为：
 
 对于主节点为网络提供的服务，Qitmeer Network 为其设定了奖励，在 Qitmeer 的区块奖励中，将分出 50% 用来奖励主节点。因此，成为 Qitmeer 的主节点，可以获得一定的经济收益，能够积累更多的代币资产，可以有效抵抗代币持有的通胀损失。
 
-Qitmeer 主节点以 Meer 代币作为保证金，保证自己的忠诚，作为回报，主节点持有人凭借主节点提供的服务将定期获得奖励。按照出块时间 15s、区块奖励为 10 Meer 的设定，每日至少有 28800 Meer 可用于主节点奖励，假设有一万个主节点，每个节点每日将有 2.88 Meer 的收益。
+Qitmeer 主节点以 Meer 代币作为保证金，保证自己的忠诚，作为回报，主节点持有人凭借主节点提供的服务将定期获得奖励。按照出块时间 30s、区块奖励为 20 Meer 的设定，每日至少有 28800 Meer 可用于主节点奖励，假设有一万个主节点，每个节点每日将有 2.88 Meer 的收益。
 
 成为 Qitmeer 的 MasterNode，将会是你参与网络发展和改进最重要也最直接的方式。主节点组成的生态网络将会是 Qitmeer Network 最重要的的项目管理层，对 Qitmeer 的未来发展进行投票决策，包括 Qitmeer 改进提案的实施，生态预算的使用等。
 

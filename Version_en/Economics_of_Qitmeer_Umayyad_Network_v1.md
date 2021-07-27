@@ -115,7 +115,7 @@ The preceding analysis of the economic significance of block reward provides som
 
 In the design of Qitmeer Block Reward Schedule, we use 50% of the block reward as an incentive for miners in return for providing hardware equipment to maintain the network, and secondly, the remaining 50% of the block reward is used as revenue for the staking of master nodes.
 
-During the Umayyad era, the average block time of Qitmeer main network is set to 15 seconds, and the initial block reward for each block is set to 10 Meer. 5 Meer is used for the PoW miner incentive and 5 Meer for the master node incentive.
+During the Umayyad era, the average block time of Qitmeer main network is set to 30 seconds, and the initial block reward for each block is set to 20 Meer. 10 Meer is used for the PoW miner incentive and 10 Meer for the master node incentive.
 
 According to this setting, the initial daily issuance of Qitmeer is about 57,600 Meer, of which 28,800 Meer is directly allocated to miners and 28,800 Meer is released to the master node staking incentive pool. Since the MeerDAG protocol of Qitmeer supports concurrent blocks, the actual daily minting volume will be larger than 57,600 Meer, with an average concurrency of about 5%.
 
@@ -128,7 +128,7 @@ If we regard PoW consensus as the first layer of Qitmeer Network, then the Maste
 
 The Qitmeer Network sets rewards for master nodes for the services they provide to the network, 50% of Qitmeer's block reward will be allocated to reward the master nodes. Therefore, being a MasterNode of Qitmeer provides a certain amount of financial gain and enables the accumulation of more token assets, which can effectively resist the inflationary loss of token holdings.
 
-Qitmeer master nodes use Meer tokens as a deposit to guarantee their loyalty, and in return, MasterNode holders will be regularly rewarded for the services provided by master nodes. According to the setting of block time of 15s and block reward of 10 Meer, at least 28800 Meer can be used for MasterNode reward every day. Assuming that there are 10000 master nodes, each node will have 2.88 Meer revenue every day.
+Qitmeer master nodes use Meer tokens as a deposit to guarantee their loyalty, and in return, MasterNode holders will be regularly rewarded for the services provided by master nodes. According to the setting of block time of 30s and block reward of 20 Meer, at least 28800 Meer can be used for MasterNode reward every day. Assuming that there are 10000 master nodes, each node will have 2.88 Meer revenue every day.
 
 Becoming a MasterNode of Qitmeer will be the most important and direct way for you to participate in the development and improvement of the network. The MasterNode will be the most important project management of the Qitmeer Network and will vote on the future development of Qitmeer, including the implementation of Qitmeer improvement proposals and the use of the ecological budget.
 
