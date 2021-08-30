@@ -1,0 +1,13 @@
+# Qitmeer Umayyad Network Master Node Experience Plan
+
+In the Qitmeer Umayyad network, PoW miners will no longer be the only ones incentivized by block rewards; we will introduce a "master node" role to the network to incentivize full nodes to build a large and decentralized full-node network.The PoW consensus layer plays a key role in maintaining the security of the ledger, and a full-node eco-network of master nodes will improve the ease of use and reliability of the network, not only for user trust and adoption, but also to provide additional functionality such as instant transactions, DAO, etc.
+
+Qitmeer wants to build a blockchain infrastructure network that serves financial inclusion, and hopes to attract more people to build an ecology on this network. The incentive for full nodes will allow Qitmeer to have a large base of full nodes, which will be the foundation for breeding more ecologies and businesses. The master node network, which can provide instant transaction capability, will play an important role in financial inclusion by becoming the clearing house on the Qitmeer network, which can help Qitmeer to realize more business functions, such as deposit, lending and savings, and thus build a larger ecological network.
+
+To become a master node of Qitmeer, the staking of a certain number of Meer tokens is required, which is very important to guarantee the loyalty of the master node operator and can also be seen as a deposit reserve to guarantee clearing capacity. Since the master node function of Qitmeer cannot be implemented at the early stage of Umayyad Network launch, we will launch the experience version of Qitmeer master node function first as a warm-up for the master node staking function, which will provide a practical reference for the implementation of the master node function. Qitmeer Master Node Experience provides users with a voluntary locking feature, which allows users to lock a certain number of Meer tokens at their own choice and thus receive a locking bonus.
+
+Since 50% of the block rewards in the economic system of Umayyad Network will be used for master node staking incentive, the master node staking function of Umayyad Network will be launched one year after the Genesis of the network, and the block where the master node staking function is launched will be the **critical block, and the block rewards that were used for master node staking incentive before the critical block will be used for locking rewards. In other words, before the critical block, 50% of the block rewards will be used for PoW incentives and the other 50% of the block rewards will be used for locking incentive**.
+
+
+
+
