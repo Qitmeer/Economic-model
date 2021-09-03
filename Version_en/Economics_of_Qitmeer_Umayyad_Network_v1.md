@@ -97,65 +97,65 @@ If hashrate is the first layer of defense in a PoW network, then an ecological n
 
 As the most important incentive in the development of blockchain networks, block rewards play a key role in sustaining network operations and maintaining the security of the ledger, affecting the scale and long-term stability of the network. In classic blockchain networks such as Bitcoin, miners are treated as the sole beneficiaries of block rewards, but with the emergence of mining pools, miners are more inclined to concentrate to the pools and give up solo mining, and therefore no longer establish a complete full node, which is far from the original vision of Bitcoin. Full nodes, however, are a natural requirement for decentralized networks, responsible for updating data in real time, broadcasting and verifying transactions, and keeping a complete copy of the blockchain ledger. The availability of a large and decentralized network of full nodes is fundamental to the blockchain's ability to achieve de-trust and is directly related to the security of the decentralized network and the trust and adoption of users.
 
-In Qitmeer Network, we will face the same problem as Bitcoin, there is no way to avoid the centralization of hashrate, but how to make the network have a large and decentralized full node network is what we have to think about, which is not only the basis of a decentralized network, but also the need and guarantee of Qitmeer to support Inclusive Financial. Therefore, in the Qitmeer system design, miners will not only be the only beneficiaries of the block rewards, we will introduce a role for the network called "master node". In other words, we will provide economic incentives to full nodes to build a large and decentralized ecological network of full nodes.
+In Qitmeer Network, we will face the same problem as Bitcoin, there is no way to avoid the centralization of hashrate, but how to make the network have a large and decentralized full node network is what we have to think about, which is not only the basis of a decentralized network, but also the need and guarantee of Qitmeer to support Inclusive Financial. Therefore, in the Qitmeer system design, miners will not only be the only beneficiaries of the block rewards, we will introduce a role for the network called "MainNode". In other words, we will provide economic incentives to full nodes to build a large and decentralized ecological network of full nodes.
 
-Master nodes are a special class of nodes running full nodes that will promise real-time online services and guarantee loyalty to the network by staking a certain amount of assets, while they will receive rewards from the block.
+MainNodes are a special class of nodes running full nodes that will promise real-time online services and guarantee loyalty to the network by staking a certain amount of assets, while they will receive rewards from the block.
 
-Of course, the introduction of master nodes is not just about increasing the number of full nodes; master nodes are like a second layer of Qitmeer Network that can support instant micro-payment needs in Qitmeer's payment scenarios by running special protocols to provide users with InstantSend capabilities. This process is similar to the Lightning Network. InstantSend is of course an optional item. In addition to this, master nodes have an important function, which is to participate in the voting and decision making of the network. The master nodes will be the most important Decentralized Autonomous Organization in the Qitmeer Network and will be the decision makers in the development of the network by participating in voting on proposals for network improvements, each master node will have one vote for each proposal (agree/disagree/abstain).
+Of course, the introduction of MainNodes is not just about increasing the number of full nodes; MainNodes are like a second layer of Qitmeer Network that can support instant micro-payment needs in Qitmeer's payment scenarios by running special protocols to provide users with InstantSend capabilities. This process is similar to the Lightning Network. InstantSend is of course an optional item. In addition to this, MainNodes have an important function, which is to participate in the voting and decision making of the network. The MainNodes will be the most important Decentralized Autonomous Organization in the Qitmeer Network and will be the decision makers in the development of the network by participating in voting on proposals for network improvements, each MainNode will have one vote for each proposal (agree/disagree/abstain).
 
 
 
 Secondly, in order to encourage and support users to build the ecosystem on the Qitmeer Network, the network will set up a financial budget for ecological construction, which will be used to give back to the nodes that have made great contributions to the network ecological construction. We hope that more developers will adopt the Qitmeer Network to build an ecosystem, and the ecological construction budget will give them support and reward.
 
-Therefore, the block reward of Qitmeer Network will be used in three places: the incentive for miners, the incentive for the master node, and the financial budget for ecological construction.
+Therefore, the block reward of Qitmeer Network will be used in three places: the incentive for miners, the incentive for the MainNode, and the financial budget for ecological construction.
 
 ### 3.3. Qitmeer Block Reward Schedule 
 
 The preceding analysis of the economic significance of block reward provides some guidance on how to design a more desirable block reward schedule. A well-chosen block reward schedule should ensure the long-term economic viability of the payment network, including sufficient incentives for users to adopt, participate in performing network functions, and expand the network ecosystem.
 
-In the design of Qitmeer Block Reward Schedule, we use 50% of the block reward as an incentive for miners in return for providing hardware equipment to maintain the network, and secondly, the remaining 50% of the block reward is used as revenue for the staking of master nodes.
+In the design of Qitmeer Block Reward Schedule, we use 50% of the block reward as an incentive for miners in return for providing hardware equipment to maintain the network, and secondly, the remaining 50% of the block reward is used as revenue for the staking of MainNodes.
 
-During the Umayyad era, the average block time of Qitmeer main network is set to 30 seconds, and the initial block reward for each block is set to 20 Meer. 10 Meer is used for the PoW miner incentive and 10 Meer for the master node incentive.
+During the Umayyad era, the average block time of Qitmeer main network is set to 30 seconds, and the initial block reward for each block is set to 20 Meer. 10 Meer is used for the PoW miner incentive and 10 Meer for the MainNode incentive.
 
-According to this setting, the initial daily issuance of Qitmeer is about 57,600 Meer, of which 28,800 Meer is directly allocated to miners and 28,800 Meer is released to the master node staking incentive pool. Since the MeerDAG protocol of Qitmeer supports concurrent blocks, the actual daily minting volume will be larger than 57,600 Meer, with an average concurrency of about 5%.
+According to this setting, the initial daily issuance of Qitmeer is about 57,600 Meer, of which 28,800 Meer is directly allocated to miners and 28,800 Meer is released to the MainNode staking incentive pool. Since the MeerDAG protocol of Qitmeer supports concurrent blocks, the actual daily minting volume will be larger than 57,600 Meer, with an average concurrency of about 5%.
 
 
-### 3.4 Master Node of Qitmeer
+### 3.4 MainNode of Qitmeer
 
-#### 3.4.1 Why become a master node of Qitmeer?
+#### 3.4.1 Why become a MainNode of Qitmeer?
 
-If we regard PoW consensus as the first layer of Qitmeer Network, then the MasterNodes of Qitmeer is the second layer built on top of the first layer network. The second layer network can provide additional services, such as InstantSend, which improves the efficiency of transactions, PrivateSend, which guarantees financial privacy, and Decentralized Autonomous Organizations (DAOs). The first layer of the network validates the newly generated blocks, provides power for the whole blockchain to move forward smoothly, and ensures that the network can provide basic functionality and security. The second layer, the MasterNode network, provides additional functionality to the whole blockchain, thus improving the ease of use and reliability of the system.
+If we regard PoW consensus as the first layer of Qitmeer Network, then the MainNodes of Qitmeer is just like the second layer built on top of the first layer network. The second layer network can provide additional services, such as InstantSend, which improves the efficiency of transactions, PrivateSend, which guarantees financial privacy, and Decentralized Autonomous Organizations (DAOs). The first layer of the network validates the newly generated blocks, provides power for the whole blockchain to move forward smoothly, and ensures that the network can provide basic functionality and security. The second layer, the MainNode network, provides additional functionality to the whole blockchain, thus improving the ease of use and reliability of the system.
 
-The Qitmeer Network sets rewards for master nodes for the services they provide to the network, 50% of Qitmeer's block reward will be allocated to reward the master nodes. Therefore, being a MasterNode of Qitmeer provides a certain amount of financial gain and enables the accumulation of more token assets, which can effectively resist the inflationary loss of token holdings.
+The Qitmeer Network sets rewards for MainNodes for the services they provide to the network, 50% of Qitmeer's block reward will be allocated to reward the MainNodes. Therefore, being a MainNode of Qitmeer provides a certain amount of financial gain and enables the accumulation of more token assets, which can effectively resist the inflationary loss of token holdings.
 
-Qitmeer master nodes use Meer tokens as a deposit to guarantee their loyalty, and in return, MasterNode holders will be regularly rewarded for the services provided by master nodes. According to the setting of block time of 30s and block reward of 20 Meer, at least 28800 Meer can be used for MasterNode reward every day. Assuming that there are 10000 master nodes, each node will have 2.88 Meer revenue every day.
+Qitmeer MainNodes use Meer tokens as a deposit to guarantee their loyalty, and in return, MainNode holders will be regularly rewarded for the services provided by MainNodes. According to the setting of block time of 30s and block reward of 20 Meer, at least 28800 Meer can be used for MainNode reward every day. Assuming that there are 10000 MainNodes, each node will have 2.88 Meer revenue every day.
 
-Becoming a MasterNode of Qitmeer will be the most important and direct way for you to participate in the development and improvement of the network. The MasterNode will be the most important project management of the Qitmeer Network and will vote on the future development of Qitmeer, including the implementation of Qitmeer improvement proposals and the use of the ecological budget.
+Becoming a MainNode of Qitmeer will be the most important and direct way for you to participate in the development and improvement of the network. The MainNode will be the most important project management of the Qitmeer Network and will vote on the future development of Qitmeer, including the implementation of Qitmeer improvement proposals and the use of the ecological budget.
 
-#### 3.4.2 how to be a master node of Qitmeer?
+#### 3.4.2 how to be a MainNode of Qitmeer?
 
-To become a MasterNode of Qitmeer, certain conditions need to be met.
+To become a MainNode of Qitmeer, certain conditions need to be met.
 
 1. A computer or server with acceptable performance is equipped with public IP. Of course, you can't shut down it often
 
-   Since MasterNode needs to  provide services for the network, it needs to be always on-line, and off-line is not profitable. In addition, certain hardware configuration is also required, but it is not too demanding and an average home computer can do the job. To ensure that the MasterNode is always connected to the network, it is important to have a stable public IP. In fact, renting a VPS server to run masternode is the simplest.
+   Since MainNode needs to  provide services for the network, it needs to be always on-line, and off-line is not profitable. In addition, certain hardware configuration is also required, but it is not too demanding and an average home computer can do the job. To ensure that the MainNode is always connected to the network, it is important to have a stable public IP. In fact, renting a VPS server to run MainNnode is the simplest.
 
 2. A certain number of Meer tokens
 
-   To run a MasterNode, you must hold a specified number of Meer tokens as proof of your loyalty to Qitmeer Network, and you need to deposit a certain number of tokens to a separate address, which will be locked when running the MasterNode.
+   To run a MainNode, you must hold a specified number of Meer tokens as proof of your loyalty to Qitmeer Network, and you need to deposit a certain number of tokens to a separate address, which will be locked when running the MainNode.
 
 3. Simple technical knowledge
 
-   To run a MasterNode, you need to prepare a configuration file and write the necessary parameters in it. In addition, you need to have a little knowledge of Linux server operation, but this is only very simple computer basics.
+   To run a MainNode, you need to prepare a configuration file and write the necessary parameters in it. In addition, you need to have a little knowledge of Linux server operation, but this is only very simple computer basics.
 
 
-#### 3.4.3 Qitmeer MasterNode Reward Schedule 
+#### 3.4.3 Qitmeer MainNode Reward Schedule 
 
-Becoming a MasterNode of Qitmeer by staking a certain amount of Meer margin, ensure stable online service for Qitmeer Network, and will receive block rewards periodically.
+Becoming a MainNode of Qitmeer by staking a certain amount of Meer margin, ensure stable online service for Qitmeer Network, and will receive block rewards periodically.
 
-For every new block generated by Qitmeer Network, 50% of the block reward will be accumulated to the MasterNode reward pool, and Qitmeer's MasterNode system will pay out the reward periodically based on the effective online duration of MasterNodes.
+For every new block generated by Qitmeer Network, 50% of the block reward will be accumulated to the MainNode reward pool, and Qitmeer's MainNode system will pay out the reward periodically based on the effective online duration of MainNodes.
 
-Since the MasterNode system is not expected to be completed until a year after the Umayyad Network goes online, more details will be announced in the later version.
+Since the MainNode system is not expected to be completed until a year after the Umayyad Network goes online, more details will be announced in the later version.
 
 
 
@@ -163,4 +163,4 @@ Since the MasterNode system is not expected to be completed until a year after t
 
 ### Annex 1:[Qitmeer Umayyad Network Mapping & Release Rules](Qitmeer_Umayyad_Network_Mapping&Release_Rules.md)
 
-### Annex 2:[Qitmeer Umayyad Network Master Node Experience Plan](Qitmeer_Umayyad_Network_Master_Node_Experience_Plan.md)
+### Annex 2:[Qitmeer Umayyad Network Main Node Experience Plan](Qitmeer_Umayyad_Network_MainNode_Experience_Plan.md)

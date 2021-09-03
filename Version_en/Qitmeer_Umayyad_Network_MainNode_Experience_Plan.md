@@ -1,4 +1,4 @@
-# Qitmeer Umayyad Network Master Node Experience Plan
+# Qitmeer Umayyad Network MainNode Experience Plan
 
 In the Qitmeer Umayyad network, PoW miners will no longer be the only ones incentivized by block rewards; we will introduce a "master node" role to the network to incentivize full nodes to build a large and decentralized full-node network.The PoW consensus layer plays a key role in maintaining the security of the ledger, and a full-node eco-network of master nodes will improve the ease of use and reliability of the network, not only for user trust and adoption, but also to provide additional functionality such as instant transactions, DAO, etc.
 

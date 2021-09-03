@@ -74,7 +74,7 @@ At the initial stage of Umayyad Network launch, a one-time Genesis will generate
 
 First of all, due to the high number of releases in linear release, from the perspective of cost control, small Meer address with small balances will not be involved in linear release and will be released in a one-time manner. **For accounts with Meer ≤ 1000, we define them as small accounts, small accounts do not participate in linear release**.
 
-Secondly, for all accounts requiring linear release, linear release will be maintained at the same rate as the PoW output rate, i.e., the total daily release is equal to the total daily PoW output, which is about 28,800 Meer.
+Secondly, for all accounts requiring linear release, the release rate will remain at a total daily release of 28,800 Meer, which is similar to the total daily production of PoW, and the annual release amount is approximately 21.71% of the total Genesis.Individual address will be released linearly on a pro-rata basis every day with such a release cycle.
 
 At a later stage, depending on the actual status of Umayyad Network development, further adjustments to the linear release rules will not be ruled out in order to increase the release rate.
 
