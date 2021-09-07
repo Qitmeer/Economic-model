@@ -163,4 +163,4 @@ Since the MainNode system is not expected to be completed until a year after the
 
 ### Annex 1:[Qitmeer Umayyad Network Mapping & Release Rules](Qitmeer_Umayyad_Network_Mapping&Release_Rules.md)
 
-### Annex 2:[Qitmeer Umayyad Network Main Node Experience Plan](Qitmeer_Umayyad_Network_MainNode_Experience_Plan.md)
+### Annex 2:[Qitmeer Umayyad Network Main Node Experience Plan](Qitmeer_Umayyad_Network_Starfire_Node_Experience_Plan.md)
