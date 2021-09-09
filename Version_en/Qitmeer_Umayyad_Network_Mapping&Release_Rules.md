@@ -6,7 +6,7 @@
 
 - Total Genesis Token Amount: mapping Genesis 20.0287911%, 42108530.40864 Meer; team incentive 3%, 6307200 Meer; the total Genesis about 48415730 Meer.
 
-- 50% of the block reward is used for PoW mining incentive, 50% for master node staking incentive.
+- 50% of the block reward is used for PoW mining incentive, 50% for staking incentive.
 
   - The block time is 30 s/block, block reward R = 20 Meer/block
 
