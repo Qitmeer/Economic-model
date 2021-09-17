@@ -1,16 +1,20 @@
 # Economic-model
 
-The Economic model research for Qitmeer (HalalChain to Qitmeer).
+The Economic model research for Qitmeer (Four era of Qitmeer).
 
-- Draft Conception of Qitmeer Economic Model:
+- Qitmeer Economic Model in different language versions:
 
   - [Version for Chinese](./Version_zh)
   
-    - [Economic Model for Test Net Mining (zh-cn)](Version_zh/Economic_Model_of_Qitmeer_Test_Net_zh.md)
+    - [Economic Model for Test Net Mining (zh)](Version_zh/Economic_Model_of_Qitmeer_Test_Net_zh.md)
+    
+    - [Qitmeer Umayyad Network 1.0 经济模型](Version_zh/Qitmeer_Umayyad_Network_1.0_经济模型.md)
     
   - [Version for English](./Version_en)
   
     - [Economic Model for Test Net Mining (en)](Version_en/Economic_Model_of_Qitmeer_Test_Net.md)
+    
+    - [Economics of Qitmeer Umayyad Network 1.0](Version_en/Economics_of_Qitmeer_Umayyad_Network_1.0.md)
     
  Download PDF documents：[releases](https://github.com/Qitmeer/Economic-model/releases)    
 
@@ -31,7 +35,7 @@ The Economic model research for Qitmeer (HalalChain to Qitmeer).
   
   - [*Blockchain Governance: Programming Our Future](./articles/Blockchain_Governance_Programming_Our_Future.md)
  
-  - [区块链网络需要一个怎样的组织形式?](./articles/区块链网络需要一个怎样的组织形式.md)
+  - [What kind of Organization is needed for a Blockchain Network?](./articles/区块链网络需要一个怎样的组织形式.md)
   
 
 - Related research discussion in [issues](https://github.com/HalalChain/Economic-model/issues)
