@@ -14,7 +14,7 @@ The Economic model research for Qitmeer (Four era of Qitmeer).
   
     - [Economic Model for Test Net Mining (en)](Version_en/Economic_Model_of_Qitmeer_Test_Net.md)
     
-    - [Economics of Qitmeer Umayyad Network (v1)](Version_en/Economics_of_Qitmeer_Umayyad_Network_v1.md)
+    - [Economics of Qitmeer Umayyad Network (v1)](Version_en/Economics_of_Qitmeer_Umayyad_Network_1.0.md)
     
  Download PDF documents：[releases](https://github.com/Qitmeer/Economic-model/releases)    
 
