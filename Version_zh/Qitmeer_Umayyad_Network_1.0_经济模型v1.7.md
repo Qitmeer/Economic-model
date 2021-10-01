@@ -1,7 +1,7 @@
-title: Qitmeer Umayyad Network 1.0 经济模型  
-Authors：yatingzhou & blocklee & yujie, Qitmeer Economic Team  
-Version: 1.7  
-September 29th, 2021  
+title: Qitmeer Umayyad Network 1.0 经济模型     
+Authors：yatingzhou & blocklee & yujie, Qitmeer Economic Team     
+Version: 1.7    
+September 29th, 2021    
 
 # Qitmeer Umayyad Network 1.0 经济模型
 
