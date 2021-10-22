@@ -1,7 +1,7 @@
 title: Economics of Qitmeer Umayyad Network 1.0      
 Authors：yatingzhou and blocklee and yujie, Qitmeer Economic Team        
-Version: 1.7       
-September 29th, 2021     
+Version: 1.71       
+October 21, 2021     
 
 # Economics of Qitmeer Umayyad Network 1.0
 
@@ -157,7 +157,7 @@ In game theory, rational individuals make choices and behaviors that are often d
 
 Therefore, we give a set of gamification settings for locking positions and their incentives based on the basic theory of non-perfect information non-cooperative dynamic games. We will set up two lockup pools, A and B, and allocate lockup incentives each period according to the lockup of each pool. The lock-up incentive received by users will consist of two parts: the basic incentive and the competitive incentive. By default, pool A is a staking pool for miners, while pool B is a staking pool for regular coin holders. The basic incentive for the current period will be equally distributed to pool A and B, and then proportionally distributed to all the current cumulative lock funds based on the amount and lock time of each.
 
-The allocation of basic incentive for each period will be set at a certain threshold, i.e. the higher the lock volume, the more incentive you will get. Pool A and pool B have the same basic incentive and the same lock threshold, only when the cumulative locking volume reaches the corresponding threshold will you get the corresponding percentage of basic incentive.
+A certain threshold will be set for the basic incentive allocation of each period, i.e., the higher the locking amount, the more incentive will be obtained. And only when the cumulative locking amount reaches the corresponding threshold, the corresponding percentage of basic incentive can be obtained.
 
 Poll A and B will compete for the winner according to the newly added locking volume in each period, and the winner will get the competition incentive in the current period. If the newly added locking volume of pool A is larger than pool B in the current period and the difference is higher than 10,000 meer, pool A will get the competitive incentive as the winner; if the newly added locking volume of pool B is larger than pool A in the current period and the difference is higher than 10,000 meer, pool B will get the competitive incentive as the winner; if the difference is less than 10,000 meer, there is no winner and the competitive incentive in the current period will be allocated to the eco-fund. The competitive incentive received by the wining locking pool will be allocated to the current period's newly added locking funds in proportion to the amount of each locking funds in this pool.
 
@@ -188,26 +188,15 @@ The lock-up incentive is divided into 12 periods, and the lock-up incentives of 
 
 The lock-up period lasts until the 1,080,000th block of the main height, after which there will be no more lock-up rewards.
 
-At the end of each period, the profit of the locking funds for that period will be liquidated and vouchers will be generated to be used as the basis for cashing out at the Genesis of Umayyad 2.0. The basic incentive of the current period will be equally distributed to pool A and B, and then distributed to all current accumulated locking funds in proportion to the amount of each locking funds and the locking time. 
+At the end of each period, the profit of the locking funds for that period will be liquidated and vouchers will be generated to be used as the basis for cashing out at the Genesis of Umayyad 2.0. The basic incentive available for the current period will be equally distributed to pool A and B, and then distributed to all current accumulated locking funds in proportion to the amount of each locking funds and the locking time. 
 
-The threshold setting for each pool is benchmarked against the theoretical output of PoW per period, which is 900,000 meer. There are three levels of threshold setting: minimum threshold, expected threshold and ultimate threshold. The minimum threshold is 25% of the theoretical PoW output for the current period, which corresponds to 50% of the basic incentives for the current period; the expected threshold is 40% of the theoretical PoW output for the current period, which corresponds to 80% of the basic incentives for the current period; the ultimate threshold is 50% of the theoretical PoW output for the current period, which corresponds to the full basic incentives for the current period. If the current cumulative locking volume is less than 25% of the theoretical PoW output, only 38% of the current basic incentives will be available, i.e. no-threshold incentives.
+Considering the reasonableness of the incentive and the assessment of the lock-up level, a certain threshold will be set for the allocation of the basic incentive in each period, i.e. the higher the locking amount, the more incentive will be obtained. Only when the total accumulated locking amount reaches the corresponding threshold, the corresponding level of basic incentive can be obtained. The total amount of basic incentive that can be obtained by the two pools in the current period can be determined based on whether the total accumulated locking amount of the two pools in the current period reaches the corresponding threshold level, and then distributed in half to pool A and B afterwards. The basic incentive that each pool has received for each period will be allocated to all the current accumulated locking funds. For the current period, the portion that cannot be obtained because the threshold level is not reached will be allocated to the Eco Fund.
 
-| |Total incentives per period	|Basic incentives	|Single pool no-threshold incentives	|Minimum threshold	|Single pool basic incentives	|Expected threshold	|Single pool basic incentives	|Ultimate threshold	|Single pool basic incentives|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|Issue x |Proportion	|Total amount	|38%	|25%	|50%	|40%	|80%	|50%	|100%|
-|1	|2%	|194400	|36936	|225000	|48600	|360000	|77760	|450000	|97200|
-|2	|3%	|291600	|55404	|450000	|72900	|720000	|116640	|900000	|145800|
-|3	|4%	|388800	|73872	|675000	|97200	|1080000	|155520	|1350000	|194400|
-|4	|5%	|486000	|92340	|900000	|121500	|1440000	|194400	|1800000	|243000
-|5	|6%	|583200	|110808	|1125000	|145800	|1800000	|233280	|2250000	|291600|
-|6	|7%	|680400	|129276	|1350000	|170100	|2160000	|272160	|2700000	|340200|
-|7	|8%	|777600	|147744	|1575000	|194400	|2520000	|311040	|3150000	|388800|
-|8	|9%	|874800	|166212	|1800000	|218700	|2880000	|349920	|3600000	|437400|
-|9	|10%	|972000	|184680	|2025000	|243000	|3240000	|388800	|4050000	|486000|
-|10	|11%	|1069200	|203148	|2250000	|267300	|3600000	|427680	|4500000	|534600|
-|11	|12%	|1166400	|221616	|2475000	|291600	|3960000	|466560	|4950000	|583200|
-|12	|13%	|1263600	|240084	|2700000	|315900	|4320000	|505440	|5400000	|631800|
+The threshold is set with respect to the total theoretical production, which is the sum of the theoretical PoW output and the theoretical linear release. Since the linear release per period maintains a 1:1 correspondence with the PoW output, the total theoretical production per period is 1.8 million meer. The threshold setting per period is benchmarked to the ratio of the total accumulated locking amount to the total accumulated theoretical production, which we can call the staking ratio. The threshold is set in three levels: the minimum threshold, the expected threshold and the ultimate threshold. If the current staking rate is less than 25%, only 38% of the basic incentive can be obtained, that is, no-threshold incentive; if the current staking rate reaches 25% but not 40%, only 50% of the basic incentive of the current period can be obtained, that is, the minimum threshold is 25%; if the current staking rate reaches 40% but not 50%, only 80% of the basic incentive of the current period can be obtained, that is, the expected threshold is 40%; if the current staking rate reaches 50%, the current period can get 100% of the basic incentive, that is, the ultimate threshold is 50%.
 
+![](../image/Umayyad/lock/formen.jpg)
+
+For example, if the total accumulated locking amount for both pools in period 3 is 2.2 million Meer, and the total accumulated theoretical production by period 3 will be 5.4 million Meer, then the staking rate is 40.74%, which has reached the expected threshold but not the ultimate threshold, so the total basic incentive available for this period is 388800 × 80% = 311,040 meer, and each of pool A and B will receive 155,520 meer.
 
 ![](../image/Umayyad/lock/P003en.png)
 
@@ -243,7 +232,7 @@ The **effective locking time weight** of any fund (L<sub>i</sub>,t<sub>i</sub>) 
 
 Note that funds participating in the lock-up prior to period x have an effective locking time weight of 5 in period x. Funds participating in the lock-up in period x have an effective locking time weight of 5 in all subsequent periods.
 
-Assuming that the total basic incentive in period x is C<sub>x,basic</sub>. If a total of n locking funds have accumulated in a single lock-up pool in period x, the basic profit available to any of these funds (L<sub>i</sub>,t<sub>i</sub>) in period x is
+Assuming that the total basic incentive available in period x is C<sub>x,basic</sub>. If a total of n locking funds have accumulated in a single lock-up pool in period x, the basic profit available to any of these funds (L<sub>i</sub>,t<sub>i</sub>) in period x is
 
 ![](../image/Umayyad/lock/formula002.png)
 
