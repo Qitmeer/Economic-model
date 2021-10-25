@@ -90,7 +90,7 @@ At the Genesis of Umayyad 1.0 network, 4% of the total number of Meer will be cr
 
 ### 3.1 Release Amount
 
-At the initial stage of the Umayyad network launch, a one-time Genesis generation of about 24% of Meer will be used mainly for mapping redemption for Mecca and Medina network holders, and team incentives. Since Qitmeer is a PoW-based consensus network and the Umayyad network uses a new ASIC-friendly mining algorithm, we need to mitigate the one-time impact of this 24% Genesis volume on the market in order to ensure the stable growth of miners, considering the stability of the Umayyad Network, so we will adopt a linear release process for this part of the Genesis balance. The maximum amount of linear release is 50518130 meer.
+At the initial stage of the Umayyad Network launch, a one-time Genesis generation of about 24% of Meer will be used mainly for mapping redemption for Mecca and Medina Network holders, and team incentives. Since Qitmeer is a PoW-based consensus network and the Umayyad Network uses a new ASIC-friendly mining algorithm, we need to mitigate the one-time impact of this 24% Genesis amount on the market in order to ensure the stable growth of miners, considering the stability of the Umayyad Network, so we will adopt a linear release process for this part of the Genesis balances. The maximum amount of linear release is 50518130 meer.
 
 ### 3.2 Release Rate
 
@@ -104,7 +104,7 @@ This release scheme is the temporary release scheme of Qitmeer Umayad 1.0. Later
 
 ## 4. Qitmeer Umayyad Network 1.0 "Majority Game Model" Design
 
-During the first year of the Umayyad network, a fixed one-year staking lock-up plan will be implemented to provide coin holders with the ability to resist inflationary losses and the opportunity to earn more, as well as to regulate network liquidity to ensure the stability of PoW miners. The plan will be designed as a non-zero-sum game similar to the majority game model, as opposed to the famous "El Farol Bar model", which will result in a majority benefit, or even a collective benefit.
+During the first year of the Umayyad Network, a fixed one-year staking lock-up plan will be implemented to provide coin holders with the ability to resist inflationary losses and the opportunity to earn more, as well as to regulate network liquidity to ensure the stability of PoW miners. The plan will be designed as a non-zero-sum game similar to the majority game model, as opposed to the famous "El Farol Bar model", which will result in a majority benefit, or even a collective benefit.
 
 Users can choose to participate in locking a certain amount of Meer at any time on their own, thus receiving an ongoing lock-up bonus. The end of the first-year's staking lock-up plan also marks the end of the Umayyad Network 1.0, and we refer to the blocks at the end of the first-year's staking lock-up plan as the critical block. Prior to the critical block, 50% of the block rewards will be used for PoW incentives and the other 50% of the block rewards will be used for staking lock-up rewards.
 
