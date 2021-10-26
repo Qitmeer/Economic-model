@@ -110,7 +110,7 @@ Users can choose to participate in locking a certain amount of Meer at any time 
 
 ### 4.1 Economic Significance
 
-#### 4.1.1 Economic Dynamics in the "majority Game Model" 
+#### 4.1.1 Economic Dynamics in the "Majority Game Model" 
 
 Umayyad 1.0 is in the infrastructure construction phase, where the supply of the market is greater than the demand, and therefore the amount of coins in circulation needs to be reduced to fight inflation. The idea of how to adaptively reduce the amount of coins in circulation to conform to the market, rather than introducing some kind of control as a mere externality, is an important concept in the design of economic system. The main point is to give the holders of coins sufficient choice.
 
